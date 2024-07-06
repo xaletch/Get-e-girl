@@ -8,11 +8,19 @@
 .authorization__block {
   height: 100%;
 }
-.authorization__block-inner {
+.authorization__block-home {
   padding: 100px 50px;
   height: 100%;
   display: grid;
   justify-content: center;
+  gap: 100px;
+}
+.authorization__block-inner {
+  padding: 100px 50px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   gap: 100px;
 }
 .authorization__logo {
@@ -27,6 +35,8 @@
   line-height: 28px;
 }
 .authorization-content {
+  max-width: 548px;
+  margin: 0 auto;
   margin-top: 30px;
 }
 .authorization__message {
@@ -40,6 +50,49 @@
 .authorization__message-link {
   color: var(--blue);
   font-weight: 600;
+}
+
+.authorization__content {
+  width: 100%;
+}
+.form-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.form-block {
+  margin-top: 16px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+.form-button {
+  margin-top: 16px;
+}
+.block-or {
+  margin-top: 32px;
+  display: flex;
+  align-items: center;
+}
+.line {
+  width: 100%;
+  height: 1px;
+  background: var(--gray-line);
+}
+.or-name {
+  padding: 0 16px;
+  color: var(--808080);
+  font-size: 12px;
+  font-family: "Gilroy";
+  font-weight: 400;
+  line-height: 8px;
+}
+
+.auth-social {
+  margin-top: 32px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 
 @media screen and (max-width: 1024px) {
@@ -56,6 +109,9 @@
     padding: 30px 15px;
     gap: 0;
   }
+  .authorization-content {
+    margin-top: 24px;
+  }
   .authorization__logo svg {
     width: 130px;
     height: 38px;
@@ -64,5 +120,13 @@
     font-size: 24px;
     font-weight: 600;
     line-height: 17px;
+  }
+  .block-or,
+  .auth-social,
+  .authorization__message-m {
+    margin-top: 24px;
+  }
+  .auth-social {
+    gap: 16px;
   }
 }

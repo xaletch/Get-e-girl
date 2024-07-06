@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Authorization</title>
+  </head>
+
+  <link rel="stylesheet" href="./assets/styles/styles.css" />
+  <link
+    rel="stylesheet"
+    href="./assets/styles/components/authorization/authorization.css"
+  />
+
+  <body>
+    <div class="authorization">
+      <div class="authorization__wrapper">
+        <div class="authorization__block">
+          <div class="authorization__block-inner">
+            <div class="authorization__logo">
+              <svg width="212" height="62">
+                <use href="./assets/icon/icons.svg#logo_dark"></use>
+              </svg>
+            </div>
+            <div class="authorization__content">
+              <h2 class="authorization-name authorization__gender-name">
+                Authorization
+              </h2>
+              <div class="authorization-content">
+                <form class="authorization__form">
+                  <div class="form-inputs">
+                    <input
+                      type="email"
+                      class="ui-input"
+                      name="email"
+                      placeholder="E-mail"
+                    />
+                    <div class="input__wrapper">
+                      <input
+                        type="password"
+                        class="ui-input"
+                        name="password"
+                        placeholder="Password"
+                      />
+                      <div class="input-eye">
+                        <svg width="24" height="25">
+                          <use href="./assets/icon/icons.svg#eye"></use>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-block">
+                    <!-- <p class="form__err-message">Неверный логин или пароль</p> -->
+                    <div class="form-help">
+                      <a href="#">Forgot password ?</a>
+                    </div>
+                  </div>
+                  <div class="form-button">
+                    <button type="submit" class="ui-button">Continue</button>
+                  </div>
+                </form>
+                <div class="block-or">
+                  <div class="line"></div>
+                  <div class="or-name">Or sign in with</div>
+                  <div class="line"></div>
+                </div>
+                <div class="auth-social">
+                  <a href="#" class="auth__social-button discord">
+                    <span class="social-icon discord">
+                      <svg width="22" height="17">
+                        <use href="./assets/icon/icons.svg#discord"></use>
+                      </svg>
+                    </span>
+                    Discord
+                  </a>
+                  <a href="#" class="auth__social-button google">
+                    <span class="social-icon google">
+                      <svg width="21" height="21">
+                        <use href="./assets/icon/icons.svg#google"></use>
+                      </svg>
+                    </span>
+                    Google
+                  </a>
+                </div>
+              </div>
+              <div class="authorization__message authorization__message-m">
+                Don't have an account?
+                <a href="./choseAcc.html" class="authorization__message-link"
+                  >Sign-up</a
+                >
+              </div>
+            </div>
+            <div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Валидация формы -->
+    <script src="./app/invalidForm.js"></script>
+  </body>
+</html>

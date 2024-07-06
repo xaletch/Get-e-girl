@@ -1,0 +1,147 @@
+/* Для инпута */
+.ui-input {
+  width: 100%;
+  height: 51px;
+  padding: 20px 32px;
+  border: 1px solid rgba(42, 43, 57, 0.25);
+  border-radius: 6px;
+  font-family: "Gilroy";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 11px;
+  color: var(--black);
+}
+.ui-input::placeholder {
+  opacity: 0.5;
+  user-select: none;
+}
+.input__wrapper {
+  position: relative;
+}
+.input-eye {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.form__err-message {
+  color: var(--red);
+  font-size: 14px;
+  font-family: "Gilroy";
+  font-weight: 400;
+  line-height: 10px;
+}
+.form-help {
+  text-align: right;
+  grid-column: 2;
+  color: var(--blue);
+  font-size: 14px;
+  font-family: "Gilroy";
+  font-weight: 600;
+  line-height: 17px;
+}
+
+.ui-input.error,
+.ui-input.error::placeholder {
+  border-color: var(--red);
+  color: var(--red);
+}
+
+/* Для кнопки */
+.ui-button {
+  width: 100%;
+  height: 57px;
+  padding: 18px;
+  background: var(--black);
+  border-radius: 40px;
+  text-align: center;
+  color: var(--white);
+  font-size: 18px;
+  font-family: "Gilroy";
+  font-weight: 600;
+  line-height: 22px;
+}
+
+/* Социальные сети */
+.auth__social-button {
+  height: 44px;
+  padding: 14px 40px 15px 60px;
+  border-radius: 45px;
+  position: relative;
+  font-size: 20px;
+  font-family: "Gilroy";
+  font-weight: 400;
+  line-height: 14px;
+  user-select: none;
+}
+.social-icon {
+  width: 34px;
+  height: 34px;
+  border-radius: 50px;
+  position: absolute;
+  display: flex;
+  top: 50%;
+  left: 6px;
+  transform: translateY(-50%);
+  align-items: center;
+  justify-content: center;
+}
+.auth__social-button.discord {
+  background: rgba(88, 101, 242, 0.2);
+  color: var(--discord-color);
+}
+.auth__social-button.google {
+  background: var(--google-bg);
+  color: var(--black);
+}
+.social-icon.discord {
+  background: var(--discord-color);
+}
+.social-icon.google {
+  background: var(--white);
+}
+
+@media screen and (max-width: 480px) {
+  .ui-input {
+    height: 40px;
+    padding: 18px 15px;
+    font-size: 14px;
+  }
+  .form__err-message,
+  .form-help {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .ui-button {
+    height: 46px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  /* Социальные сети */
+  .auth__social-button {
+    height: 37px;
+    padding: 13px 28px 14px 48px;
+    font-size: 14px;
+    line-height: 13px;
+  }
+  .social-icon {
+    width: 28px;
+    height: 28px;
+    left: 5px;
+  }
+  .social-icon.discord svg {
+    width: 19px;
+    height: 14px;
+  }
+  .social-icon.google svg {
+    width: 16px;
+    height: 16px;
+  }
+}
