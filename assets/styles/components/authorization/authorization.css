@@ -1,0 +1,68 @@
+.authorization__wrapper {
+  max-width: 650px;
+  height: 100vh;
+  background: var(--white);
+  overflow-x: auto;
+  white-space: nowrap;
+}
+.authorization__block {
+  height: 100%;
+}
+.authorization__block-inner {
+  padding: 100px 50px;
+  height: 100%;
+  display: grid;
+  justify-content: center;
+  gap: 100px;
+}
+.authorization__logo {
+  text-align: center;
+}
+.authorization-name {
+  text-align: center;
+  color: var(--black);
+  font-size: 40px;
+  font-family: var(--font-family);
+  font-weight: 600;
+  line-height: 28px;
+}
+.authorization-content {
+  margin-top: 30px;
+}
+.authorization__message {
+  margin-top: 40px;
+  text-align: center;
+  color: var(--black);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 17px;
+}
+.authorization__message-link {
+  color: var(--blue);
+  font-weight: 600;
+}
+
+@media screen and (max-width: 1024px) {
+  .authorization__wrapper {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .authorization__wrapper {
+    max-width: 100%;
+  }
+  .authorization__block-inner {
+    padding: 30px 15px;
+    gap: 0;
+  }
+  .authorization__logo svg {
+    width: 130px;
+    height: 38px;
+  }
+  .authorization-name {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 17px;
+  }
+}

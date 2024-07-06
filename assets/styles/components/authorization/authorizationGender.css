@@ -1,0 +1,81 @@
+.gender__wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+.gender__block {
+  display: grid;
+  gap: 18px;
+}
+.gender__card {
+  width: 181px;
+  min-height: 181px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.gender__card.w {
+  background: var(--girl);
+}
+.gender__card.w svg {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.gender__card.m {
+  background: var(--men);
+}
+.gender-button {
+  width: 100%;
+  height: 54px;
+  padding: 18px 36px;
+  background: var(--f5f5f5);
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  color: var(--dark-blue);
+  user-select: none;
+}
+@media screen and (max-width: 480px) {
+  .authorization__gender-name {
+    display: none;
+  }
+  .gender__card {
+    width: 157px;
+    min-height: 157px;
+  }
+  .gender__card.w svg {
+    width: 119px;
+    height: 144px;
+  }
+  .gender__card.m svg {
+    width: 103px;
+    height: 125px;
+  }
+  .gender-button {
+    height: 54px;
+    padding: 18px 27px;
+    text-align: center;
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 359px) {
+  .gender__card {
+    width: 140px;
+    min-height: 140px;
+  }
+  .gender__card.w svg {
+    width: 109px;
+    height: 134px;
+  }
+  .gender__card.m svg {
+    width: 93px;
+    height: 115px;
+  }
+  .gender-button {
+    padding: 18px 15px;
+  }
+}

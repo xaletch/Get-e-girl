@@ -1,0 +1,9 @@
+@import "./reset.css";
+@import "./fonts.css";
+@import "./root.css";
+
+body {
+  font-family: "Inter";
+  background: var(--black);
+  color: var(--white);
+}
