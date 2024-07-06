@@ -1,31 +1,18 @@
 import { validateEmail } from "./validateEmail.js";
 
 document
-  .querySelector(".authorization__form")
+  .querySelector(".forgot-password__form")
   .addEventListener("submit", function (event) {
     event.preventDefault();
 
     const form = event.target;
-
     const formData = new FormData(form);
-
     const data = Object.fromEntries(formData.entries());
-
-    const inputs = document.querySelectorAll(".input-required");
 
     const emailInput = form.querySelector('input[name="email"]');
     const emailValue = emailInput.value.trim();
 
     let isFormValid = true;
-
-    inputs.forEach((input) => {
-      if (input.value.trim() === "") {
-        input.classList.add("error");
-        isFormValid = false;
-      } else {
-        input.classList.remove("error");
-      }
-    });
 
     if (emailValue === "" || !validateEmail(emailValue)) {
       emailInput.classList.add("error");
@@ -35,8 +22,10 @@ document
     }
 
     if (isFormValid) {
-      // Тут отправляем данные формы на бэк
+      // Отправка данных формы на бэк
       console.log(data);
+
+      window.location.href = "forgotPassStageTwo.html";
     }
   });
 

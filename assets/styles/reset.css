@@ -55,6 +55,11 @@ a {
   color: inherit;
 }
 
+p {
+  white-space: normal;
+  word-wrap: break-word;
+}
+
 ul {
   margin: 0;
   padding: 0;
@@ -74,7 +79,7 @@ textarea {
   border: none;
   outline: none;
 }
-/* input[type="number"]::-webkit-inner-spin-button {
+input[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
-} */
+}

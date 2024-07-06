@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration</title>
+
+    <link rel="stylesheet" href="../../assets/styles/styles.css" />
+    <link
+      rel="stylesheet"
+      href="../../assets/styles/components/authorization/authorization.css"
+    />
+  </head>
+  <body>
+    <div class="authorization">
+      <div class="authorization__wrapper">
+        <div class="authorization__block">
+          <div class="authorization__block-inner">
+            <div class="authorization__logo">
+              <svg width="212" height="62">
+                <use href="../../assets/icon/icons.svg#logo_dark"></use>
+              </svg>
+            </div>
+            <div class="authorization__content">
+              <h2 class="authorization-name authorization__gender-name">
+                Registration
+              </h2>
+              <div class="authorization-content">
+                <form class="authorization__form">
+                  <div class="form-inputs">
+                    <input
+                      type="email"
+                      class="ui-input input-required"
+                      name="email"
+                      placeholder="E-mail"
+                    />
+                    <input
+                      type="text"
+                      class="ui-input input-required"
+                      name="username"
+                      placeholder="Username"
+                    />
+                    <div class="input__wrapper">
+                      <input
+                        type="password"
+                        class="ui-input input-required"
+                        name="password"
+                        placeholder="Password"
+                      />
+                      <!-- <div class="input-eye">
+                        <svg width="24" height="25">
+                          <use href="../../assets/icon/icons.svg#eye"></use>
+                        </svg>
+                      </div> -->
+                    </div>
+                    <div class="input__wrapper">
+                      <input
+                        type="password"
+                        class="ui-input input-required"
+                        name="repeat-password "
+                        placeholder="Repeat password "
+                      />
+                      <!-- <div class="input-eye">
+                        <svg width="24" height="25">
+                          <use href="../../assets/icon/icons.svg#eye"></use>
+                        </svg>
+                      </div> -->
+                    </div>
+                  </div>
+                  <div class="form-block">
+                    <!-- <p class="form__err-message"></p> -->
+                  </div>
+                  <div class="form-button">
+                    <button type="submit" class="ui-button">
+                      Create account
+                    </button>
+                  </div>
+                  <div class="form-checkboxes">
+                    <label class="ui-checkbox">
+                      <input type="checkbox" required />
+                      <span class="checked"></span>
+                      <span class="label-text">Confirmed 18+</span>
+                    </label>
+                    <label class="ui-checkbox">
+                      <input type="checkbox" required />
+                      <span class="checked"></span>
+                      <span class="label-text"
+                        >I agree with the processing of
+                        <a href="#" class="label-link"> personal data</a> and
+                        <a href="#" class="label-link label-link-m">
+                          privacy policy</a
+                        >
+                      </span>
+                    </label>
+                  </div>
+                </form>
+              </div>
+              <div class="authorization__message authorization__message-m">
+                Already have an account?
+                <a
+                  href="./authorization.html"
+                  class="authorization__message-link"
+                  >Sign-in</a
+                >
+              </div>
+            </div>
+            <div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Валидация формы -->
+    <script type="module" src="../../app/invalidForm.js"></script>
+  </body>
+</html>

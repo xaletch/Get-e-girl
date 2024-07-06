@@ -21,7 +21,10 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 100px;
+  /* gap: 100px; */
+}
+.authorization__block-forgot {
+  display: block;
 }
 .authorization__logo {
   text-align: center;
@@ -38,6 +41,9 @@
   max-width: 548px;
   margin: 0 auto;
   margin-top: 30px;
+}
+.authorization__forgot-content {
+  margin-top: 40px;
 }
 .authorization__message {
   margin-top: 40px;
@@ -95,6 +101,72 @@
   gap: 20px;
 }
 
+.form-checkboxes {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.input-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+/* Восстановление пароля */
+.forgot-block {
+  max-width: 456px;
+  margin: 0 auto;
+}
+
+.forgot-pass {
+  text-align: center;
+  color: var(--black);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 17px;
+}
+.forgot-description {
+  margin-top: 24px;
+  text-align: center;
+  color: var(--dark-blue);
+  font-size: 14px;
+  font-family: "Gilroy";
+  font-weight: 400;
+  line-height: 1.5;
+  opacity: 0.8;
+}
+
+/* Вернуться назад */
+.come-back__block {
+  margin-top: 36px;
+}
+
+/*  */
+.forgot__block-message {
+  margin-top: 100px;
+  width: 100%;
+  border: 1px solid rgba(42, 43, 57, 0.1);
+  border-radius: 8px;
+}
+.forgot__block-message__inner {
+  padding: 40px 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+.forgot__message-text {
+  text-align: center;
+  color: var(--515151);
+  font-size: 14px;
+  font-family: "Gilroy";
+  font-weight: 400;
+  line-height: 1.4;
+}
+
 @media screen and (max-width: 1024px) {
   .authorization__wrapper {
     max-width: 100%;
@@ -105,7 +177,8 @@
   .authorization__wrapper {
     max-width: 100%;
   }
-  .authorization__block-inner {
+  .authorization__block-inner,
+  .authorization__block-home {
     padding: 30px 15px;
     gap: 0;
   }
@@ -121,6 +194,9 @@
     font-weight: 600;
     line-height: 17px;
   }
+  .form-inputs {
+    gap: 8px;
+  }
   .block-or,
   .auth-social,
   .authorization__message-m {
@@ -128,5 +204,31 @@
   }
   .auth-social {
     gap: 16px;
+  }
+  .form-checkboxes {
+    margin-top: 24px;
+    gap: 12px;
+  }
+  .input-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  /* Вернуться назад */
+  .come-back__block {
+    margin-top: 90px;
+  }
+
+  /*  */
+  .authorization__block-forgot {
+    display: flex;
+    justify-content: space-between;
+  }
+  .forgot__block-message {
+    margin-top: 0;
+  }
+  .forgot__block-message__inner {
+    padding: 40px;
   }
 }
