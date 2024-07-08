@@ -8,3 +8,46 @@ body {
   background: var(--black);
   color: var(--white);
 }
+
+.app {
+  height: 100%;
+}
+
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.title-page {
+  color: var(--white);
+  font-size: 60px;
+  font-family: "Gilroy";
+  font-weight: 700;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 1060px) {
+  .title-page {
+    font-size: 48px;
+  }
+}
+
+@media screen and (max-width: 1060px) {
+  .title-page {
+    font-size: 32px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .container {
+    padding: 0 15px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .title-page {
+    font-size: 24px;
+  }
+}
