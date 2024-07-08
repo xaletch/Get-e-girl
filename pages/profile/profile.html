@@ -251,12 +251,24 @@
                           name="text"
                           placeholder="Username"
                         />
-                        <input
-                          class="form-input ui-input"
-                          type="email"
-                          name="email"
-                          placeholder="Выберите языки"
-                        />
+                        <div class="ui-popup">
+                          <div class="popup-label">
+                            <span class="popup-icon">
+                              <svg width="14" height="9">
+                                <use
+                                  href="../../assets/icon/icons.svg#arrow_bottom"
+                                ></use>
+                              </svg>
+                            </span>
+                            <p class="popup-placeholder">Выберите языки</p>
+                            <p class="popup__select-value"></p>
+                          </div>
+                          <div class="popups-items">
+                            <div class="popups-item">Русский</div>
+                            <div class="popups-item">English</div>
+                            <div class="popups-item">Germany</div>
+                          </div>
+                        </div>
                         <div class="two-inputs">
                           <input
                             class="form-input ui-input"
@@ -344,6 +356,7 @@
       </div>
     </div>
 
+    <script src="../../app/popup.js"></script>
     <script src="../../app/modal.js"></script>
   </body>
 </html>
