@@ -349,6 +349,13 @@
   transform: rotate(-180deg);
   transition: all 0.2s linear;
 }
+.button-light {
+  color: var(--light-blue-gray);
+  transition: color 0.3s ease;
+}
+.button-light:hover {
+  color: var(--black);
+}
 
 @media screen and (max-width: 580px) {
   .modal__menu-wrapper {
