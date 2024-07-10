@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Статистика</title>
+
+    <link rel="stylesheet" href="../../assets/styles/styles.css" />
+    <link rel="stylesheet" href="../../assets/styles/ui.css" />
+    <link rel="stylesheet" href="../../assets/styles/components/header.css" />
+    <link rel="stylesheet" href="../../assets/styles/components/navbar.css" />
+    <link
+      rel="stylesheet"
+      href="../../assets/styles/components/balance/balance.css"
+    />
+  </head>
+  <body>
+    <div class="app">
+      <div class="navbar">
+        <div class="navbar__wrapper">
+          <div class="navbar__head">
+            <div class="navbar__head-inner">
+              <div class="navbar__head-name">Chats</div>
+              <div class="navbar__head-icon">
+                <svg width="22" height="21">
+                  <use href="../../assets/icon/icons.svg#chat"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="navbar__chats">
+            <div class="navbar__chats-wrapper">
+              <a href="#" class="navbar__chat">
+                <img src="../../assets/images/girl-1.png" alt="girl" />
+              </a>
+              <a href="#" class="navbar__chat online">
+                <img src="../../assets/images/girl-2.png" alt="girl" />
+              </a>
+              <a href="#" class="navbar__chat">
+                <img src="../../assets/images/girl-1.png" alt="girl" />
+              </a>
+              <a href="#" class="navbar__chat">
+                <img src="../../assets/images/girl-1.png" alt="girl" />
+              </a>
+              <a href="#" class="navbar__chat">
+                <img src="../../assets/images/girl-2.png" alt="girl" />
+              </a>
+              <a href="#" class="navbar__chat">
+                <img src="../../assets/images/girl-1.png" alt="girl" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <header class="header header-l">
+        <div class="container">
+          <div class="header__wrapper">
+            <a href="#" class="header-logo">
+              <svg width="180" height="54">
+                <use href="../../assets/icon/icons.svg#logo_white"></use>
+              </svg>
+            </a>
+            <nav class="header__naw">
+              <ul class="header__naw-list">
+                <li class="header__list-item">
+                  <a href="#">Feeds</a>
+                </li>
+                <li class="header__list-item">
+                  <a href="#">My E-girls</a>
+                </li>
+                <li class="header__list-item">
+                  <a href="#">My Сontent</a>
+                </li>
+                <li class="header__list-item">
+                  <a href="../Orders/orders.html">Orders</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="header__user-info">
+              <!-- БАЛАНС -->
+              <a href="../balance/finance.html" class="user-balance">
+                <span class="balance-h">$12 310</span>
+              </a>
+              <!-- УВЕДОМЛЕНИЯ -->
+              <button href="#" class="header__buttons-btn header__notif-btn">
+                <div class="notification-count">12</div>
+                <span>
+                  <svg width="18" height="20">
+                    <use href="../../assets/icon/icons.svg#notification"></use>
+                  </svg>
+                </span>
+                <div class="header__buttons-arrow"></div>
+              </button>
+              <!-- ПОЛЬЗОВАТЕЛЬ -->
+              <div class="user">
+                <div class="user-img">
+                  <img src="../../assets/images/user.png" alt="user" />
+                </div>
+                <div class="user-name">@MoraruV</div>
+              </div>
+              <!-- МЕНЮ -->
+              <button class="header__buttons-btn header__notif-btn">
+                <svg width="24" height="24">
+                  <use href="../../assets/icon/icons.svg#menu"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="header__buttons">
+              <!-- Уведомления -->
+              <button href="#" class="header__buttons-btn">
+                <div class="notification-count">12</div>
+                <span>
+                  <svg width="18" height="20">
+                    <use href="../../assets/icon/icons.svg#notification"></use>
+                  </svg>
+                </span>
+                <div class="header__buttons-arrow"></div>
+              </button>
+              <!-- Язык -->
+              <button href="#" class="header__buttons-btn">
+                <span class="lang">
+                  <svg width="28" height="20">
+                    <use href="../../assets/icon/icons.svg#russia"></use>
+                  </svg>
+                </span>
+                <div class="header__buttons-arrow"></div>
+              </button>
+              <!-- Настройки -->
+              <a href="#" class="header__buttons-btn">
+                <span>
+                  <svg width="20" height="20">
+                    <use href="../../assets/icon/icons.svg#setting"></use>
+                  </svg>
+                </span>
+              </a>
+              <button class="header__buttons-btn header__button-menu">
+                <svg width="24" height="24">
+                  <use href="../../assets/icon/icons.svg#menu"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="main">
+        <section class="balance section-p">
+          <div class="container">
+            <div class="balance-head">
+              <h1 class="title-page">Balance</h1>
+              <div class="balance__page">
+                <a href="./finance.html" class="balance__page-item">Финансы</a>
+                <a href="./statistics.html" class="balance__page-item active"
+                  >Статистика</a
+                >
+              </div>
+            </div>
+            <div class="statistics__wrapper">
+              <div class="statistics__block">
+                <div class="statistics__block-card">
+                  <h2 class="statistics__name">Статистика</h2>
+                  <div class="statistics__card">
+                    <div class="statistics__card-inner">
+                      <h3 class="statistics__card-result">$400 000</h3>
+                      <p class="statistics__card-name">Общий вывод</p>
+                    </div>
+                  </div>
+                  <div class="statistics__card">
+                    <div class="statistics__card-inner">
+                      <h3 class="statistics__card-result">$400 000</h3>
+                      <p class="statistics__card-name">Общий вывод</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="statistics__block-card">
+                  <h2 class="statistics__name">Рефералка</h2>
+                  <div class="statistics__card">
+                    <div class="statistics__card-inner">
+                      <h3 class="statistics__card-result">$400 000</h3>
+                      <p class="statistics__card-name">Общий вывод</p>
+                    </div>
+                  </div>
+                  <div class="statistics__card">
+                    <div class="statistics__card-inner">
+                      <h3 class="statistics__card-result">25</h3>
+                      <p class="statistics__card-name">Приглашено людей</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

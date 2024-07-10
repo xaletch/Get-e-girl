@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Финансы</title>
+
+    <link rel="stylesheet" href="../../assets/styles/styles.css" />
+    <link rel="stylesheet" href="../../assets/styles/ui.css" />
+    <link rel="stylesheet" href="../../assets/styles/components/header.css" />
+    <link rel="stylesheet" href="../../assets/styles/components/navbar.css" />
+    <link
+      rel="stylesheet"
+      href="../../assets/styles/components/balance/balance.css"
+    />
+  </head>
+  <body>
+    <div class="app">
+      <div class="navbar">
+        <div class="navbar__wrapper">
+          <div class="navbar__head">
+            <div class="navbar__head-inner">
+              <div class="navbar__head-name">Chats</div>
+              <div class="navbar__head-icon">
+                <svg width="22" height="21">
+                  <use href="../../assets/icon/icons.svg#chat"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="navbar__chats">
+            <div class="navbar__chats-wrapper">
+              <a href="#" class="navbar__chat">
+                <img src="../../assets/images/girl-1.png" alt="girl" />
+              </a>
+              <a href="#" class="navbar__chat online">
+                <img src="../../assets/images/girl-2.png" alt="girl" />
+              </a>
+              <a href="#" class="navbar__chat">
+                <img src="../../assets/images/girl-1.png" alt="girl" />
+              </a>
+              <a href="#" class="navbar__chat">
+                <img src="../../assets/images/girl-1.png" alt="girl" />
+              </a>
+              <a href="#" class="navbar__chat">
+                <img src="../../assets/images/girl-2.png" alt="girl" />
+              </a>
+              <a href="#" class="navbar__chat">
+                <img src="../../assets/images/girl-1.png" alt="girl" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <header class="header header-l">
+        <div class="container">
+          <div class="header__wrapper">
+            <a href="#" class="header-logo">
+              <svg width="180" height="54">
+                <use href="../../assets/icon/icons.svg#logo_white"></use>
+              </svg>
+            </a>
+            <nav class="header__naw">
+              <ul class="header__naw-list">
+                <li class="header__list-item">
+                  <a href="#">Feeds</a>
+                </li>
+                <li class="header__list-item">
+                  <a href="#">My E-girls</a>
+                </li>
+                <li class="header__list-item">
+                  <a href="#">My Сontent</a>
+                </li>
+                <li class="header__list-item">
+                  <a href="../Orders/orders.html">Orders</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="header__user-info">
+              <!-- БАЛАНС -->
+              <a href="../balance/finance.html" class="user-balance">
+                <span class="balance-h">$12 310</span>
+              </a>
+              <!-- УВЕДОМЛЕНИЯ -->
+              <button href="#" class="header__buttons-btn header__notif-btn">
+                <div class="notification-count">12</div>
+                <span>
+                  <svg width="18" height="20">
+                    <use href="../../assets/icon/icons.svg#notification"></use>
+                  </svg>
+                </span>
+                <div class="header__buttons-arrow"></div>
+              </button>
+              <!-- ПОЛЬЗОВАТЕЛЬ -->
+              <div class="user">
+                <div class="user-img">
+                  <img src="../../assets/images/user.png" alt="user" />
+                </div>
+                <div class="user-name">@MoraruV</div>
+              </div>
+              <!-- МЕНЮ -->
+              <button class="header__buttons-btn header__notif-btn">
+                <svg width="24" height="24">
+                  <use href="../../assets/icon/icons.svg#menu"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="header__buttons">
+              <!-- Уведомления -->
+              <button href="#" class="header__buttons-btn">
+                <div class="notification-count">12</div>
+                <span>
+                  <svg width="18" height="20">
+                    <use href="../../assets/icon/icons.svg#notification"></use>
+                  </svg>
+                </span>
+                <div class="header__buttons-arrow"></div>
+              </button>
+              <!-- Язык -->
+              <button href="#" class="header__buttons-btn">
+                <span class="lang">
+                  <svg width="28" height="20">
+                    <use href="../../assets/icon/icons.svg#russia"></use>
+                  </svg>
+                </span>
+                <div class="header__buttons-arrow"></div>
+              </button>
+              <!-- Настройки -->
+              <a href="#" class="header__buttons-btn">
+                <span>
+                  <svg width="20" height="20">
+                    <use href="../../assets/icon/icons.svg#setting"></use>
+                  </svg>
+                </span>
+              </a>
+              <button class="header__buttons-btn header__button-menu">
+                <svg width="24" height="24">
+                  <use href="../../assets/icon/icons.svg#menu"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="main">
+        <section class="balance section-p">
+          <div class="container">
+            <div class="balance-head">
+              <h1 class="title-page">Balance</h1>
+              <div class="balance__page">
+                <a href="./finance.html" class="balance__page-item active"
+                  >Финансы</a
+                >
+                <a href="./statistics.html" class="balance__page-item"
+                  >Статистика</a
+                >
+              </div>
+            </div>
+
+            <!--  -->
+            <div class="balance__wrapper">
+              <div class="balance__navbar">
+                <div class="balance__navbar-menu">
+                  <div class="balance__navbar-inner">
+                    <div class="balance__navbar-info">
+                      <h2 class="balance__navbar-name">Balance</h2>
+                      <div class="balance-money">$400 000</div>
+                    </div>
+                    <div class="balance__navbar-buttons">
+                      <button class="balance-button ui-button button-white">
+                        Пополнить
+                      </button>
+                      <button class="balance-button ui-button button-black">
+                        Вывод
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="balance__navbar-inputs">
+                  <div class="input-wrapper">
+                    <span class="input-name">Код:</span>
+                    <input
+                      class="ui__mini-input ui-mini-pl ui-mini-pr input-code"
+                      type="text"
+                      placeholder="8884-8884-8884-8884"
+                    />
+                    <button class="text-copy" onclick="copyText('input-code')">
+                      <svg width="16" height="18">
+                        <use href="../../assets/icon/icons.svg#copy"></use>
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="input-wrapper">
+                    <input
+                      class="ui__mini-input ui-mini-pr input-link"
+                      type="text"
+                      placeholder="Ссылка"
+                    />
+                    <button class="text-copy" onclick="copyText('input-link')">
+                      <svg width="16" height="18">
+                        <use href="../../assets/icon/icons.svg#copy"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="balance__history">
+                <div class="balance__history-sort">
+                  <div class="sort-date">
+                    <p class="sort-name">выбрать период</p>
+                    <div class="sort__date">
+                      <div class="sort__date-block date-block">
+                        <div class="date__block-wrapper">
+                          <span class="date-period date-period">C</span>
+                          <p class="select-date select-date">15.02.24</p>
+                          <span class="order__date-icon date-icon">
+                            <svg width="19" height="20">
+                              <use
+                                href="../../assets/icon/icons.svg#calendar"
+                              ></use>
+                            </svg>
+                          </span>
+                        </div>
+                      </div>
+                      <div class="sort__date-block date-block">
+                        <div class="date__block-wrapper">
+                          <span class="order__date-period date-period">По</span>
+                          <p class="order__select-date select-date">31.12.25</p>
+                          <span class="order__date-icon date-icon">
+                            <svg width="19" height="20">
+                              <use
+                                href="../../assets/icon/icons.svg#calendar"
+                              ></use>
+                            </svg>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="sort__category-block">
+                    <p class="order__sort-name sort-name">Сортировка:</p>
+                    <div class="ui-sort__popup">
+                      <div class="sort__popup-block">
+                        <div class="select__sort-value">Все доходы</div>
+                        <svg width="14" height="9">
+                          <use
+                            href="../../assets/icon/icons.svg#arrow_bottom"
+                          ></use>
+                        </svg>
+                      </div>
+                      <div class="sort__popup-values">
+                        <div class="popup__values-list">
+                          <div class="popup__valuer-list__item select">
+                            Все доходы
+                          </div>
+                          <div class="line"></div>
+                          <div class="popup__valuer-list__item">Все доходы</div>
+                          <div class="line"></div>
+                          <div class="popup__valuer-list__item">Все доходы</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!--  -->
+                <div class="balance__history-wrapper">
+                  <div class="balance__history-history">
+                    <!-- Card loading -->
+                    <div class="balance__history-card">
+                      <div class="history__card-inner">
+                        <div class="history__card-status__icon">
+                          <svg width="25" height="24">
+                            <use
+                              href="../../assets/icon/icons.svg#loading"
+                            ></use>
+                          </svg>
+                        </div>
+                        <!--  -->
+                        <div class="history__card-main">
+                          <div class="card__main-block">
+                            <div class="history__card-content">
+                              <h3 class="content__card-name">Content:</h3>
+                              <span class="card-content">#15615125</span>
+                            </div>
+                            <div class="history__card-price status-loading">
+                              $100
+                            </div>
+                          </div>
+                          <div class="card__main-block">
+                            <div
+                              class="history__card-status status-loading card__main-bottom"
+                            >
+                              В обработке
+                            </div>
+                            <div class="history__card-date card__main-bottom">
+                              16.06.2022
+                            </div>
+                          </div>
+                        </div>
+                        <!--  -->
+                        <button class="history__card-open">
+                          <svg width="16" height="12">
+                            <use
+                              href="../../assets/icon/icons.svg#arrow_bottom"
+                            ></use>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+
+                    <!-- Card success -->
+                    <div class="balance__history-card">
+                      <div class="history__card-inner">
+                        <div class="history__card-status__icon">
+                          <svg width="18" height="12">
+                            <use
+                              href="../../assets/icon/icons.svg#success"
+                            ></use>
+                          </svg>
+                        </div>
+                        <!--  -->
+                        <div class="history__card-main">
+                          <div class="card__main-block">
+                            <div class="history__card-content">
+                              <h3 class="content__card-name">Rent time:</h3>
+                              <span class="card-content">#15615125</span>
+                            </div>
+                            <div class="history__card-price status-success">
+                              $1 000
+                            </div>
+                          </div>
+                          <div class="card__main-block">
+                            <div
+                              class="history__card-status status-success card__main-bottom"
+                            >
+                              Успешно
+                            </div>
+                            <div class="history__card-date card__main-bottom">
+                              16.06.2022
+                            </div>
+                          </div>
+                        </div>
+                        <!--  -->
+                        <button class="history__card-open">
+                          <svg width="16" height="12">
+                            <use
+                              href="../../assets/icon/icons.svg#arrow_bottom"
+                            ></use>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+
+                    <!-- Card error -->
+                    <div class="balance__history-card">
+                      <div class="history__card-inner">
+                        <div class="history__card-status__icon">
+                          <svg width="25" height="24">
+                            <use href="../../assets/icon/icons.svg#error"></use>
+                          </svg>
+                        </div>
+                        <!--  -->
+                        <div class="history__card-main">
+                          <div class="card__main-block">
+                            <div class="history__card-content">
+                              <h3 class="content__card-name">Tranaction:</h3>
+                              <span class="card-content">#15615125</span>
+                            </div>
+                            <div class="history__card-price status-error">
+                              $500
+                            </div>
+                          </div>
+                          <div class="card__main-block">
+                            <div
+                              class="history__card-status status-error card__main-bottom"
+                            >
+                              Ошибка
+                            </div>
+                            <div class="history__card-date card__main-bottom">
+                              16.06.2022
+                            </div>
+                          </div>
+                        </div>
+                        <!--  -->
+                        <button class="history__card-open">
+                          <svg width="16" height="12">
+                            <use
+                              href="../../assets/icon/icons.svg#arrow_bottom"
+                            ></use>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!--  -->
+                  <div class="balance__history-earned">
+                    <h3 class="earned-title">Заработали за период</h3>
+                    <div class="earned-period">
+                      <div class="earned-date">15.02.24</div>
+                      <span>-</span>
+                      <div class="earned-date">31.12.25</div>
+                    </div>
+                    <div class="balance-money earned-money">$200 000</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="../../app/balance.js"></script>
+  </body>
+</html>

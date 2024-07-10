@@ -241,4 +241,34 @@
     <path d="M31.5 31.5L22.5 22.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
   </symbol>
 
+  <!-- copy -->
+  <symbol id="copy" viewBox="0 0 16 18" fill="none">  
+    <path d="M3.83333 4.00033V1.50033C3.83333 1.27931 3.92113 1.06735 4.07741 0.91107C4.23369 0.75479 4.44565 0.666992 4.66667 0.666992H14.6667C14.8877 0.666992 15.0996 0.75479 15.2559 0.91107C15.4122 1.06735 15.5 1.27931 15.5 1.50033V13.167C15.5 13.388 15.4122 13.6 15.2559 13.7562C15.0996 13.9125 14.8877 14.0003 14.6667 14.0003H12.1667V16.5003C12.1667 16.9603 11.7917 17.3337 11.3275 17.3337H1.33917C1.22927 17.3343 1.12033 17.3133 1.0186 17.2717C0.916873 17.2301 0.824361 17.1688 0.746382 17.0914C0.668403 17.014 0.606494 16.9219 0.564212 16.8205C0.52193 16.719 0.500108 16.6102 0.5 16.5003L0.5025 4.83366C0.5025 4.37366 0.8775 4.00033 1.34167 4.00033H3.83333ZM2.16917 5.66699L2.16667 15.667H10.5V5.66699H2.16917ZM5.5 4.00033H12.1667V12.3337H13.8333V2.33366H5.5V4.00033Z" fill="#9DA2AD" />
+  </symbol>
+
+  <!-- Balance -->
+
+  <!-- loading -->
+  <symbol id="loading" viewBox="0 0 25 24" fill="none">
+    <path d="M12.5 6V3" stroke="#E49701" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M16.75 7.74961L18.9 5.59961" stroke="#E49701" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M18.5 12H21.5" stroke="#E49701" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M16.75 16.25L18.9 18.4" stroke="#E49701" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M12.5 18V21" stroke="#E49701" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M8.2501 16.25L6.1001 18.4" stroke="#E49701" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M6.5 12H3.5" stroke="#E49701" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M8.2501 7.74961L6.1001 5.59961" stroke="#E49701" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+  </symbol>
+
+  <!-- success -->
+  <symbol id="success" viewBox="0 0 18 12" fill="none">
+    <path d="M1.5 6L6.5 11L16.5 1" stroke="#06E401" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+  </symbol>
+
+  <!-- error -->
+  <symbol id="error" viewBox="0 0 25 24" fill="none">
+    <path d="M3.5 12C3.5 13.1819 3.73279 14.3522 4.18508 15.4442C4.63738 16.5361 5.30031 17.5282 6.13604 18.364C6.97177 19.1997 7.96392 19.8626 9.05585 20.3149C10.1478 20.7672 11.3181 21 12.5 21C13.6819 21 14.8522 20.7672 15.9442 20.3149C17.0361 19.8626 18.0282 19.1997 18.864 18.364C19.6997 17.5282 20.3626 16.5361 20.8149 15.4442C21.2672 14.3522 21.5 13.1819 21.5 12C21.5 10.8181 21.2672 9.64778 20.8149 8.55585C20.3626 7.46392 19.6997 6.47177 18.864 5.63604C18.0282 4.80031 17.0361 4.13738 15.9442 3.68508C14.8522 3.23279 13.6819 3 12.5 3C11.3181 3 10.1478 3.23279 9.05585 3.68508C7.96392 4.13738 6.97177 4.80031 6.13604 5.63604C5.30031 6.47177 4.63738 7.46392 4.18508 8.55585C3.73279 9.64778 3.5 10.8181 3.5 12Z" stroke="#FF3F33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M10.5 10L14.5 14M14.5 10L10.5 14" stroke="#FF3F33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+  </symbol>
+
 <svg/>  

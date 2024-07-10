@@ -32,7 +32,7 @@
   align-items: center;
   justify-content: center;
 }
-.balance {
+.balance-h {
   color: var(--icon);
   font-size: 16px;
   font-family: "Poppins";
@@ -220,7 +220,7 @@
   .header__buttons-btn {
     width: 32px;
   }
-  .balance {
+  .balance-h {
     font-size: 12px;
   }
 }

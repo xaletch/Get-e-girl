@@ -53,6 +53,31 @@
   color: var(--red);
 }
 
+/* mini */
+.ui__mini-input {
+  width: 100%;
+  height: 44px;
+  padding: 12px 18px;
+  border-radius: 6px;
+  border: 1px solid var(--white);
+  background: none;
+  color: var(--white);
+  font-size: 16px;
+  font-family: "Gilroy";
+  font-weight: 500;
+  line-height: 1;
+}
+.ui-mini-pl {
+  padding-left: 78px;
+}
+.ui-mini-pr {
+  padding-right: 40px;
+}
+.ui__mini-input::placeholder {
+  opacity: 0.5;
+  user-select: none;
+}
+
 /* Для кнопки */
 .ui-button {
   width: 100%;
@@ -67,7 +92,27 @@
   font-weight: 600;
   line-height: 22px;
 }
-
+.button-white {
+  background: var(--white);
+  color: var(--black);
+  border: 1px solid transparent;
+  transition: all 0.3s ease-in;
+}
+.button-white:hover {
+  background: none;
+  border: 1px solid var(--white);
+  color: var(--white);
+}
+.button-black {
+  background: none;
+  border: 1px solid var(--white);
+  color: var(--white);
+  transition: all 0.3s ease-in;
+}
+.button-black:hover {
+  background: var(--white);
+  color: var(--black);
+}
 /* Социальные сети */
 .auth__social-button {
   height: 44px;
@@ -397,12 +442,12 @@
   border-radius: 6px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   color: var(--white);
   font-weight: 400;
   font-family: "Gilroy";
   font-size: 16px;
   line-height: 1.4;
-  gap: 18px;
   cursor: pointer;
 }
 .select-date {
@@ -411,6 +456,15 @@
 .date-period {
   opacity: 0.5;
   user-select: none;
+}
+.sort__date {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.sort-date {
+  display: flex;
+  align-items: center;
 }
 
 /* Sort Popup */
@@ -423,6 +477,14 @@
 }
 .ui-sort__popup {
   position: relative;
+}
+.sort-name {
+  margin-right: 10px;
+  color: var(--white);
+  font-weight: 400;
+  font-family: "Inter";
+  font-size: 15px;
+  line-height: 1.15;
 }
 .sort__popup-block {
   height: 46px;
@@ -471,6 +533,27 @@
   height: 1px;
   background: var(--dark-gray);
 }
+
+@media screen and (max-width: 1111px) {
+  .sort-date {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .ui-sort__popup,
+  .sort-date,
+  .sort__date,
+  .sort__date-block.date-block {
+    width: 100%;
+  }
+  .sort__date {
+    gap: 12px;
+  }
+}
+
 @media screen and (max-width: 580px) {
   .modal__menu-wrapper {
     padding: 24px;
@@ -598,6 +681,9 @@
   .ui-popup .popup-icon svg {
     width: 12px;
     height: 7px;
+  }
+  .sort__popup-block {
+    justify-content: space-between;
   }
 }
 
