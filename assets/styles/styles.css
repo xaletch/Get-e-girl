@@ -28,6 +28,12 @@ body {
   text-transform: uppercase;
 }
 
+.page-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 @media screen and (max-width: 1060px) {
   .title-page {
     font-size: 48px;

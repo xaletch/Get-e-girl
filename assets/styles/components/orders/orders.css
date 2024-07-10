@@ -74,6 +74,7 @@
   align-items: center;
   gap: 60px;
   border-bottom: 1px solid var(--dark-charcoal);
+  cursor: default;
 }
 .table__item-name {
   color: var(--white);
@@ -147,6 +148,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 1380px) {
