@@ -521,14 +521,30 @@
         </section>
 
         <!-- gallery -->
-        <div class="slider" id="media-slider">
-          <div class="slider-main">
-            <img id="main-img" src="" alt="main image" />
-          </div>
-          <div class="slider-thumbnails">
-            <button class="arrow left" onclick="prevImage()">pre</button>
-            <div class="thumbnails"></div>
-            <button class="arrow right" onclick="nextImage()">next</button>
+        <div class="slider-modal">
+          <div class="slider" id="media-slider">
+            <div class="slider-main">
+              <button class="slider-button arrow left" onclick="prevImage()">
+                <svg width="60" height="60">
+                  <use
+                    href="../../../assets/icon/icons.svg#slider-button"
+                  ></use>
+                </svg>
+              </button>
+              <div class="slider__main-img">
+                <img id="main-img" src="" alt="media__slider-img main image" />
+              </div>
+              <button class="slider-button arrow right" onclick="nextImage()">
+                <svg width="60" height="60">
+                  <use
+                    href="../../../assets/icon/icons.svg#slider-button"
+                  ></use>
+                </svg>
+              </button>
+            </div>
+            <div class="slider-thumbnails">
+              <div class="thumbnails media__slider-item"></div>
+            </div>
           </div>
         </div>
       </main>
