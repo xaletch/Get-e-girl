@@ -19,6 +19,12 @@ body {
   padding: 0 20px;
 }
 
+.big-container {
+  max-width: 1530px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
 .title-page {
   color: var(--white);
   font-size: 60px;
