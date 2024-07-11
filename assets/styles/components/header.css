@@ -49,7 +49,7 @@
   height: 60px;
   padding: 4px;
   border: 1px solid var(--white);
-  box-shadow: 0 1px 6px 0 #b735bc;
+  box-shadow: 0 1px 6px 0 var(--magenta);
   border-radius: 100px;
 }
 .user-name {
