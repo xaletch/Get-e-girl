@@ -911,7 +911,7 @@
 .button-private {
   height: 58px;
   padding: 16px 23px;
-  border: 1px dashed var(--black);
+  border: 2px dashed var(--black);
   box-shadow: 0 0 3px 0 var(--white);
   background: var(--black);
   border-radius: 6px;
@@ -937,6 +937,112 @@
   box-shadow: 0 0 3px 0 var(--magenta);
 }
 
+/* create feeds */
+.create-feeds {
+  margin-top: 20px;
+  padding: 0 20px;
+}
+.create__feeds-block {
+  border: 2px dashed rgba(255, 255, 255, 0.25);
+  border-radius: 6px;
+  background: #242424;
+}
+.create__feeds-textarea {
+  border-bottom: 2px dashed rgba(255, 255, 255, 0.25);
+}
+.textarea-feeds {
+  width: 100%;
+  min-height: 66px;
+  padding: 20px 20px;
+  background: none;
+  font-weight: 400;
+  font-size: 16px;
+  font-family: "Gilroy";
+  line-height: 1.4;
+  color: var(--white);
+  resize: vertical;
+}
+
+.textarea-feeds::placeholder {
+  opacity: 0.7;
+}
+.create__feeds-button {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.create__feeds-button-add {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.upload-file {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.seen-popup {
+  position: relative;
+}
+.seen-select {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 400;
+  font-size: 13px;
+  font-family: "Gilroy";
+  line-height: 1.53846;
+  color: var(--medium-gray-2);
+  cursor: pointer;
+}
+.seen-values {
+  background: var(--black);
+  border-radius: 4px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+.seen-item {
+  padding: 4px;
+  font-weight: 400;
+  font-size: 13px;
+  font-family: "Gilroy";
+  line-height: 1.53846;
+  color: var(--medium-gray-2);
+  cursor: pointer;
+}
+.create__feeds-send {
+  height: 48px;
+  padding: 12px 30px;
+  border: 1px solid var(--white);
+  border-radius: 100px;
+  background: rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 14px;
+  font-family: "Gilroy";
+  color: var(--white);
+  gap: 10px;
+  transition: all 0.3s ease-in;
+}
+
+.create__feeds-send:hover .send-icon {
+  transition: filter 0.3s ease-in;
+}
+.create__feeds-send:hover {
+  background: var(--white);
+  color: var(--black);
+}
+.create__feeds-send:hover .send-icon {
+  filter: invert(100%);
+}
 @media screen and (max-height: 1000px) {
   .slider__main-img {
     width: 660px;

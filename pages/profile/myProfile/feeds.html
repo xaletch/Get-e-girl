@@ -279,7 +279,76 @@
                   </div>
 
                   <div class="profile__feeds">
-                    <div class="profile__feeds-write"></div>
+                    <div class="profile__feeds-write create-feeds">
+                      <div class="create__feeds-block">
+                        <div class="create__feeds-block__inner">
+                          <div class="create__feeds-textarea">
+                            <textarea
+                              name="text"
+                              id="text"
+                              class="textarea-feeds"
+                              placeholder="Написать пост"
+                            ></textarea>
+                          </div>
+                          <div class="create__feeds-button">
+                            <div class="create__feeds-button-add">
+                              <!-- upload -->
+                              <button class="upload-file">
+                                <svg width="20" height="22">
+                                  <use
+                                    href="../../../assets/icon/icons.svg#add-file"
+                                  ></use>
+                                </svg>
+                              </button>
+
+                              <!-- seen -->
+                              <div class="seen-popup">
+                                <div class="seen-select">
+                                  Видно всем
+                                  <span>
+                                    <svg width="12" height="8">
+                                      <use
+                                        href="../../../assets/icon/icons.svg#arrow_bottom"
+                                      ></use>
+                                    </svg>
+                                  </span>
+                                </div>
+                                <div class="seen-values">
+                                  <div class="seen-item">Видно всем</div>
+                                  <div class="seen-item">Видно всем</div>
+                                </div>
+                              </div>
+
+                              <!-- Paid -->
+                              <div class="checkbox-container">
+                                <input
+                                  type="checkbox"
+                                  id="customCheckbox"
+                                  class="checkbox-input"
+                                />
+                                <label
+                                  for="customCheckbox"
+                                  class="checkbox-label"
+                                >
+                                  Платный
+                                  <span class="checkbox-custom"></span>
+                                </label>
+                              </div>
+                            </div>
+                            <button class="create__feeds-send">
+                              Отправить
+                              <span>
+                                <svg width="25" height="24" class="send-icon">
+                                  <use
+                                    href="../../../assets/icon/icons.svg#send"
+                                  ></use>
+                                </svg>
+                              </span>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
 
                     <div class="profile__posts">
                       <div class="profile__posts-wrapper">
