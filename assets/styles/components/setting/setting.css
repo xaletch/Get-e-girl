@@ -147,7 +147,7 @@
   margin-top: 60px;
 } */
 .edit__form-wrapper {
-  padding: 0 40px 40px;
+  padding: 60px 40px 40px;
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -250,7 +250,7 @@
     height: 14px;
   }
   .edit__form-wrapper {
-    padding: 0 12px 24px;
+    padding: 60px 12px 24px;
   }
   .reset-password__form {
     padding: 24px 12px;
