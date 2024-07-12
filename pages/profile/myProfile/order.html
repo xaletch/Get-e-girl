@@ -277,6 +277,100 @@
                       </a>
                     </div>
                   </div>
+
+                  <div class="profile__order">
+                    <div class="profile__order-inner">
+                      <form class="profile__order-form">
+                        <div class="order__form-inner">
+                          <!--  -->
+                          <div class="input-group">
+                            <div class="input__wrapper">
+                              <label class="input-label" for="theme"
+                                >Тема</label
+                              >
+                              <input
+                                class="ui__dark-input"
+                                type="text"
+                                name="theme"
+                                id="theme"
+                              />
+                            </div>
+                            <div class="input__wrapper">
+                              <label class="input-label" for="date">Дата</label>
+                              <input
+                                class="ui__dark-input"
+                                type="date"
+                                name="date"
+                                id="date"
+                                placeholder="Выберите дату сдачи"
+                              />
+                            </div>
+                          </div>
+                          <!--  -->
+                          <div class="input__group-price">
+                            <div class="input__wrapper">
+                              <label class="input-label" for="price"
+                                >Цена ($)</label
+                              >
+                              <input
+                                class="ui__dark-input"
+                                type="number"
+                                name="price"
+                                id="price"
+                              />
+                            </div>
+                            <div class="my-balance">
+                              My balance
+                              <span class="my-balance__balance">$ 250 000</span>
+                            </div>
+                          </div>
+                          <!--  -->
+                          <div class="input-group inputs-gap input__grid-two">
+                            <div class="input__wrapper">
+                              <label class="input-label" for="message"
+                                >Сообщение</label
+                              >
+                              <textarea
+                                class="ui__dark-textarea ui__dark-input"
+                                name="message"
+                                id="message"
+                              ></textarea>
+                            </div>
+                            <div class="upload-container">
+                              <input
+                                type="file"
+                                id="fileInput"
+                                accept=".jpeg, .jpg, .png, .bmp"
+                              />
+                              <label for="fileInput" class="upload-label">
+                                <div class="upload-text">
+                                  Нажмите для загрузки
+                                </div>
+                                <div class="upload-text upload__text-sm">
+                                  Доступные расширения фото: jpeg, jpg, png, bmp
+                                </div>
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                        <!--  -->
+                        <div class="order__form-buttons">
+                          <button
+                            type="reset"
+                            class="order__form-button cancel"
+                          >
+                            Cancel
+                          </button>
+                          <button
+                            type="submit"
+                            class="order__form-button confirm"
+                          >
+                            Confirm
+                          </button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

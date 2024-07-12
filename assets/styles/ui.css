@@ -78,6 +78,40 @@
   user-select: none;
 }
 
+/* black input */
+.input__wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.input-label {
+  color: var(--white);
+  font-size: 12px;
+  font-family: "Gilroy";
+  font-weight: 400;
+  line-height: 1.66667;
+}
+.ui__dark-input {
+  width: 100%;
+  height: 32px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  background: var(--dark-gray);
+  padding: 6px 12px;
+  font-weight: 400;
+  font-family: "Gilroy";
+  font-size: 13px;
+  line-height: 1.53846;
+  color: var(--white);
+}
+
+/* textarea black */
+.ui__dark-textarea {
+  width: 100%;
+  height: 126px;
+  resize: none;
+}
+
 /* Для кнопки */
 .ui-button {
   width: 100%;
