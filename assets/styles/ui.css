@@ -307,6 +307,31 @@
   border-radius: 6px;
   border: 1px solid rgba(255, 255, 255, 0.15);
 }
+.modal__menu-block {
+  width: 435px;
+  background: var(--black);
+  border-radius: 12px;
+}
+.modal__menu-block .modal__menu-wrapper {
+  padding: 18px 24px 14px;
+}
+.modal__menu-dark.modal__menu {
+  border: none;
+  border-radius: none;
+  background: none;
+  display: flex;
+  gap: 11px;
+}
+.modal-close.modal__button-close {
+  width: 24px;
+  height: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.modal-close.modal__button-close:hover {
+  background: none;
+}
 .modal__menu-wrapper {
   padding: 40px;
 }
@@ -334,6 +359,10 @@
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   gap: 16px;
+}
+.modal__menu-button {
+  width: 100%;
+  display: block;
 }
 .modal-button {
   width: 100%;

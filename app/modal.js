@@ -15,7 +15,6 @@ buttonClose.addEventListener("click", closeMenu);
 function applyChanges() {
   openMenu();
   closeMenu();
-  console.log("Выход с аккаунта");
 }
 
 function openMenu() {
