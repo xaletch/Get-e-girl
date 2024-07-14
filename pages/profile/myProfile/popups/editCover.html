@@ -15,6 +15,16 @@
       rel="stylesheet"
       href="../../../../assets/styles/components/profile/profile.css"
     />
+
+    <link
+      rel="stylesheet"
+      href="../../../../assets/styles/components/modals/editCover.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="../../../../assets/styles/components/modals/modal.css"
+    />
   </head>
   <body>
     <div class="app">
@@ -35,7 +45,7 @@
                   <a href="#">My E-girls</a>
                 </li>
                 <li class="header__list-item">
-                  <a href="#">My Сontent</a>
+                  <a href="../../../MyContent/myContent.html">My Сontent</a>
                 </li>
                 <li class="header__list-item">
                   <a href="../../Orders/orders.html">Orders</a>
@@ -512,19 +522,43 @@
       </main>
 
       <!-- Редактирование обложки -->
-      <div class="edit__cover-img">
-        <img
-          src="../../../../assets/images/subscribers-6.png"
-          alt="Image"
-          id="edit__cover-image"
-        />
-        <div class="edit__cover-overlay" id="cropOverlay">
-          <div class="handle edit__top-left"></div>
-          <div class="handle edit__top-right"></div>
-          <div class="handle edit__bottom-left"></div>
-          <div class="handle edit__bottom-right"></div>
-          <div class="handle edit__top-center"></div>
-          <div class="handle edit__bottom-center"></div>
+      <div class="modal-big">
+        <div class="modal__block">
+          <div class="modal__block-inner">
+            <div class="modal-head">
+              <button class="modal-close">
+                <svg width="14" height="14">
+                  <use
+                    href="../../../../assets/icon/icons.svg#close-madal"
+                  ></use>
+                </svg>
+              </button>
+              <h4 class="modal-name">Редактирование обложки</h4>
+            </div>
+            <div class="modal-content">
+              <div class="edit__cover-img">
+                <img
+                  src="../../../../assets/images/subscribers-1.png"
+                  alt="Image"
+                  id="edit__cover-image"
+                />
+                <div class="edit__cover-overlay" id="cropOverlay">
+                  <div class="handle edit__top-left"></div>
+                  <div class="handle edit__top-right"></div>
+                  <div class="handle edit__bottom-left"></div>
+                  <div class="handle edit__bottom-right"></div>
+                  <div class="handle edit__top-center"></div>
+                  <div class="handle edit__bottom-center"></div>
+                </div>
+                <div class="overlay-top"></div>
+                <div class="overlay-bottom"></div>
+              </div>
+            </div>
+            <div class="modal-big__button">
+              <button class="modal-btn modal__btn-cancel">Cancel</button>
+              <button class="modal-btn modal__btn-confirm">Confirm</button>
+            </div>
+          </div>
         </div>
       </div>
     </div>

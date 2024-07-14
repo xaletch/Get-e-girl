@@ -1,5 +1,7 @@
 const cropOverlay = document.getElementById("cropOverlay");
 const handles = document.querySelectorAll(".handle");
+const overlayTop = document.querySelector(".overlay-top");
+const overlayBottom = document.querySelector(".overlay-bottom");
 
 let isResizing = false;
 let isDragging = false;
@@ -10,42 +12,42 @@ const constrain = (value, min, max) => {
 };
 
 const resizeFunctions = {
-  "edit__top-left": (dx, dy, containerRect) => ({
-    newWidth: constrain(startWidth - dx, 137, containerRect.width - startLeft),
-    newHeight: constrain(
-      startHeight - dy,
-      137,
-      containerRect.height - startTop
-    ),
-    newLeft: constrain(startLeft + dx, 0, containerRect.width - startWidth),
-    newTop: constrain(startTop + dy, 0, containerRect.height - startHeight),
-  }),
-  "edit__top-right": (dx, dy, containerRect) => ({
-    newWidth: constrain(startWidth + dx, 137, containerRect.width - startLeft),
-    newHeight: constrain(
-      startHeight - dy,
-      137,
-      containerRect.height - startTop
-    ),
-    newTop: constrain(startTop + dy, 0, containerRect.height - startHeight),
-  }),
-  "edit__bottom-left": (dx, dy, containerRect) => ({
-    newWidth: constrain(startWidth - dx, 137, containerRect.width - startLeft),
-    newHeight: constrain(
-      startHeight + dy,
-      137,
-      containerRect.height - startTop
-    ),
-    newLeft: constrain(startLeft + dx, 0, containerRect.width - startWidth),
-  }),
-  "edit__bottom-right": (dx, dy, containerRect) => ({
-    newWidth: constrain(startWidth + dx, 137, containerRect.width - startLeft),
-    newHeight: constrain(
-      startHeight + dy,
-      137,
-      containerRect.height - startTop
-    ),
-  }),
+  // "edit__top-left": (dx, dy, containerRect) => ({
+  //   newWidth: constrain(startWidth - dx, 137, containerRect.width - startLeft),
+  //   newHeight: constrain(
+  //     startHeight - dy,
+  //     137,
+  //     containerRect.height - startTop
+  //   ),
+  //   newLeft: constrain(startLeft + dx, 0, containerRect.width - startWidth),
+  //   newTop: constrain(startTop + dy, 0, containerRect.height - startHeight),
+  // }),
+  // "edit__top-right": (dx, dy, containerRect) => ({
+  //   newWidth: constrain(startWidth + dx, 137, containerRect.width - startLeft),
+  //   newHeight: constrain(
+  //     startHeight - dy,
+  //     137,
+  //     containerRect.height - startTop
+  //   ),
+  //   newTop: constrain(startTop + dy, 0, containerRect.height - startHeight),
+  // }),
+  // "edit__bottom-left": (dx, dy, containerRect) => ({
+  //   newWidth: constrain(startWidth - dx, 137, containerRect.width - startLeft),
+  //   newHeight: constrain(
+  //     startHeight + dy,
+  //     137,
+  //     containerRect.height - startTop
+  //   ),
+  //   newLeft: constrain(startLeft + dx, 0, containerRect.width - startWidth),
+  // }),
+  // "edit__bottom-right": (dx, dy, containerRect) => ({
+  //   newWidth: constrain(startWidth + dx, 137, containerRect.width - startLeft),
+  //   newHeight: constrain(
+  //     startHeight + dy,
+  //     137,
+  //     containerRect.height - startTop
+  //   ),
+  // }),
   "edit__top-center": (_, dy, containerRect) => ({
     newHeight: constrain(
       startHeight - dy,
@@ -61,6 +63,16 @@ const resizeFunctions = {
       containerRect.height - startTop
     ),
   }),
+};
+
+const updateOverlays = () => {
+  const cropOverlayRect = cropOverlay.getBoundingClientRect();
+  const parentRect = cropOverlay.parentNode.getBoundingClientRect();
+
+  overlayTop.style.height = `${cropOverlayRect.top - parentRect.top}px`;
+  overlayBottom.style.height = `${
+    parentRect.bottom - cropOverlayRect.bottom
+  }px`;
 };
 
 handles.forEach((handle) => {
@@ -105,6 +117,8 @@ document.addEventListener("mousemove", (e) => {
     cropOverlay.style.height = `${newHeight}px`;
     if (newLeft !== undefined) cropOverlay.style.left = `${newLeft}px`;
     if (newTop !== undefined) cropOverlay.style.top = `${newTop}px`;
+
+    updateOverlays();
   }
 
   if (isDragging) {
@@ -126,6 +140,8 @@ document.addEventListener("mousemove", (e) => {
 
     cropOverlay.style.left = `${newLeft}px`;
     cropOverlay.style.top = `${newTop}px`;
+
+    updateOverlays();
   }
 });
 
