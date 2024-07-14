@@ -108,6 +108,14 @@
   align-items: center;
   gap: 22px;
 }
+.my-content__head.my-content-head__block {
+  justify-content: space-between;
+}
+.my-content__head-name {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
 .content__head-img {
   width: 50px;
   height: 50px;
@@ -206,4 +214,68 @@
 }
 .content__media-head {
   margin-top: 20px;
+}
+
+/* my content */
+.content-wrapper {
+  width: 100%;
+  display: block;
+}
+
+.my-content__media {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+.contents__wrapper .my-content__media .media__card-img {
+  box-shadow: none;
+}
+.media__card-create__info {
+  margin-top: 7px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.info-text {
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.4;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.7);
+  gap: 4px;
+}
+.info-text span {
+  color: var(--white);
+}
+.my-content__media .create__content-card.add-content .card {
+  width: 100%;
+  height: 222px;
+}
+.my-content__media .media__collection-card {
+  width: 100%;
+  height: 222px;
+}
+.my-content__media .media__collection-card .media__card-img {
+  height: 100%;
+}
+/* price */
+.my-content-price {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.91667;
+  font-family: "Gilroy";
+  color: var(--white);
+}
+
+/* Редактирование */
+.media__collection-edit {
+  display: grid;
+  grid-template-columns: 458px 110px;
+  gap: 24px;
+}
+.ui-input__edit-folder {
+  height: 46px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
 }

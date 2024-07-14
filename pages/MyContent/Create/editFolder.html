@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../../../assets/styles/styles.css" />
+    <link rel="stylesheet" href="../../../assets/styles/ui.css" />
+    <link
+      rel="stylesheet"
+      href="../../../assets/styles/components/header.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../../../assets/styles/components/media/media.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../../../assets/styles/components/myContent/myContent.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../../../assets/styles/components/myContent/create.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../../../assets/styles/components/modals/modal.css"
+    />
+  </head>
+  <body>
+    <div class="app">
+      <header class="header">
+        <div class="container">
+          <div class="header__wrapper">
+            <a href="#" class="header-logo">
+              <svg width="180" height="54">
+                <use href="../../../assets/icon/icons.svg#logo_white"></use>
+              </svg>
+            </a>
+            <nav class="header__naw">
+              <ul class="header__naw-list">
+                <li class="header__list-item">
+                  <a href="../../profile/myProfile/feeds.html">Feeds</a>
+                </li>
+                <li class="header__list-item">
+                  <a href="#">My E-girls</a>
+                </li>
+                <li class="header__list-item">
+                  <a href="../../MyContent/myContent.html">My Сontent</a>
+                </li>
+                <li class="header__list-item">
+                  <a href="../../Orders/orders.html">Orders</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="header__user-info">
+              <button class="user-balance">
+                <span class="balance-h">$12 310</span>
+              </button>
+              <div class="user">
+                <div class="user-img">
+                  <img src="../../../assets/images/user.png" alt="user" />
+                </div>
+                <div class="username">@MoraruV</div>
+              </div>
+            </div>
+            <div class="header__buttons">
+              <!-- Уведомления -->
+              <button class="header__buttons-btn">
+                <div class="notification-count">12</div>
+                <span>
+                  <svg width="18" height="20">
+                    <use
+                      href="../../../assets/icon/icons.svg#notification"
+                    ></use>
+                  </svg>
+                </span>
+                <div class="header__buttons-arrow"></div>
+              </button>
+              <!-- Язык -->
+              <button class="header__buttons-btn">
+                <span class="lang">
+                  <svg width="28" height="20">
+                    <use href="../../../assets/icon/icons.svg#russia"></use>
+                  </svg>
+                </span>
+                <div class="header__buttons-arrow"></div>
+              </button>
+              <!-- Настройки -->
+              <a
+                href="../../profileSetting/profile.html"
+                class="header__buttons-btn"
+              >
+                <span>
+                  <svg width="20" height="20">
+                    <use href="../../../assets/icon/icons.svg#setting"></use>
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="main">
+        <section class="my-content">
+          <div class="container">
+            <h1 class="title-page">My content</h1>
+            <div class="content__wrapper content-wrapper">
+              <!--  -->
+              <div class="my-content__content">
+                <!-- Для пользователей -->
+
+                <div class="my-content__head my-content-head__block">
+                  <div class="my-content__head-name">
+                    <div class="content__head-img">
+                      <img
+                        src="../../../assets/images/subscribers-1.png "
+                        alt="user"
+                      />
+                    </div>
+                    <h2 class="content-username">My content</h2>
+                  </div>
+                  <a href="./contentFolder.html" class="media__collection-back">
+                    <span>
+                      <svg width="20" height="20">
+                        <use
+                          href="../../../assets/icon/icons.svg#check-mark"
+                        ></use>
+                      </svg>
+                    </span>
+                    Готово
+                  </a>
+                </div>
+                <div class="profile__content-inner">
+                  <div class="user__media media__collection">
+                    <div class="media__head content__media-head">
+                      <div class="media__collection-name">
+                        <div class="media__collection-edit">
+                          <input
+                            class="ui__mini-input ui-input__edit-folder"
+                            type="text"
+                            value="Subcribers"
+                          />
+                          <input
+                            class="ui__mini-input ui-input__edit-folder"
+                            type="text"
+                            value="$20"
+                          />
+                        </div>
+
+                        <div class="media__info-card">
+                          <svg width="15" height="15">
+                            <use
+                              href="../../../assets/icon/icons.svg#image"
+                            ></use>
+                          </svg>
+                          <span>11</span>
+                        </div>
+                      </div>
+                      <button
+                        class="media__collection-back delete button-modal"
+                      >
+                        <span>
+                          <svg width="24" height="24">
+                            <use
+                              href="../../../assets/icon/icons.svg#delete"
+                            ></use>
+                          </svg>
+                        </span>
+                        Удалить папку
+                      </button>
+                    </div>
+
+                    <div
+                      class="user__media-inner user__media-collection my-content__media"
+                    >
+                      <div class="create__content-card add-content">
+                        <div class="card">
+                          <div class="card-icon card__add-icon">
+                            <svg width="26" height="26">
+                              <use
+                                href="../../../assets/icon/icons.svg#add"
+                              ></use>
+                            </svg>
+                          </div>
+                          <h3 class="card-name">Add new folder</h3>
+                        </div>
+                      </div>
+                      <div
+                        class="user__media-card media__collection-card user-card"
+                      >
+                        <div class="media__card-img media-img">
+                          <img
+                            src="../../../assets/images/subscribers-1.png"
+                            alt="media"
+                          />
+                        </div>
+                      </div>
+                      <div
+                        class="user__media-card media__collection-card user-card"
+                      >
+                        <div class="media__card-img media-img">
+                          <img
+                            src="../../../assets/images/subscribers-2.png"
+                            alt="media"
+                          />
+                        </div>
+                      </div>
+                      <div
+                        class="user__media-card media__collection-card user-card"
+                      >
+                        <div class="media__card-img media-img">
+                          <img
+                            src="../../../assets/images/subscribers-3.png"
+                            alt="media"
+                          />
+                        </div>
+                      </div>
+                      <div
+                        class="user__media-card media__collection-card user-card"
+                      >
+                        <div class="media__card-img media-img">
+                          <img
+                            src="../../../assets/images/subscribers-4.png"
+                            alt="media"
+                          />
+                        </div>
+                      </div>
+                      <div
+                        class="user__media-card media__collection-card user-card private"
+                      >
+                        <div class="media__card-img media-img">
+                          <div class="private-icon">
+                            <div class="private-icon-p">
+                              <svg width="55" height="54">
+                                <use
+                                  href="../../../assets/icon/icons.svg#private"
+                                ></use>
+                              </svg>
+                            </div>
+                            <div class="private-price">$24</div>
+                          </div>
+                          <img
+                            src="../../../assets/images/subscribers-5.png"
+                            alt="media"
+                          />
+                        </div>
+                      </div>
+                      <div
+                        class="user__media-card media__collection-card user-card private"
+                      >
+                        <div class="media__card-img media-img">
+                          <div class="private-icon">
+                            <div class="private-icon-p">
+                              <svg width="55" height="54">
+                                <use
+                                  href="../../../assets/icon/icons.svg#private"
+                                ></use>
+                              </svg>
+                            </div>
+                            <div class="private-price">$24</div>
+                          </div>
+                          <img
+                            src="../../../assets/images/subscribers-6.png"
+                            alt="media"
+                          />
+                        </div>
+                      </div>
+                      <div
+                        class="user__media-card media__collection-card user-card"
+                      >
+                        <div class="media__card-img media-img">
+                          <img
+                            src="../../../assets/images/subscribers-6.png"
+                            alt="media"
+                          />
+                        </div>
+                      </div>
+                      <div
+                        class="user__media-card media__collection-card user-card"
+                      >
+                        <div class="media__card-img media-img">
+                          <img
+                            src="../../../assets/images/subscribers-7.png"
+                            alt="media"
+                          />
+                        </div>
+                      </div>
+                      <div
+                        class="user__media-card media__collection-card user-card"
+                      >
+                        <div class="media__card-img media-img">
+                          <img
+                            src="../../../assets/images/subscribers-8.png"
+                            alt="media"
+                          />
+                        </div>
+                      </div>
+                      <div
+                        class="user__media-card media__collection-card user-card"
+                      >
+                        <div class="media__card-img media-img">
+                          <img
+                            src="../../../assets/images/subscribers-9.png"
+                            alt="media"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal">
+      <div class="modal__menu">
+        <div class="modal__menu-wrapper">
+          <h3 class="modal__menu-name">Удалить папку</h3>
+          <p class="modal__menu-text">Вы точно хотите удалить папку {name} ?</p>
+          <p class="modal__menu-text text">это нельзя будет отменить</p>
+          <div class="modal__menu-buttons">
+            <button class="modal-button modal__button-apply">Удалить</button>
+            <button class="modal-button modal__button-close">Отменить</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../../../app/modal.js"></script>
+  </body>
+</html>

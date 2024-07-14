@@ -147,6 +147,9 @@
   cursor: pointer;
   user-select: none;
 }
+.media__collection-back.delete {
+  border-color: var(--red);
+}
 .user__media-collection {
   margin-top: 20px;
 }

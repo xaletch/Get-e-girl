@@ -1,0 +1,82 @@
+.create__content-wrapper {
+  margin-top: 40px;
+}
+.create-content {
+  width: 100%;
+}
+.create__content-cards {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(4, 250px);
+  gap: 20px;
+}
+.create__content-head {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+.content__head-img {
+  width: 50px;
+  height: 50px;
+  border: 1px solid var(--white);
+  box-shadow: 0 0 3px 0 var(--magenta);
+  border-radius: 100%;
+}
+.content__head-img img {
+  border-radius: 100%;
+  width: 100%;
+  height: auto;
+  background-size: cover;
+}
+.content-username {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.4;
+  font-family: "Gilroy";
+  color: var(--white);
+}
+.create__content-card {
+  width: 100%;
+}
+.create__content-card .card {
+  height: 254px;
+  border-radius: 6px;
+  background: var(--dark-gray);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+.create__content-card .card__add-icon {
+  width: 46px;
+  height: 46px;
+  border-radius: 100px;
+  background: rgba(255, 255, 255, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.create__content-card .card-name {
+  margin-top: 12px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.4;
+  text-align: center;
+  color: var(--white);
+}
+.create__content-card .no-content {
+  margin-top: 8px;
+}
+.create__content-card__name {
+  margin-top: 16px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.4;
+  color: var(--white);
+}
+/* Модалка Add new folder */
+.input-group {
+  display: flex;
+  gap: 32px;
+}

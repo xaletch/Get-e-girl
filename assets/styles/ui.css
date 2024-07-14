@@ -353,6 +353,9 @@
   line-height: 1.4;
   opacity: 0.8;
 }
+.modal__menu-text.text {
+  margin-top: 0;
+}
 .modal__menu-buttons {
   margin-top: 24px;
   display: grid;
