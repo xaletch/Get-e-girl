@@ -25,6 +25,12 @@ body {
   padding: 0 20px;
 }
 
+.container-sm {
+  max-width: 1082px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
 .title-page {
   color: var(--white);
   font-size: 60px;

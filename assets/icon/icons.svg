@@ -418,4 +418,15 @@
     <path d="M5 7L6 19C6 19.5304 6.21071 20.0391 6.58579 20.4142C6.96086 20.7893 7.46957 21 8 21H16C16.5304 21 17.0391 20.7893 17.4142 20.4142C17.7893 20.0391 18 19.5304 18 19L19 7" stroke="#FF3F33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
     <path d="M9 7V4C9 3.73478 9.10536 3.48043 9.29289 3.29289C9.48043 3.10536 9.73478 3 10 3H14C14.2652 3 14.5196 3.10536 14.7071 3.29289C14.8946 3.48043 15 3.73478 15 4V7" stroke="#FF3F33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
   </symbol>
+
+  <!-- checkbox active -->
+  <symbol id='checkbox-active' viewBox="0 0 11 9" fill="none">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M10.3135 1.00725C10.704 1.39777 10.704 2.03094 10.3135 2.42146L4.24253 8.49242C3.85201 8.88295 3.21884 8.88295 2.82832 8.49242L0.292893 5.957C-0.0976311 5.56647 -0.0976311 4.93331 0.292893 4.54278C0.683417 4.15226 1.31658 4.15226 1.70711 4.54278L3.53542 6.3711L8.89928 1.00725C9.2898 0.616724 9.92297 0.616724 10.3135 1.00725Z" fill="white" />
+  </symbol>
+
+  <!-- table sort -->
+  <symbol id="table-sort" viewBox="0 0 18 18" fill="none">
+    <path d="M2.25 6.75L5.25 3.75M5.25 3.75L8.25 6.75M5.25 3.75V14.25" stroke="white" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+    <path opacity="0.3" d="M15.75 11.25L12.75 14.25M12.75 14.25L9.75 11.25M12.75 14.25V3.75" stroke="white" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+  </symbol>
 <svg/>  

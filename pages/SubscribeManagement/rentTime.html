@@ -1,0 +1,1002 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../../assets/styles/ui.css" />
+    <link rel="stylesheet" href="../../assets/styles/styles.css" />
+
+    <link rel="stylesheet" href="../../assets/styles/components/header.css" />
+    <link
+      rel="stylesheet"
+      href="../../assets/styles/components/subscribe/rentTime.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../../assets/styles/components/subscribe/cards.css"
+    />
+  </head>
+  <body>
+    <div class="app">
+      <header class="header">
+        <div class="container">
+          <div class="header__wrapper">
+            <a href="#" class="header-logo">
+              <svg width="180" height="54">
+                <use href="../../../assets/icon/icons.svg#logo_white"></use>
+              </svg>
+            </a>
+            <nav class="header__naw">
+              <ul class="header__naw-list">
+                <li class="header__list-item">
+                  <a href="../profile/myProfile/feeds.html">Feeds</a>
+                </li>
+                <li class="header__list-item">
+                  <a href="#">My E-girls</a>
+                </li>
+                <li class="header__list-item">
+                  <a href="../MyContent/myContent.html">My Сontent</a>
+                </li>
+                <li class="header__list-item">
+                  <a href="../Orders/orders.html">Orders</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="header__user-info">
+              <!-- БАЛАНС -->
+              <a href="../balance/finance.html" class="user-balance">
+                <span class="balance-h">$12 310</span>
+              </a>
+              <!-- УВЕДОМЛЕНИЯ -->
+              <button href="#" class="header__buttons-btn header__notif-btn">
+                <div class="notification-count">12</div>
+                <span>
+                  <svg width="18" height="20">
+                    <use
+                      href="../../../assets/icon/icons.svg#notification"
+                    ></use>
+                  </svg>
+                </span>
+                <div class="header__buttons-arrow"></div>
+              </button>
+              <!-- ПОЛЬЗОВАТЕЛЬ -->
+              <div class="user">
+                <div class="user-img">
+                  <img src="../../../assets/images/user.png" alt="user" />
+                </div>
+                <div class="user-name">@MoraruV</div>
+              </div>
+              <!-- МЕНЮ -->
+              <button class="header__buttons-btn header__notif-btn">
+                <svg width="24" height="24">
+                  <use href="../../../assets/icon/icons.svg#menu"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="header__buttons">
+              <!-- Уведомления -->
+              <button class="header__buttons-btn">
+                <div class="notification-count">12</div>
+                <span>
+                  <svg width="18" height="20">
+                    <use
+                      href="../../../assets/icon/icons.svg#notification"
+                    ></use>
+                  </svg>
+                </span>
+                <div class="header__buttons-arrow"></div>
+              </button>
+              <!-- Язык -->
+              <button class="header__buttons-btn">
+                <span class="lang">
+                  <svg width="28" height="20">
+                    <use href="../../../assets/icon/icons.svg#russia"></use>
+                  </svg>
+                </span>
+                <div class="header__buttons-arrow"></div>
+              </button>
+              <!-- Настройки -->
+              <a
+                href="../profileSetting/profile.html"
+                class="header__buttons-btn"
+              >
+                <span>
+                  <svg width="20" height="20">
+                    <use href="../../../assets/icon/icons.svg#setting"></use>
+                  </svg>
+                </span>
+              </a>
+              <button class="header__buttons-btn header__button-menu">
+                <svg width="24" height="24">
+                  <use href="../../../assets/icon/icons.svg#menu"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <section class="rent-time">
+          <div class="container-sm">
+            <div class="rent-time__wrapper">
+              <div class="user__category-block">
+                <h3 class="category-name">Rent Time</h3>
+                <div class="category__block-wrapper">
+                  <div class="category__grid-one">
+                    <!--  -->
+                    <div class="category__card">
+                      <div class="category__card-inner">
+                        <div class="category__card-checkbox">
+                          <div class="checkbox-wrapper">
+                            <input
+                              type="checkbox"
+                              id="checkbox-1"
+                              class="checkbox-input"
+                            />
+                            <label for="checkbox-1" class="checkbox-label">
+                              <svg class="checkbox-icon" width="11" height="9">
+                                <use
+                                  href="../../../assets/icon/icons.svg#checkbox-active"
+                                ></use>
+                              </svg>
+                            </label>
+                          </div>
+                        </div>
+                        <!-- Название категории -->
+                        <div class="category__card-name">
+                          <h3 class="category-red">Just chatting</h3>
+                        </div>
+
+                        <!-- Описание категории -->
+                        <div class="category__card-description">
+                          <p class="category-description">
+                            Страстная геймерша, покоряющая виртуальные миры с
+                            ловкостью ниндзя и умом стратега. В ее руках
+                            контроллер...
+                          </p>
+                          <button class="see-more"><span>еще</span>...</button>
+                        </div>
+
+                        <!-- Цена и купить -->
+                        <div class="category__card-bottom">
+                          <div class="category__card-price">
+                            <h4 class="category-price">$20</h4>
+                            <span>/h</span>
+                          </div>
+                          <button class="category__card-pay">
+                            Купить
+                            <span>
+                              <svg width="16" height="16">
+                                <use
+                                  href="../../../assets/icon/icons.svg#arrow-white"
+                                ></use>
+                              </svg>
+                            </span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!--  -->
+                    <div class="category__card">
+                      <div class="category__card-inner">
+                        <div class="category__card-checkbox">
+                          <div class="checkbox-wrapper">
+                            <input
+                              type="checkbox"
+                              id="checkbox-2"
+                              class="checkbox-input"
+                            />
+                            <label for="checkbox-2" class="checkbox-label">
+                              <svg class="checkbox-icon" width="11" height="9">
+                                <use
+                                  href="../../../assets/icon/icons.svg#checkbox-active"
+                                ></use>
+                              </svg>
+                            </label>
+                          </div>
+                        </div>
+                        <!-- Название категории -->
+                        <div class="category__card-name">
+                          <h3 class="category-blue">Just chatting</h3>
+                        </div>
+
+                        <!-- Описание категории -->
+                        <div class="category__card-description">
+                          <p class="category-description">
+                            Страстная геймерша, покоряющая виртуальные миры с
+                            ловкостью ниндзя и умом стратега. В ее руках
+                            контроллер...
+                          </p>
+                          <button class="see-more"><span>еще</span>...</button>
+                        </div>
+
+                        <!-- Цена и купить -->
+                        <div class="category__card-bottom">
+                          <div class="category__card-price">
+                            <h4 class="category-price">$20</h4>
+                            <span>/h</span>
+                          </div>
+                          <button class="category__card-pay">
+                            Купить
+                            <span>
+                              <svg width="16" height="16">
+                                <use
+                                  href="../../../assets/icon/icons.svg#arrow-white"
+                                ></use>
+                              </svg>
+                            </span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!--  -->
+                    <div class="category__card">
+                      <div class="category__card-inner">
+                        <div class="category__card-checkbox">
+                          <div class="checkbox-wrapper">
+                            <input
+                              type="checkbox"
+                              id="checkbox-3"
+                              class="checkbox-input"
+                            />
+                            <label for="checkbox-3" class="checkbox-label">
+                              <svg class="checkbox-icon" width="11" height="9">
+                                <use
+                                  href="../../../assets/icon/icons.svg#checkbox-active"
+                                ></use>
+                              </svg>
+                            </label>
+                          </div>
+                        </div>
+                        <!-- Название категории -->
+                        <div class="category__card-name">
+                          <h3 class="category-yellow">Just chatting</h3>
+                        </div>
+
+                        <!-- Описание категории -->
+                        <div class="category__card-description">
+                          <p class="category-description">
+                            Страстная геймерша, покоряющая виртуальные миры с
+                            ловкостью ниндзя и умом стратега. В ее руках
+                            контроллер...
+                          </p>
+                          <button class="see-more"><span>еще</span>...</button>
+                        </div>
+
+                        <!-- Цена и купить -->
+                        <div class="category__card-bottom">
+                          <div class="category__card-price">
+                            <h4 class="category-price">$20</h4>
+                            <span>/h</span>
+                          </div>
+                          <button class="category__card-pay">
+                            Купить
+                            <span>
+                              <svg width="16" height="16">
+                                <use
+                                  href="../../../assets/icon/icons.svg#arrow-white"
+                                ></use>
+                              </svg>
+                            </span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="category__grid-two">
+                    <!--  -->
+                    <div class="category__card">
+                      <div class="category__card-inner">
+                        <div class="category__card-checkbox">
+                          <div class="checkbox-wrapper">
+                            <input
+                              type="checkbox"
+                              id="checkbox-4"
+                              class="checkbox-input"
+                            />
+                            <label for="checkbox-4" class="checkbox-label">
+                              <svg class="checkbox-icon" width="11" height="9">
+                                <use
+                                  href="../../../assets/icon/icons.svg#checkbox-active"
+                                ></use>
+                              </svg>
+                            </label>
+                          </div>
+                        </div>
+                        <!-- Название категории -->
+                        <div class="category__card-name">
+                          <h3 class="category-green">Video-call</h3>
+                        </div>
+
+                        <!-- Описание категории -->
+                        <div class="category__card-description">
+                          <p class="category-description">
+                            Страстная геймерша, покоряющая виртуальные миры с
+                            ловкостью ниндзя и умом стр...
+                          </p>
+                          <button class="see-more"><span>еще</span>...</button>
+                        </div>
+
+                        <!-- Цена и купить -->
+                        <div class="category__card-bottom">
+                          <div class="category__card-price">
+                            <h4 class="category-price">$20</h4>
+                            <span>/h</span>
+                          </div>
+                          <button class="category__card-pay">
+                            Купить
+                            <span>
+                              <svg width="16" height="16">
+                                <use
+                                  href="../../../assets/icon/icons.svg#arrow-white"
+                                ></use>
+                              </svg>
+                            </span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!--  -->
+
+                    <div class="category__card subscribers">
+                      <div class="category__card-inner">
+                        <div class="category__card-subscribers">
+                          Subscribers
+                        </div>
+                        <div class="category__card-checkbox">
+                          <div class="checkbox-wrapper">
+                            <input
+                              type="checkbox"
+                              id="checkbox-5"
+                              class="checkbox-input"
+                            />
+                            <label for="checkbox-5" class="checkbox-label">
+                              <svg class="checkbox-icon" width="11" height="9">
+                                <use
+                                  href="../../../assets/icon/icons.svg#checkbox-active"
+                                ></use>
+                              </svg>
+                            </label>
+                          </div>
+                        </div>
+                        <!-- Название категории -->
+                        <div class="category__card-name">
+                          <h3 class="category-white">ASMR</h3>
+                        </div>
+
+                        <!-- Описание категории -->
+                        <div class="category__card-description">
+                          <p class="category-description">
+                            Страстная геймерша, покоряющая виртуальные миры с
+                            ловкостью ниндзя и умом стр...
+                          </p>
+                          <button class="see-more"><span>еще</span>...</button>
+                        </div>
+
+                        <!-- Цена и купить -->
+                        <div class="category__card-bottom">
+                          <div class="category__card-price">
+                            <h4 class="category-price">$20</h4>
+                            <span>/h</span>
+                          </div>
+                          <button class="category__card-subscribe">
+                            Subscribe
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!--  -->
+                    <div class="category__card">
+                      <div class="category__card-inner">
+                        <div class="category__card-checkbox">
+                          <div class="checkbox-wrapper">
+                            <input
+                              type="checkbox"
+                              id="checkbox-6"
+                              class="checkbox-input"
+                            />
+                            <label for="checkbox-6" class="checkbox-label">
+                              <svg class="checkbox-icon" width="11" height="9">
+                                <use
+                                  href="../../../assets/icon/icons.svg#checkbox-active"
+                                ></use>
+                              </svg>
+                            </label>
+                          </div>
+                        </div>
+                        <!-- Название категории -->
+                        <div class="category__card-name">
+                          <h3 class="category-purple">Sleep call</h3>
+                        </div>
+
+                        <!-- Описание категории -->
+                        <div class="category__card-description">
+                          <p class="category-description">
+                            Страстная геймерша, покоряющая виртуальные миры с
+                            ловкостью ниндзя и умом стратега. В ее руках
+                            контроллер превращается в мощное оружие, а взгляд
+                            полон решимости побеждать в любой игре.
+                          </p>
+                          <button class="see-more"><span>еще</span>...</button>
+                        </div>
+
+                        <!-- Цена и купить -->
+                        <div class="category__card-bottom">
+                          <div class="category__card-price">
+                            <h4 class="category-price">$20</h4>
+                            <span>/h</span>
+                          </div>
+                          <button class="category__card-pay">
+                            Купить
+                            <span>
+                              <svg width="16" height="16">
+                                <use
+                                  href="../../../assets/icon/icons.svg#arrow-white"
+                                ></use>
+                              </svg>
+                            </span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- EGirl Special -->
+              <div class="user__category-block">
+                <h3 class="category-name">EGirl Special</h3>
+                <div class="category__block-wrapper">
+                  <div class="category__grid-one">
+                    <!-- 1 -->
+                    <div class="category__card">
+                      <div class="category__card-inner">
+                        <div class="category__card-checkbox">
+                          <div class="checkbox-wrapper">
+                            <input
+                              type="checkbox"
+                              id="checkbox-7"
+                              class="checkbox-input"
+                            />
+                            <label for="checkbox-7" class="checkbox-label">
+                              <svg class="checkbox-icon" width="11" height="9">
+                                <use
+                                  href="../../../assets/icon/icons.svg#checkbox-active"
+                                ></use>
+                              </svg>
+                            </label>
+                          </div>
+                        </div>
+                        <!-- Название категории -->
+                        <div class="category__card-name">
+                          <h3 class="category-red">Just chatting</h3>
+                        </div>
+
+                        <!-- Описание категории -->
+                        <div class="category__card-description">
+                          <p class="category-description">
+                            Страстная геймерша, покоряющая виртуальные миры с
+                            ловкостью ниндзя и умом стратега. В ее руках
+                            контроллер...
+                          </p>
+                          <button class="see-more"><span>еще</span>...</button>
+                        </div>
+
+                        <!-- Цена и купить -->
+                        <div class="category__card-bottom">
+                          <div class="category__card-price">
+                            <h4 class="category-price">$20</h4>
+                            <span>/h</span>
+                          </div>
+                          <button class="category__card-pay">
+                            Купить
+                            <span>
+                              <svg width="16" height="16">
+                                <use
+                                  href="../../../assets/icon/icons.svg#arrow-white"
+                                ></use>
+                              </svg>
+                            </span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- 2 -->
+                    <div class="category__card subscribers">
+                      <div class="category__card-inner">
+                        <div class="category__card-subscribers">
+                          Subscribers
+                        </div>
+                        <div class="category__card-checkbox">
+                          <div class="checkbox-wrapper">
+                            <input
+                              type="checkbox"
+                              id="checkbox-8"
+                              class="checkbox-input"
+                            />
+                            <label for="checkbox-8" class="checkbox-label">
+                              <svg class="checkbox-icon" width="11" height="9">
+                                <use
+                                  href="../../../assets/icon/icons.svg#checkbox-active"
+                                ></use>
+                              </svg>
+                            </label>
+                          </div>
+                        </div>
+                        <!-- Название категории -->
+                        <div class="category__card-name">
+                          <h3 class="category-white">ASMR</h3>
+                        </div>
+
+                        <!-- Описание категории -->
+                        <div class="category__card-description">
+                          <p class="category-description">
+                            Страстная геймерша, покоряющая виртуальные миры с
+                            ловкостью ниндзя и умом стратега. В ее руках
+                            контроллер...
+                          </p>
+                          <button class="see-more"><span>еще</span>...</button>
+                        </div>
+
+                        <!-- Цена и купить -->
+                        <div class="category__card-bottom">
+                          <div class="category__card-price">
+                            <h4 class="category-price">$20</h4>
+                            <span>/h</span>
+                          </div>
+                          <button class="category__card-subscribe">
+                            Subscribe
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- 3 -->
+                    <div class="category__card">
+                      <div class="category__card-inner">
+                        <div class="category__card-checkbox">
+                          <div class="checkbox-wrapper">
+                            <input
+                              type="checkbox"
+                              id="checkbox-9"
+                              class="checkbox-input"
+                            />
+                            <label for="checkbox-9" class="checkbox-label">
+                              <svg class="checkbox-icon" width="11" height="9">
+                                <use
+                                  href="../../../assets/icon/icons.svg#checkbox-active"
+                                ></use>
+                              </svg>
+                            </label>
+                          </div>
+                        </div>
+                        <!-- Название категории -->
+                        <div class="category__card-name">
+                          <h3 class="category-yellow">Sleep call</h3>
+                        </div>
+
+                        <!-- Описание категории -->
+                        <div class="category__card-description">
+                          <p class="category-description">
+                            Страстная геймерша, покоряющая виртуальные миры с
+                            ловкостью ниндзя и умом стратега. В ее руках
+                            контроллер...
+                          </p>
+                          <button class="see-more"><span>еще</span>...</button>
+                        </div>
+
+                        <!-- Цена и купить -->
+                        <div class="category__card-bottom">
+                          <div class="category__card-price">
+                            <h4 class="category-price">$20</h4>
+                            <span>/h</span>
+                          </div>
+                          <button class="category__card-pay">
+                            Купить
+                            <span>
+                              <svg width="16" height="16">
+                                <use
+                                  href="../../../assets/icon/icons.svg#arrow-white"
+                                ></use>
+                              </svg>
+                            </span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="category__grid-three">
+                    <!-- 1 -->
+                    <div class="category__card">
+                      <div class="category__card-inner">
+                        <div class="category__card-checkbox">
+                          <div class="checkbox-wrapper">
+                            <input
+                              type="checkbox"
+                              id="checkbox-10"
+                              class="checkbox-input"
+                            />
+                            <label for="checkbox-10" class="checkbox-label">
+                              <svg class="checkbox-icon" width="11" height="9">
+                                <use
+                                  href="../../../assets/icon/icons.svg#checkbox-active"
+                                ></use>
+                              </svg>
+                            </label>
+                          </div>
+                        </div>
+                        <!-- Название категории -->
+                        <div class="category__card-name">
+                          <h3 class="category-violet">ASMR</h3>
+                        </div>
+
+                        <!-- Описание категории -->
+                        <div class="category__card-description">
+                          <p class="category-description">
+                            Страстная геймерша, покоряющая виртуальные миры с
+                            ловкостью ниндзя и умом стр...
+                          </p>
+                          <button class="see-more"><span>еще</span>...</button>
+                        </div>
+
+                        <!-- Цена и купить -->
+                        <div class="category__card-bottom">
+                          <div class="category__card-price">
+                            <h4 class="category-price">$20</h4>
+                            <span>/h</span>
+                          </div>
+                          <button class="category__card-pay">
+                            Купить
+                            <span>
+                              <svg width="16" height="16">
+                                <use
+                                  href="../../../assets/icon/icons.svg#arrow-white"
+                                ></use>
+                              </svg>
+                            </span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- 2 -->
+                    <div class="category__card">
+                      <div class="category__card-inner">
+                        <div class="category__card-checkbox">
+                          <div class="checkbox-wrapper">
+                            <input
+                              type="checkbox"
+                              id="checkbox-11"
+                              class="checkbox-input"
+                            />
+                            <label for="checkbox-11" class="checkbox-label">
+                              <svg class="checkbox-icon" width="11" height="9">
+                                <use
+                                  href="../../../assets/icon/icons.svg#checkbox-active"
+                                ></use>
+                              </svg>
+                            </label>
+                          </div>
+                        </div>
+                        <!-- Название категории -->
+                        <div class="category__card-name">
+                          <h3 class="category-azure">Video-call</h3>
+                        </div>
+
+                        <!-- Описание категории -->
+                        <div class="category__card-description">
+                          <p class="category-description">
+                            Страстная геймерша, покоряющая виртуальные миры с
+                            ловкостью ниндзя и умом стр...
+                          </p>
+                          <button class="see-more"><span>еще</span>...</button>
+                        </div>
+
+                        <!-- Цена и купить -->
+                        <div class="category__card-bottom">
+                          <div class="category__card-price">
+                            <h4 class="category-price">$20</h4>
+                            <span>/h</span>
+                          </div>
+                          <button class="category__card-pay">
+                            Купить
+                            <span>
+                              <svg width="16" height="16">
+                                <use
+                                  href="../../../assets/icon/icons.svg#arrow-white"
+                                ></use>
+                              </svg>
+                            </span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- 3 -->
+                    <div class="category__card">
+                      <div class="category__card-inner">
+                        <div class="category__card-checkbox">
+                          <div class="checkbox-wrapper">
+                            <input
+                              type="checkbox"
+                              id="checkbox-12"
+                              class="checkbox-input"
+                            />
+                            <label for="checkbox-12" class="checkbox-label">
+                              <svg class="checkbox-icon" width="11" height="9">
+                                <use
+                                  href="../../../assets/icon/icons.svg#checkbox-active"
+                                ></use>
+                              </svg>
+                            </label>
+                          </div>
+                        </div>
+                        <!-- Название категории -->
+                        <div class="category__card-name">
+                          <h3 class="category-coral">ASMR</h3>
+                        </div>
+
+                        <!-- Описание категории -->
+                        <div class="category__card-description">
+                          <p class="category-description">
+                            Страстная геймерша, покоряющая виртуальные миры с
+                            ловкостью ниндзя и умом стр...
+                          </p>
+                          <button class="see-more"><span>еще</span>...</button>
+                        </div>
+
+                        <!-- Цена и купить -->
+                        <div class="category__card-bottom">
+                          <div class="category__card-price">
+                            <h4 class="category-price">$20</h4>
+                            <span>/h</span>
+                          </div>
+                          <button class="category__card-pay">
+                            Купить
+                            <span>
+                              <svg width="16" height="16">
+                                <use
+                                  href="../../../assets/icon/icons.svg#arrow-white"
+                                ></use>
+                              </svg>
+                            </span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- 4 -->
+                    <div class="category__card">
+                      <div class="category__card-inner">
+                        <div class="category__card-checkbox">
+                          <div class="checkbox-wrapper">
+                            <input
+                              type="checkbox"
+                              id="checkbox-13"
+                              class="checkbox-input"
+                            />
+                            <label for="checkbox-13" class="checkbox-label">
+                              <svg class="checkbox-icon" width="11" height="9">
+                                <use
+                                  href="../../../assets/icon/icons.svg#checkbox-active"
+                                ></use>
+                              </svg>
+                            </label>
+                          </div>
+                        </div>
+                        <!-- Название категории -->
+                        <div class="category__card-name">
+                          <h3 class="category-lime">Just chatting</h3>
+                        </div>
+
+                        <!-- Описание категории -->
+                        <div class="category__card-description">
+                          <p class="category-description">
+                            Страстная геймерша, покоряющая виртуальные миры с
+                            ловкостью ниндзя и умом стр...
+                          </p>
+                          <button class="see-more"><span>еще</span>...</button>
+                        </div>
+
+                        <!-- Цена и купить -->
+                        <div class="category__card-bottom">
+                          <div class="category__card-price">
+                            <h4 class="category-price">$20</h4>
+                            <span>/h</span>
+                          </div>
+                          <button class="category__card-pay">
+                            Купить
+                            <span>
+                              <svg width="16" height="16">
+                                <use
+                                  href="../../../assets/icon/icons.svg#arrow-white"
+                                ></use>
+                              </svg>
+                            </span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="category__grid-two">
+                    <!-- 1 -->
+                    <div class="category__card">
+                      <div class="category__card-inner">
+                        <div class="category__card-checkbox">
+                          <div class="checkbox-wrapper">
+                            <input
+                              type="checkbox"
+                              id="checkbox-14"
+                              class="checkbox-input"
+                            />
+                            <label for="checkbox-14" class="checkbox-label">
+                              <svg class="checkbox-icon" width="11" height="9">
+                                <use
+                                  href="../../../assets/icon/icons.svg#checkbox-active"
+                                ></use>
+                              </svg>
+                            </label>
+                          </div>
+                        </div>
+                        <!-- Название категории -->
+                        <div class="category__card-name">
+                          <h3 class="ategory-green">Video-call</h3>
+                        </div>
+
+                        <!-- Описание категории -->
+                        <div class="category__card-description">
+                          <p class="category-description">
+                            Страстная геймерша, покоряющая виртуальные миры с
+                            ловкостью ниндзя и умом стр...
+                          </p>
+                          <button class="see-more"><span>еще</span>...</button>
+                        </div>
+
+                        <!-- Цена и купить -->
+                        <div class="category__card-bottom">
+                          <div class="category__card-price">
+                            <h4 class="category-price">$20</h4>
+                            <span>/h</span>
+                          </div>
+                          <button class="category__card-pay">
+                            Купить
+                            <span>
+                              <svg width="16" height="16">
+                                <use
+                                  href="../../../assets/icon/icons.svg#arrow-white"
+                                ></use>
+                              </svg>
+                            </span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- 2 -->
+                    <div class="category__card">
+                      <div class="category__card-inner">
+                        <div class="category__card-checkbox">
+                          <div class="checkbox-wrapper">
+                            <input
+                              type="checkbox"
+                              id="checkbox-15"
+                              class="checkbox-input"
+                            />
+                            <label for="checkbox-15" class="checkbox-label">
+                              <svg class="checkbox-icon" width="11" height="9">
+                                <use
+                                  href="../../../assets/icon/icons.svg#checkbox-active"
+                                ></use>
+                              </svg>
+                            </label>
+                          </div>
+                        </div>
+                        <!-- Название категории -->
+                        <div class="category__card-name">
+                          <h3 class="category-purple">ASMR</h3>
+                        </div>
+
+                        <!-- Описание категории -->
+                        <div class="category__card-description">
+                          <p class="category-description">
+                            Страстная геймерша, покоряющая виртуальные миры с
+                            ловкостью ниндзя и умом стр...
+                          </p>
+                          <button class="see-more"><span>еще</span>...</button>
+                        </div>
+
+                        <!-- Цена и купить -->
+                        <div class="category__card-bottom">
+                          <div class="category__card-price">
+                            <h4 class="category-price">$20</h4>
+                            <span>/h</span>
+                          </div>
+                          <button class="category__card-pay">
+                            Купить
+                            <span>
+                              <svg width="16" height="16">
+                                <use
+                                  href="../../../assets/icon/icons.svg#arrow-white"
+                                ></use>
+                              </svg>
+                            </span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- 3 -->
+                    <div class="category__card subscribers">
+                      <div class="category__card-inner">
+                        <div class="category__card-checkbox">
+                          <div class="checkbox-wrapper">
+                            <input
+                              type="checkbox"
+                              id="checkbox-16"
+                              class="checkbox-input"
+                            />
+                            <label for="checkbox-16" class="checkbox-label">
+                              <svg class="checkbox-icon" width="11" height="9">
+                                <use
+                                  href="../../../assets/icon/icons.svg#checkbox-active"
+                                ></use>
+                              </svg>
+                            </label>
+                          </div>
+                        </div>
+                        <!-- Название категории -->
+                        <div class="category__card-name">
+                          <h3 class="category-white">ASMR</h3>
+                        </div>
+
+                        <!-- Описание категории -->
+                        <div class="category__card-description">
+                          <p class="category-description">
+                            Страстная геймерша, покоряющая виртуальные миры с
+                            ловкостью ниндзя и умом стратега. В ее руках
+                            контроллер превращается в мощное оружие, а взгляд
+                            полон решимости побеждать в любой игре.
+                          </p>
+                          <button class="see-more"><span>еще</span>...</button>
+                        </div>
+
+                        <!-- Цена и купить -->
+                        <div class="category__card-bottom">
+                          <div class="category__card-price">
+                            <h4 class="category-price">$20</h4>
+                            <span>/h</span>
+                          </div>
+                          <button class="category__card-subscribe">
+                            Subscribe
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <div class="rent-time__save">
+        <div class="rent-time__save-inner">
+          <div class="save-button">
+            <button class="ui-button button-white rent-time__btn">
+              Сохранить
+            </button>
+            <button class="ui-button button-black rent-time__btn">
+              Отмена
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

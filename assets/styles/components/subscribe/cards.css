@@ -1,0 +1,204 @@
+.user__category-block {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.category-name {
+  color: var(--white);
+  font-size: 32px;
+  font-family: "Gilroy";
+  font-weight: 700;
+  line-height: 1;
+}
+.category__block-wrapper {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.category__grid-one {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+.category__grid-two {
+  display: grid;
+  grid-template-columns: repeat(2, 240px) 1fr;
+  gap: 12px;
+}
+.category__grid-three {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+.category__card {
+  background: var(--black);
+  border-radius: 6px;
+}
+.category__card.subscribers {
+  border: 1px solid var(--white);
+}
+.category__card-inner {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 20px;
+  position: relative;
+}
+.category__card-more {
+  width: 20px;
+  height: 20px;
+  background: var(--deep-charcoal);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.category__card-subscribers {
+  height: 24px;
+  padding: 4px 12px;
+  border: 1px solid var(--white);
+  border-radius: 3px;
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  color: var(--white);
+  font-size: 12px;
+  font-family: "Gilroy";
+  font-weight: 700;
+  line-height: 1.2;
+  user-select: none;
+}
+.category__card-name {
+  width: 100%;
+  height: 140px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.category__card-name h3 {
+  padding-bottom: 10px;
+  color: var(--white);
+  font-size: 26px;
+  font-family: "Gilroy";
+  font-weight: 700;
+  line-height: 1.2;
+}
+.category__card.subscribers .category__card-name {
+  border-color: var(--white);
+}
+.category-red {
+  border-bottom: 3px solid var(--light-red);
+}
+.category-blue {
+  border-bottom: 3px solid var(--light-cyan);
+}
+.category-yellow {
+  border-bottom: 3px solid var(--lemon-yellow);
+}
+.category-green {
+  border-bottom: 3px solid var(--mint-green);
+}
+.category-white {
+  border-bottom: 3px solid var(--white);
+}
+.category-purple {
+  border-bottom: 3px solid var(--vivid-purple);
+}
+.category-violet {
+  border-bottom: 3px solid var(--electric-violet);
+}
+.category-azure {
+  border-bottom: 3px solid var(--azure);
+}
+.category-coral {
+  border-bottom: 3px solid var(--coral);
+}
+.category-lime {
+  border-bottom: 3px solid var(--lime-green);
+}
+.category__card-description {
+  margin-top: 20px;
+  padding: 0 12px;
+  color: var(--white);
+  font-size: 14px;
+  font-family: "Gilroy";
+  font-weight: 400;
+  line-height: 1.2;
+}
+.category__card-bottom {
+  margin-top: 6px;
+  padding: 0 12px;
+}
+.see-more {
+  margin-top: 6px;
+  display: flex;
+  align-items: center;
+  color: var(--white);
+  font-size: 14px;
+  font-family: "Gilroy";
+  font-weight: 500;
+  line-height: 1.2;
+}
+.see-more span {
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+}
+.category__card-bottom {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.category__card-price {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.category-price {
+  color: var(--white);
+  font-size: 24px;
+  font-family: "Gilroy";
+  font-weight: 600;
+  line-height: 1.91667;
+}
+.category__card-price span {
+  font-weight: 400;
+  font-size: 17px;
+  color: #848199;
+}
+.category__card-pay {
+  height: 46px;
+  padding: 11px 16px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  color: var(--white);
+  font-size: 14px;
+  font-family: "Gilroy";
+  font-weight: 700;
+  line-height: 1.2;
+  gap: 8px;
+  user-select: none;
+}
+.category__card-pay span svg {
+  width: 14px;
+  height: 14px;
+}
+.category__card-subscribe {
+  height: 46px;
+  padding: 14px 16px;
+  border: 1px solid var(--white);
+  border-radius: 4px;
+  color: var(--white);
+  font-size: 14px;
+  font-family: "Gilroy";
+  font-weight: 700;
+  line-height: 1.2;
+  cursor: default;
+  user-select: none;
+}
