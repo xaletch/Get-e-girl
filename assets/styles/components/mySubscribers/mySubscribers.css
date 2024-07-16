@@ -1,0 +1,116 @@
+.my-girls__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.sort__subscribe-block {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.subscribe__content {
+  margin-top: 40px;
+  display: grid;
+  gap: 40px;
+}
+.subscribe__block-name {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1;
+  font-family: "Gilroy";
+  color: var(--white);
+}
+.subscribe__block-cards {
+  margin-top: 24px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.subscribe__card {
+  width: 100%;
+  height: 110px;
+  border-radius: 6px;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-sizing: border-box;
+  position: relative;
+}
+.subscribe__card::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(8, 9, 10, 0.51);
+  z-index: 1;
+}
+.subscribe__card-inner {
+  padding: 16px;
+  position: relative;
+  z-index: 2;
+}
+.subscribe__user {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+.subscribe__user-img {
+  width: 77px;
+  height: 77px;
+  border-radius: 100%;
+}
+.subscribe__user-name {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1;
+  font-family: "Gilroy";
+  color: var(--white);
+}
+.subscribe__username {
+  margin-top: 6px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.66667;
+  font-family: "Gilroy";
+  color: var(--white);
+}
+.subscribe__user-status {
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.user-status {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-family: "Gilroy";
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.75;
+  text-align: center;
+  color: var(--white);
+}
+.user-status .status {
+  width: 12px;
+  height: 12px;
+  border-radius: 20px;
+  border: 1px solid var(--white);
+  background: var(--light-blue-gray);
+}
+.user-status .status.online {
+  background: var(--bright-lime);
+}
+.status-busy {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-family: "Gilroy";
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.75;
+  text-align: center;
+  color: var(--red);
+}
