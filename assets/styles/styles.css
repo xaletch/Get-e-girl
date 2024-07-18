@@ -30,6 +30,11 @@ body {
   margin: 0 auto;
   padding: 0 20px;
 }
+.container-lg {
+  max-width: 1260px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
 .container-xl {
   max-width: 1660px;
   margin: 0 auto;
