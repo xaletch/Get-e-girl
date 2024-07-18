@@ -1,6 +1,7 @@
 :root {
   --white: #ffffff;
   --black: #111111;
+  --dark: #000000;
   --dark-blue: #2a2b39;
   --red: #ff3f33;
   --dark-red: #3b0a0d;
@@ -49,4 +50,8 @@
   --bright-lime: #54eb53;
   --graphite: #282828;
   --hot-pink: #ff33d2;
+  --dusty-blue: #7d91aa;
+  --bright-red: #f8000f;
+  --vivid-green: #01ce22;
+  --light-steel: #c4c4c4;
 }
