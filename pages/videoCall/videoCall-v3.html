@@ -13,7 +13,7 @@
   </head>
   <body>
     <div class="app">
-      <div class="video-call">
+      <div class="video-call video-call__chat-open">
         <div class="video-call__wrapper video-call__wrapper-xl">
           <!-- head -->
           <div class="video-call__head">
@@ -48,10 +48,10 @@
             <div class="vide__container-xl">
               <div class="video__wrapper video__wrapper-xl">
                 <div
-                  class="video-call__users-wrapper video-call__users-wrapper-xl"
+                  class="video-call__users-wrapper video-call__users-wrapper-md"
                 >
                   <!-- card 1 -->
-                  <div class="video-card video__card-big">
+                  <div class="video-card">
                     <div class="video__card-inner">
                       <!-- buttons -->
                       <div class="video__card-buttons">
@@ -97,81 +97,12 @@
                       <div class="video__card-video video-block">
                         <img src="../../assets/images/video.png" alt="video" />
                       </div>
-                      <!-- video button action -->
-                      <div class="video__card-action__btn">
-                        <div class="action-button red">
-                          <svg width="21" height="21">
-                            <use
-                              href="../../assets/icon/icons.svg#microphone-off"
-                            ></use>
-                          </svg>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- card 3 -->
-                  <div class="video-card video-card-md">
-                    <div class="video__card-inner">
-                      <!-- video -->
-                      <div class="video__card-video">
-                        <img
-                          src="../../assets/images/chat-img.png"
-                          alt="video"
-                        />
-                      </div>
-                      <!-- video button action -->
-                      <div class="video__card-action__btn">
-                        <div class="action-button green">
-                          <svg width="21" height="21">
-                            <use
-                              href="../../assets/icon/icons.svg#speaks"
-                            ></use>
-                          </svg>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- card 4 -->
-                  <div class="video-card video-card-md">
-                    <div class="video__card-inner">
-                      <!-- video -->
-                      <div class="video__card-video">
-                        <img
-                          src="../../assets/images/chat-img.png"
-                          alt="video"
-                        />
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- card 5 -->
-                  <div class="video-card video-card-md">
-                    <div class="video__card-inner">
-                      <!-- video -->
-                      <div class="video__card-video">
-                        <img
-                          src="../../assets/images/chat-img.png"
-                          alt="video"
-                        />
-                      </div>
-                      <!-- video button action -->
-                      <div class="video__card-action__btn">
-                        <div class="action-button red">
-                          <svg width="21" height="21">
-                            <use
-                              href="../../assets/icon/icons.svg#microphone-off"
-                            ></use>
-                          </svg>
-                        </div>
-                      </div>
                     </div>
                   </div>
                 </div>
 
                 <!-- other users -->
-                <div class="video__other-users">
+                <div class="video__other-users chat-open">
                   <div class="others-users__inner">
                     <div class="other-user__card">
                       <!-- video -->
@@ -296,9 +227,9 @@
                       <use href="../../assets/icon/icons.svg#microphone"></use>
                     </svg>
                   </button>
-                  <button class="video-button">
-                    <svg width="20" height="20">
-                      <use href="../../assets/icon/icons.svg#chat-open"></use>
+                  <button class="video-button chat-open">
+                    <svg width="24" height="24" class="icon">
+                      <use href="../../assets/icon/icons.svg#video-close"></use>
                     </svg>
                   </button>
                 </div>
@@ -316,6 +247,171 @@
                 <svg width="15" height="14">
                   <use href="../../assets/icon/icons.svg#sound"></use>
                 </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- chat -->
+        <div class="video-call_chat">
+          <div class="chat__wrapper">
+            <!-- chat head -->
+            <div class="chat__head">
+              <div class="chat__head-inner">
+                <h2>Chats</h2>
+              </div>
+            </div>
+
+            <!-- chat content -->
+            <div class="chat__content">
+              <div class="chat__messages">
+                <div class="chat__messages-wrapper">
+                  <!-- messages -->
+                  <div class="chat__messages-message">
+                    <!-- message 1 -->
+                    <div class="chat__message">
+                      <div class="chat__message-head">
+                        <div class="message-data">
+                          <div class="message__user-img">
+                            <img
+                              src="../../assets/images/subscribers-1.png"
+                              alt="user"
+                            />
+                          </div>
+                          <div class="message__user-data">
+                            <h3 class="message-username">Author</h3>
+                            <p class="message-text">Hello, Eva</p>
+                          </div>
+                        </div>
+                        <div class="message-info">
+                          <div class="message__info-date">12:00</div>
+                          <div class="message-status">
+                            <svg width="22" height="13">
+                              <use
+                                href="../../assets/icon/icons.svg#read"
+                              ></use>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- message 2 -->
+                    <div class="chat__message">
+                      <div class="chat__message-head">
+                        <div class="message-data">
+                          <div class="message__user-img">
+                            <img
+                              src="../../assets/images/subscribers-1.png"
+                              alt="user"
+                            />
+                          </div>
+                          <div class="message__user-data">
+                            <h3 class="message-username">Author</h3>
+                            <p class="message-text">Hello, Eva</p>
+                          </div>
+                        </div>
+                        <div class="message-info">
+                          <div class="message__info-date">12:00</div>
+                          <div class="message-status">
+                            <svg width="22" height="13">
+                              <use
+                                href="../../assets/icon/icons.svg#received"
+                              ></use>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="chat__message-contents">
+                        <img
+                          class="chat__content-img"
+                          src="../../assets/images/subscribers-8.png"
+                          alt="#"
+                        />
+                      </div>
+                    </div>
+
+                    <!-- message 3 -->
+                    <div class="chat__message">
+                      <div class="chat__message-head">
+                        <div class="message-data">
+                          <div class="message__user-img">
+                            <img
+                              src="../../assets/images/subscribers-1.png"
+                              alt="user"
+                            />
+                          </div>
+                          <div class="message__user-data">
+                            <h3 class="message-username">Author</h3>
+                            <p class="message-text message__text-white">
+                              Hello, Eva
+                            </p>
+                          </div>
+                        </div>
+                        <div class="message-info">
+                          <div class="message__info-date">12:00</div>
+                          <div class="message-status">
+                            <svg width="22" height="13">
+                              <use
+                                href="../../assets/icon/icons.svg#read"
+                              ></use>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- send message -->
+              <div class="chat__send-message">
+                <div class="send__message-inner">
+                  <!-- buttons -->
+                  <div class="send__message-buttons">
+                    <!-- загрузить документ/кртинку -->
+                    <button class="message-button upload-button">
+                      <svg width="24" height="24">
+                        <use href="../../assets/icon/icons.svg#upload"></use>
+                      </svg>
+                    </button>
+                    <!-- выбор смайликов -->
+                    <button class="message-button icon-button">
+                      <svg width="24" height="24">
+                        <use href="../../assets/icon/icons.svg#chat-icon"></use>
+                      </svg>
+                    </button>
+                  </div>
+
+                  <!-- write message -->
+                  <div class="write-message">
+                    <input
+                      class="write-message__input"
+                      type="text"
+                      name="message"
+                      placeholder="Напишите сообщение..."
+                    />
+                  </div>
+
+                  <!-- buttons -->
+                  <div class="send__message-buttons">
+                    <!-- записать голосовое -->
+                    <button class="message-button voice-button">
+                      <svg width="24" height="24">
+                        <use
+                          href="../../assets/icon/icons.svg#voice-message"
+                        ></use>
+                      </svg>
+                    </button>
+                    <!-- отправить сообщение -->
+                    <button class="message-button send-button">
+                      <svg width="24" height="24">
+                        <use
+                          href="../../assets/icon/icons.svg#send-message"
+                        ></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

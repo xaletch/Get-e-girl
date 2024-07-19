@@ -19,10 +19,7 @@
           <div class="video-call__head">
             <div class="video-call__head-inner">
               <div class="video-call-info">
-                <a
-                  href="./videoCallBackground.html"
-                  class="video-call_come-back"
-                >
+                <a href="#" class="video-call_come-back">
                   <span>
                     <svg width="9" height="14">
                       <use href="../../assets/icon/icons.svg#come-back"></use>
@@ -48,10 +45,10 @@
             <div class="vide__container-xl">
               <div class="video__wrapper video__wrapper-xl">
                 <div
-                  class="video-call__users-wrapper video-call__users-wrapper-xl"
+                  class="video-call__users-wrapper video-call__users-wrapper-md"
                 >
                   <!-- card 1 -->
-                  <div class="video-card video__card-big">
+                  <div class="video-card">
                     <div class="video__card-inner">
                       <!-- buttons -->
                       <div class="video__card-buttons">
@@ -96,65 +93,6 @@
                       <!-- video -->
                       <div class="video__card-video video-block">
                         <img src="../../assets/images/video.png" alt="video" />
-                      </div>
-                      <!-- video button action -->
-                      <div class="video__card-action__btn">
-                        <div class="action-button red">
-                          <svg width="21" height="21">
-                            <use
-                              href="../../assets/icon/icons.svg#microphone-off"
-                            ></use>
-                          </svg>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- card 3 -->
-                  <div class="video-card video-card-md">
-                    <div class="video__card-inner">
-                      <!-- video -->
-                      <div class="video__card-video">
-                        <img
-                          src="../../assets/images/chat-img.png"
-                          alt="video"
-                        />
-                      </div>
-                      <!-- video button action -->
-                      <div class="video__card-action__btn">
-                        <div class="action-button green">
-                          <svg width="21" height="21">
-                            <use
-                              href="../../assets/icon/icons.svg#speaks"
-                            ></use>
-                          </svg>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- card 4 -->
-                  <div class="video-card video-card-md">
-                    <div class="video__card-inner">
-                      <!-- video -->
-                      <div class="video__card-video">
-                        <img
-                          src="../../assets/images/chat-img.png"
-                          alt="video"
-                        />
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- card 5 -->
-                  <div class="video-card video-card-md">
-                    <div class="video__card-inner">
-                      <!-- video -->
-                      <div class="video__card-video">
-                        <img
-                          src="../../assets/images/chat-img.png"
-                          alt="video"
-                        />
                       </div>
                       <!-- video button action -->
                       <div class="video__card-action__btn">
@@ -286,7 +224,7 @@
                       <use href="../../assets/icon/icons.svg#camera-on"></use>
                     </svg>
                   </button>
-                  <button class="video-button leave-button button-modal">
+                  <button class="video-button leave-button">
                     <svg width="35" height="15">
                       <use href="../../assets/icon/icons.svg#leave"></use>
                     </svg>
@@ -321,24 +259,26 @@
           </div>
         </div>
       </div>
+    </div>
 
-      <!-- Modal -->
-      <div class="modal">
-        <div class="modal__menu">
-          <div class="modal__menu-wrapper">
-            <h3 class="modal__menu-name">Выйти из лобби</h3>
-            <p class="modal__menu-text">
-              Вы уверены что хотите выйти из лобби ?
-            </p>
-            <div class="modal__menu-buttons">
-              <button class="modal-button modal__button-apply">Выйти</button>
-              <button class="modal-button modal__button-close">Отменить</button>
-            </div>
+    <!-- Modal -->
+    <div class="modal active">
+      <div class="modal__menu menu__open-camera">
+        <div class="modal__menu-wrapper">
+          <div class="modal__user-img">
+            <img src="../../assets/images/subscribers-1.png" alt="user-img" />
+          </div>
+          <h3 class="modal__menu-name">@MoraruV</h3>
+          <p class="modal__menu-text">
+            Хочет включить камеру, это спишет с вашего аккаунта <span>$25</span>
+          </p>
+
+          <div class="modal__menu-buttons">
+            <button class="modal-button modal__button-apply">Удалить</button>
+            <button class="modal-button modal__button-close">Отменить</button>
           </div>
         </div>
       </div>
     </div>
-
-    <script src="../../app/modal.js"></script>
   </body>
 </html>

@@ -302,6 +302,25 @@
 .modal.active {
   display: flex;
 }
+.menu__open-camera {
+  width: 470px;
+}
+.menu__open-camera .modal__menu-text span {
+  font-size: 14px;
+  font-weight: 700;
+  opacity: 0.8;
+}
+.modal__user-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+.modal__user-img img {
+  width: 144px;
+  height: 144px;
+  border-radius: 100%;
+}
 .modal__menu {
   background: var(--dark-gray);
   border-radius: 6px;

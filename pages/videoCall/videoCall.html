@@ -19,7 +19,10 @@
           <div class="video-call__head">
             <div class="video-call__head-inner">
               <div class="video-call-info">
-                <a href="#" class="video-call_come-back">
+                <a
+                  href="./videoCallBackground.html"
+                  class="video-call_come-back"
+                >
                   <span>
                     <svg width="9" height="14">
                       <use href="../../assets/icon/icons.svg#come-back"></use>
@@ -192,7 +195,7 @@
                         <use href="../../assets/icon/icons.svg#camera-on"></use>
                       </svg>
                     </button>
-                    <button class="video-button leave-button">
+                    <button class="video-button leave-button button-modal">
                       <svg width="35" height="15">
                         <use href="../../assets/icon/icons.svg#leave"></use>
                       </svg>
@@ -230,6 +233,24 @@
           </div>
         </div>
       </div>
+
+      <!-- Modal -->
+      <div class="modal">
+        <div class="modal__menu">
+          <div class="modal__menu-wrapper">
+            <h3 class="modal__menu-name">Выйти из лобби</h3>
+            <p class="modal__menu-text">
+              Вы уверены что хотите выйти из лобби ?
+            </p>
+            <div class="modal__menu-buttons">
+              <button class="modal-button modal__button-apply">Выйти</button>
+              <button class="modal-button modal__button-close">Отменить</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+
+    <script src="../../app/modal.js"></script>
   </body>
 </html>
