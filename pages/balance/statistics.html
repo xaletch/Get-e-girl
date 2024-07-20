@@ -16,40 +16,173 @@
   </head>
   <body>
     <div class="app">
-      <div class="navbar">
-        <div class="navbar__wrapper">
-          <div class="navbar__head">
-            <div class="navbar__head-inner">
-              <div class="navbar__head-name">Chats</div>
-              <div class="navbar__head-icon">
-                <svg width="22" height="21">
-                  <use href="../../assets/icon/icons.svg#chat"></use>
-                </svg>
+      <div class="chat">
+        <div class="navbar chat-navbar">
+          <div class="navbar__wrapper">
+            <div class="navbar__head">
+              <div class="navbar__head-inner">
+                <div class="navbar__head-name">
+                  <p>Chats</p>
+                  <button class="navbar-close">
+                    <svg width="24" height="24" class="icon">
+                      <use href="../../assets/icon/icons.svg#video-close"></use>
+                    </svg>
+                  </button>
+                </div>
+                <button class="navbar__head-icon" id="chat-open">
+                  <svg width="22" height="21">
+                    <use href="../../assets/icon/icons.svg#chat"></use>
+                  </svg>
+                </button>
+                <div class="navbar__chat-search">
+                  <input class="chat-search" type="text" placeholder="Поиск" />
+                  <button class="chat__search-button">
+                    <svg width="20" height="20">
+                      <use href="../../assets/icon/icons.svg#search"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="navbar__chats">
+              <div class="navbar__chats-category">
+                <div class="chats__category-list">
+                  <div class="category-item active">
+                    <p class="category-name">Подписчики</p>
+                    <div class="category__count-massage">14</div>
+                  </div>
+                  <div class="category-item">
+                    <p class="category-name">Rent time</p>
+                    <div class="category__count-massage">1</div>
+                  </div>
+                  <div class="category-item">
+                    <p class="category-name">Оплачено</p>
+                    <div class="category__count-massage">1</div>
+                  </div>
+                </div>
+              </div>
+              <div class="navbar__chats-wrapper">
+                <p class="chat-when">Today</p>
+                <a href="#" class="navbar__chat navbar__chat-item" user-id="1">
+                  <img src="../../assets/images/subscribers-9.png" alt="girl" />
+                  <div class="navbar__chat-info">
+                    <div class="chat__info-name">
+                      <h3 class="chat-name">Лера</h3>
+                      <p class="char-message">Привет</p>
+                    </div>
+                    <div class="chat__info-date">
+                      <span>21.02.24</span>
+                      <span>14:25</span>
+                    </div>
+                  </div>
+                </a>
+                <a href="#" class="navbar__chat navbar__chat-item" user-id="2">
+                  <img
+                    src="../../assets/images/subscribers-10.png"
+                    alt="girl"
+                  />
+                  <div class="navbar__chat-info">
+                    <div class="chat__info-name">
+                      <h3 class="chat-name">Лера</h3>
+                      <p class="char-message">Привет</p>
+                    </div>
+                    <div class="chat__info-date">
+                      <span>21.02.24</span>
+                      <span>14:25</span>
+                    </div>
+                  </div>
+                </a>
+                <p class="chat-when">Yesterday</p>
+                <a href="#" class="navbar__chat navbar__chat-item" user-id="3">
+                  <img src="../../assets/images/subscribers-7.png" alt="girl" />
+                  <div class="navbar__chat-info">
+                    <div class="chat__info-name">
+                      <h3 class="chat-name">Иван</h3>
+                      <p class="char-message">Привет</p>
+                    </div>
+                    <div class="chat__info-date">
+                      <span>21.02.24</span>
+                      <span>14:25</span>
+                    </div>
+                  </div>
+                </a>
+                <p class="chat-when">Previous 7 days</p>
+
+                <a href="#" class="navbar__chat navbar__chat-item" user-id="4">
+                  <img src="../../assets/images/subscribers-2.png" alt="girl" />
+                  <div class="navbar__chat-info">
+                    <div class="chat__info-name">
+                      <h3 class="chat-name">Маша</h3>
+                      <p class="char-message">Привет</p>
+                    </div>
+                    <div class="chat__info-date">
+                      <span>21.02.24</span>
+                      <span>14:25</span>
+                    </div>
+                  </div>
+                </a>
+                <a href="#" class="navbar__chat navbar__chat-item" user-id="5">
+                  <img src="../../assets/images/media-3.png" alt="girl" />
+                  <div class="navbar__chat-info">
+                    <div class="chat__info-name">
+                      <h3 class="chat-name">Вера</h3>
+                      <p class="char-message">Привет</p>
+                    </div>
+                    <div class="chat__info-date">
+                      <span>21.02.24</span>
+                      <span>14:25</span>
+                    </div>
+                  </div>
+                </a>
+                <a href="#" class="navbar__chat navbar__chat-item" user-id="6">
+                  <img src="../../assets/images/subscribers-8.png" alt="girl" />
+                  <div class="navbar__chat-info">
+                    <div class="chat__info-name">
+                      <h3 class="chat-name">Таня</h3>
+                      <p class="char-message">Привет</p>
+                    </div>
+                    <div class="chat__info-date">
+                      <span>21.02.24</span>
+                      <span>14:25</span>
+                    </div>
+                  </div>
+                </a>
+                <a href="#" class="navbar__chat navbar__chat-item" user-id="7">
+                  <img
+                    src="../../assets/images/subscribers-11.png"
+                    alt="girl"
+                  />
+                  <div class="navbar__chat-info">
+                    <div class="chat__info-name">
+                      <h3 class="chat-name">Ксюша</h3>
+                      <p class="char-message">Привет</p>
+                    </div>
+                    <div class="chat__info-date">
+                      <span>21.02.24</span>
+                      <span>14:25</span>
+                    </div>
+                  </div>
+                </a>
+                <a href="#" class="navbar__chat navbar__chat-item" user-id="8">
+                  <img src="../../assets/images/subscribers-1.png" alt="girl" />
+                  <div class="navbar__chat-info">
+                    <div class="chat__info-name">
+                      <h3 class="chat-name">Соня</h3>
+                      <p class="char-message">Привет</p>
+                    </div>
+                    <div class="chat__info-date">
+                      <span>21.02.24</span>
+                      <span>14:25</span>
+                    </div>
+                  </div>
+                </a>
               </div>
             </div>
           </div>
-          <div class="navbar__chats">
-            <div class="navbar__chats-wrapper">
-              <a href="#" class="navbar__chat">
-                <img src="../../assets/images/girl-1.png" alt="girl" />
-              </a>
-              <a href="#" class="navbar__chat online">
-                <img src="../../assets/images/girl-2.png" alt="girl" />
-              </a>
-              <a href="#" class="navbar__chat">
-                <img src="../../assets/images/girl-1.png" alt="girl" />
-              </a>
-              <a href="#" class="navbar__chat">
-                <img src="../../assets/images/girl-1.png" alt="girl" />
-              </a>
-              <a href="#" class="navbar__chat">
-                <img src="../../assets/images/girl-2.png" alt="girl" />
-              </a>
-              <a href="#" class="navbar__chat">
-                <img src="../../assets/images/girl-1.png" alt="girl" />
-              </a>
-            </div>
-          </div>
+        </div>
+        <!-- chat -->
+        <div class="chat__wrapper">
+          <!-- Тут контент чата -->
         </div>
       </div>
 
@@ -257,6 +390,116 @@
           </div>
         </section>
       </main>
+
+      <!-- modals -->
+
+      <!-- delete chat -->
+      <div class="modal modal__delete-chat">
+        <div class="modal__menu">
+          <div class="modal__menu-wrapper">
+            <h3 class="modal__menu-name">Удалить чат</h3>
+            <p class="modal__menu-text">
+              Вы точно хотите удалить чат с name ? <br />
+              это нельзя будет отменить
+            </p>
+            <div class="modal__menu-buttons">
+              <button class="modal-button modal__button-apply button__delete">
+                Удалить
+              </button>
+              <button class="modal-button modal__button-close">Отменить</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- report -->
+      <div class="modal modal__report-chat">
+        <div class="modal__menu">
+          <div class="modal__menu-wrapper">
+            <h3 class="modal__menu-name">Написать в поддержку</h3>
+            <p class="modal__menu-text">
+              Выберите категорию которая вас интересует
+            </p>
+            <div class="modal__menu-popup ui-popup">
+              <div class="popup-label">
+                <p class="popup-placeholder">Выберите категорию</p>
+                <p class="popup__select-value select-item"></p>
+                <span class="popup-icon">
+                  <svg width="14" height="9">
+                    <use
+                      href="../../../assets/icon/icons.svg#arrow_bottom"
+                    ></use>
+                  </svg>
+                </span>
+              </div>
+              <div class="popups-items">
+                <div class="popups-item">Категория 1</div>
+                <div class="popups-item">Категория 2</div>
+                <div class="popups-item">Категория 3</div>
+              </div>
+            </div>
+            <div class="modal__menu-form">
+              <input
+                type="text"
+                class="ui-input"
+                name="theme"
+                placeholder="Тема"
+              />
+              <textarea
+                class="ui-input ui-textarea"
+                name="comment"
+                id="comment"
+                placeholder="Комментарий"
+              ></textarea>
+            </div>
+            <div class="modal__menu-buttons">
+              <button class="modal-button modal__button-apply button__delete">
+                Удалить
+              </button>
+              <button class="modal-button modal__button-close">Отменить</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- cancel task -->
+      <div class="modal modal__cancel-task">
+        <div class="modal__menu">
+          <div class="modal__menu-wrapper">
+            <h3 class="modal__menu-name">Написать в поддержку</h3>
+            <p class="modal__menu-text">
+              Выберите категорию которая вас интересует
+            </p>
+            <div class="modal__menu-popup ui-popup">
+              <div class="popup-label">
+                <p class="popup-placeholder">Выберите категорию</p>
+                <p class="popup__select-value select-item"></p>
+                <span class="popup-icon">
+                  <svg width="14" height="9">
+                    <use
+                      href="../../../assets/icon/icons.svg#arrow_bottom"
+                    ></use>
+                  </svg>
+                </span>
+              </div>
+              <div class="popups-items">
+                <div class="popups-item">Категория 1</div>
+                <div class="popups-item">Категория 2</div>
+                <div class="popups-item">Категория 3</div>
+              </div>
+            </div>
+            <div class="modal__menu-buttons">
+              <button class="modal-button modal__button-apply button__delete">
+                Удалить
+              </button>
+              <button class="modal-button modal__button-close">Отменить</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+
+    <script src="../../app/popup.js"></script>
+    <script src="../../app/openChat.js"></script>
   </body>
 </html>

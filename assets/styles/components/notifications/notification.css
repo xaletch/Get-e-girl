@@ -1,0 +1,127 @@
+.notification {
+  width: 430px;
+  border-radius: 12px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  background: rgba(29, 29, 29, 0.9);
+  position: fixed;
+  top: 130px;
+  right: 50px;
+}
+.notification__head {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+.notification__head-inner {
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.notification-title {
+  font-family: "Gilroy";
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.4;
+  color: var(--white);
+}
+.notification__read-all {
+  font-family: "Gilroy";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4;
+  color: var(--white);
+}
+.notification__content-inner {
+  padding: 0 12px 8px 20px;
+}
+.notification__item {
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+.notification__item.border-n {
+  border-bottom: none;
+}
+.notification__item-head {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+}
+.notification__user-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+}
+.notification__item-text {
+  font-family: "Gilroy";
+  font-size: 13px;
+  line-height: 1.53846;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.6);
+}
+.notification__item-text a,
+.notification__item-text b {
+  font-weight: 700;
+  color: var(--white);
+}
+.notification__item-get {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.notification-time,
+.notification-category {
+  font-family: "Gilroy";
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1.53846;
+  color: rgba(255, 255, 255, 0.6);
+}
+.notification__item-content {
+  margin-top: 8px;
+}
+.notification__item-button {
+  padding-left: 48px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.notification-button {
+  width: 100px;
+  height: 32px;
+  padding: 8px 17px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  font-family: "Gilroy";
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 1.23077;
+  text-align: center;
+  transition: all 0.2s ease-in;
+}
+.notification-button.cancel {
+  color: var(--white);
+  border: 1px solid var(--light-blue-gray);
+}
+.notification-button.cancel:hover {
+  background: var(--white);
+  color: var(--black);
+}
+.notification-button.accept {
+  background: var(--white);
+  color: var(--black);
+}
+.notification-button.accept:hover {
+  color: var(--white);
+  border: 1px solid var(--light-blue-gray);
+  background: none;
+}
+.notification__item-status {
+  width: 13px;
+  height: 13px;
+  border-radius: 20px;
+  background: var(--red);
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+}

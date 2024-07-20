@@ -411,7 +411,7 @@
 .chat__messages-wrapper {
   flex: 1;
   overflow-y: auto;
-  padding: 20px;
+  /* padding: 20px; */
 }
 .chat__head {
   border-bottom: 1px solid var(--dusty-blue);
@@ -433,6 +433,32 @@
   flex-direction: column;
   justify-content: flex-end;
   gap: 8px;
+}
+.chat__messages-message::-webkit-scrollbar {
+  width: 1px;
+}
+
+.chat__messages-message::-webkit-scrollbar-thumb {
+  background-color: var(--dark-gray);
+}
+
+/* Для Firefox */
+.chat__messages-message {
+  scrollbar-width: thin;
+  scrollbar-color: var(--dark-gray) transparent;
+}
+
+@-ms-viewport {
+  width: 1px;
+  background-color: var(--dark-gray);
+}
+
+.chat__messages-message::-ms-scrollbar {
+  width: 1px;
+}
+
+.chat__messages-message::-ms-scrollbar-thumb {
+  background-color: var(--dark-gray);
 }
 /* chat message */
 .chat__message {
@@ -476,7 +502,7 @@
   color: var(--white);
   opacity: 0.8;
 }
-.message__user-data .message__text-white {
+.message__user-data .message__text-bold {
   font-weight: 500;
   opacity: 1;
 }

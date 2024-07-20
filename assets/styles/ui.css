@@ -271,6 +271,7 @@
 
 /* Textarea */
 .ui-textarea {
+  width: 100%;
   height: 141px;
   padding: 32px;
   line-height: 20px;
@@ -414,6 +415,9 @@
   background: var(--white);
   color: var(--black);
 }
+.modal__menu-popup {
+  margin-top: 24px;
+}
 
 /* Popups */
 .ui-popup {
@@ -476,10 +480,7 @@
 .popups-item:hover {
   background: var(--black);
 }
-.ui-popup .popup-icon.active {
-  transform: rotate(-180deg);
-  transition: all 0.2s linear;
-}
+
 .button-light {
   color: var(--light-blue-gray);
   transition: color 0.3s ease;
