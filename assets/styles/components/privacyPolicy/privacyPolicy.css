@@ -1,0 +1,87 @@
+.private-policy__wrapper {
+  margin-top: 40px;
+}
+.private-policy__head {
+  border-radius: 6px;
+  background: var(--dark-gray);
+}
+.private-policy__head-inner {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.private-policy__head-text {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.8;
+  color: var(--white);
+}
+
+.private-policy__head-text a,
+.private-policy__head-text b {
+  font-weight: 700;
+}
+.private-policy__text-wrapper {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.private-policy__point .point-name {
+  margin-bottom: 10px;
+  font-family: "Gilroy";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.92857;
+  text-transform: uppercase;
+  color: var(--white);
+}
+.private-policy__point p {
+  font-family: "Gilroy";
+  font-weight: 300;
+  line-height: 34px;
+}
+.point__text-dot {
+  position: relative;
+  padding-left: 20px;
+}
+.point__text-dot::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  width: 5px;
+  height: 5px;
+  border-radius: 10px;
+  background: var(--white);
+  transform: translateY(-50%);
+}
+.private-policy__point .point-text .email {
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #6584f9;
+}
+
+@media screen and (max-width: 780px) {
+  .private-policy__wrapper {
+    margin-top: 26px;
+  }
+  .private-policy__head-inner {
+    padding: 16px;
+    gap: 10px;
+  }
+  .private-policy__head-text {
+    font-size: 12px;
+    line-height: 2.25;
+  }
+  .private-policy__point .point-name {
+    font-size: 12px;
+  }
+  .private-policy__point p {
+    font-size: 12px;
+    line-height: 24px;
+  }
+}

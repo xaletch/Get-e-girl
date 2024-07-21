@@ -126,6 +126,9 @@
 .header-big-l {
   padding: 0 100px;
 }
+.header__mobile-logo {
+  display: none;
+}
 @media screen and (max-width: 1440px) {
   .header__left {
     gap: 30px;
@@ -140,8 +143,13 @@
 }
 
 @media screen and (max-width: 1220px) {
-  .header__list-item__logo {
+  .header__list-item__logo,
+  .header-logo,
+  .header-logo-eye {
     display: none;
+  }
+  .header__mobile-logo {
+    display: block;
   }
 }
 
@@ -164,7 +172,7 @@
     grid-column: 3;
     justify-content: flex-end;
   }
-  .header-logo svg {
+  .header__mobile-logo svg {
     width: 150px;
   }
   .header__naw {
@@ -186,9 +194,6 @@
   .header__left {
     display: none;
   }
-  .header-logo {
-    display: block;
-  }
   .header__buttons {
     display: flex;
   }
@@ -204,7 +209,7 @@
 }
 
 @media screen and (max-width: 680px) {
-  .header-logo svg {
+  .header__mobile-logo svg {
     width: 120px;
     height: 40px;
   }
@@ -234,6 +239,13 @@
     height: 32px;
     padding: 7px 11px;
   }
+  .header__buttons-btn span svg {
+    width: 16px;
+    height: 16px;
+  }
+  .balance-h {
+    font-size: 12px;
+  }
 }
 
 @media screen and (max-width: 540px) {
@@ -260,7 +272,18 @@
   .header__buttons-btn {
     width: 32px;
   }
-  .balance-h {
-    font-size: 12px;
+}
+
+@media screen and (max-width: 380px) {
+  .header__mobile-logo svg {
+    width: 84px;
+    height: 28px;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .header__mobile-logo svg {
+    width: 74px;
+    height: 28px;
   }
 }

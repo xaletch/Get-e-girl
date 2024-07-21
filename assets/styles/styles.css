@@ -4,14 +4,21 @@
 @import "./ui.css";
 
 body {
+  min-height: 100vh;
   font-family: "Inter";
   background: var(--black);
   color: var(--white);
 }
 
 .app {
-  height: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
+main {
+  flex: 1;
+}
+
 .app.chat-open {
   position: relative;
 }
@@ -100,10 +107,26 @@ body {
   .section-p {
     padding-left: 0;
   }
+  .footer {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 520px) {
   .container {
+    padding: 0 15px;
+  }
+  .big-container {
+    padding: 0 15px;
+  }
+
+  .container-sm {
+    padding: 0 15px;
+  }
+  .container-lg {
+    padding: 0 15px;
+  }
+  .container-xl {
     padding: 0 15px;
   }
   .main {

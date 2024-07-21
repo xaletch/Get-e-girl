@@ -3,84 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Notification</title>
-
+    <title>Contact us</title>
     <link rel="stylesheet" href="../../assets/styles/styles.css" />
     <link rel="stylesheet" href="../../assets/styles/components/header.css" />
     <link
       rel="stylesheet"
-      href="../assets/styles/components/notifications/notification.css"
+      href="../../assets/styles/components/contactUs/contact.css"
+    />
+    <link rel="stylesheet" href="../../assets/styles/components/footer.css" />
+    <link
+      rel="stylesheet"
+      href="../../assets/styles/components/mobileNavigation.css"
     />
   </head>
   <body>
     <div class="app">
-      <div class="notification">
-        <div class="notification__wrapper">
-          <div class="notification__head">
-            <div class="notification__head-inner">
-              <p class="notification-title">Уведомления</p>
-              <button class="notification__read-all">Прочитать все</button>
-            </div>
-          </div>
-          <div class="notification__content">
-            <div class="notification__content-inner">
-              <!-- 1 -->
-              <div class="notification__item">
-                <div class="notification__item-head">
-                  <img
-                    class="notification__user-img"
-                    src="../assets/images/user.png"
-                    alt="user"
-                  />
-                  <div class="notification__item-info">
-                    <div class="notification__item-text">
-                      <a href="#">@MoraruV</a> создал запрос на сеанс в
-                      <b>2 часа</b>
-                    </div>
-                    <div class="notification__item-get">
-                      <div class="notification-time">1 минут назад</div>
-                      <span class="notification-dot"></span>
-                      <div class="notification-category">Just chating</div>
-                    </div>
-                  </div>
-                  <div class="notification__item-status"></div>
-                </div>
-                <div class="notification__item-content">
-                  <div class="notification__item-button">
-                    <button class="notification-button cancel">
-                      Отклонить
-                    </button>
-                    <button class="notification-button accept">Принять</button>
-                  </div>
-                </div>
-              </div>
-              <!-- 2 -->
-              <div class="notification__item border-n">
-                <div class="notification__item-head">
-                  <img
-                    class="notification__user-img"
-                    src="../assets/images/user.png"
-                    alt="user"
-                  />
-                  <div class="notification__item-info">
-                    <div class="notification__item-text">
-                      <a href="#">@MoraruV</a> создал запрос на сеанс в
-                      <b>2 часа</b>
-                    </div>
-                    <div class="notification__item-get">
-                      <div class="notification-time">1 минут назад</div>
-                      <span class="notification-dot"></span>
-                      <div class="notification-category">Just chating</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <header class="header header-l header-big-l">
+      <header class="header">
         <div class="container-xl">
           <div class="header__wrapper">
             <a href="#" class="header-logo">
@@ -124,7 +62,7 @@
                 </button>
                 <!-- Настройки -->
                 <a
-                  href=".../pages/profileSetting/profile.html"
+                  href="../profileSetting/profile.html"
                   class="header__buttons-btn"
                 >
                   <span>
@@ -144,12 +82,10 @@
             <nav class="header__naw">
               <ul class="header__naw-list">
                 <li class="header__list-item">
-                  <a href=".../pages/profile/myProfile/feeds.html">Feeds</a>
+                  <a href="../profile/myProfile/feeds.html">Feeds</a>
                 </li>
                 <li class="header__list-item">
-                  <a href=".../pages/MySubscribers/subscribers.html"
-                    >My E-girls</a
-                  >
+                  <a href="../MySubscribers/subscribers.html">My E-girls</a>
                 </li>
                 <li class="header__list-item header__list-item__logo">
                   <a href="#">
@@ -161,16 +97,16 @@
                   </a>
                 </li>
                 <li class="header__list-item">
-                  <a href="../pages/MyContent/myContent.html">My Сontent</a>
+                  <a href="../MyContent/myContent.html">My Сontent</a>
                 </li>
                 <li class="header__list-item">
-                  <a href="../pages/Orders/orders.html">Orders</a>
+                  <a href="../Orders/orders.html">Orders</a>
                 </li>
               </ul>
             </nav>
             <div class="header__user-info">
               <!-- БАЛАНС -->
-              <a href="../pages/balance/finance.html" class="user-balance">
+              <a href="../balance/finance.html" class="user-balance">
                 <span class="balance-h">$12 310</span>
               </a>
               <!-- УВЕДОМЛЕНИЯ -->
@@ -223,7 +159,7 @@
               </button>
               <!-- Настройки -->
               <a
-                href="../pages/profileSetting/profile.html"
+                href="../profileSetting/profile.html"
                 class="header__buttons-btn"
               >
                 <span>
@@ -241,6 +177,145 @@
           </div>
         </div>
       </header>
+
+      <main class="main">
+        <section class="contact">
+          <div class="container">
+            <h1 class="title-page">Contact us</h1>
+            <div class="contact__wrapper">
+              <form class="contact__form form-send">
+                <div class="contact__form-inner">
+                  <div class="contact__form-send">
+                    <div class="contact__form-send__inner">
+                      <div class="form__send-icon">
+                        <svg width="40" height="27">
+                          <use
+                            href="../../../assets/icon/icons.svg#application-send"
+                          ></use>
+                        </svg>
+                      </div>
+                      <p class="form__send-text">Заявка отправлена</p>
+                    </div>
+                  </div>
+                </div>
+              </form>
+              <div class="contact__contacts">
+                <!-- tel -->
+                <div class="contacts__card">
+                  <div class="contacts__card-inner">
+                    <h3 class="contacts__card-name">Телефон:</h3>
+                    <a href="tel:+70000000000" class="contact__card-link">
+                      <span class="contact__card-icon">
+                        <svg width="19" height="20">
+                          <use href="../../../assets/icon/icons.svg#tel"></use>
+                        </svg>
+                      </span>
+                      +7 (000) 000-00-00
+                    </a>
+                  </div>
+                </div>
+                <!-- email -->
+                <div class="contacts__card">
+                  <div class="contacts__card-inner">
+                    <h3 class="contacts__card-name">Email:</h3>
+                    <a href="mailto:info@mail.ru" class="contact__card-link">
+                      <span class="contact__card-icon">
+                        <svg width="24" height="25">
+                          <use
+                            href="../../../assets/icon/icons.svg#email"
+                          ></use>
+                        </svg>
+                      </span>
+                      Mail.ru
+                    </a>
+                    <p class="text-explanation">По вопросам сотрудничества</p>
+                  </div>
+                </div>
+                <!-- address -->
+                <div class="contacts__card">
+                  <div class="contacts__card-inner">
+                    <h3 class="contacts__card-name">Адрес</h3>
+                    <a href="" class="contact__card-link">
+                      <span class="contact__card-icon">
+                        <svg width="24" height="25">
+                          <use
+                            href="../../../assets/icon/icons.svg#address"
+                          ></use>
+                        </svg>
+                      </span>
+                      Бамбуковая сочи
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__wrapper">
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                <a href="../PrivacyPolicy/privacyPolicy.html"
+                  >Политика конфиденциальности</a
+                >
+              </li>
+              <li class="footer__list-item">
+                <a href="#">Публичная оферта</a>
+              </li>
+              <li class="footer__list-item">
+                <a href="../Faq/faq.html">FAQ</a>
+              </li>
+              <li class="footer__list-item">
+                <a href="./contact.html">Contact us</a>
+              </li>
+            </ul>
+            <div class="footer-policy">
+              <p>© 2024 - Get e-girl</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <!-- for mobile -->
+      <div class="mobile__navigation">
+        <div class="mobile__navigation-wrapper">
+          <a href="#" class="mobile__navigation-item">
+            <span class="mobile__navigation-icon">
+              <svg width="21" height="19">
+                <use href="../../assets/icon/icons.svg#chat-nav"></use>
+              </svg>
+            </span>
+            Chat
+          </a>
+          <a href="#" class="mobile__navigation-item">
+            <span class="mobile__navigation-icon">
+              <svg width="14" height="20">
+                <use href="../../assets/icon/icons.svg#my_e-giris"></use>
+              </svg>
+            </span>
+            My E-girls
+          </a>
+          <a href="#" class="mobile__navigation-item">
+            <span class="mobile__navigation-icon">
+              <svg width="16" height="20">
+                <use href="../../assets/icon/icons.svg#lock"></use>
+              </svg>
+            </span>
+            My Сontent
+          </a>
+          <a href="#" class="mobile__navigation-item">
+            <span class="mobile__navigation-icon">
+              <svg width="24" height="24">
+                <use href="../../assets/icon/icons.svg#orders"></use>
+              </svg>
+            </span>
+            Orders
+          </a>
+        </div>
+      </div>
     </div>
   </body>
 </html>
