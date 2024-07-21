@@ -756,3 +756,240 @@
 .navbar__chats-category {
   -ms-overflow-style: none;
 }
+
+/* modal accept task */
+.modal__accept-wrapper {
+  min-height: 800px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+.modal__accept-game {
+  width: 535px;
+  height: 100%;
+  border-radius: 6px;
+  overflow: hidden;
+}
+.modal__accept-game .game-img {
+  width: 100%;
+  height: 100%;
+}
+.modal__accept-content {
+  height: 800px;
+}
+.modal-accept__block-inner {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.modal-accept__block-inner .modal-content {
+  flex: 1;
+  overflow-y: auto;
+  padding-bottom: 0;
+}
+.modal-accept__block-inner .modal__content-inner {
+  position: relative;
+}
+.order__content-shadow {
+  width: 100%;
+  height: 69px;
+  background: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, #111 100%);
+  position: sticky;
+  left: 0;
+  bottom: 0;
+}
+
+.modal__content-inner__block {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.modal__content-game .game-name {
+  font-family: "Gilroy";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 0.83333;
+  color: var(--white);
+}
+.modal__content-game .game-category {
+  margin-top: 8px;
+  font-family: "Gilroy";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.42857;
+  color: var(--white);
+}
+
+.input__group-three {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+.input__group-three .input-group {
+  display: flex;
+  gap: 12px;
+}
+
+/* add user */
+.add-user {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+.add__user-btn {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  background: #353535;
+}
+.add__user-text {
+  font-family: "Gilroy";
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 1.23077;
+  text-align: center;
+  color: var(--white);
+}
+
+/* order__users */
+.order__users {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.order__users-line {
+  width: 100%;
+  height: 1px;
+  background: #353535;
+}
+.order__user-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.user__head-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.order__user-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+}
+.user__head-info .username h3 {
+  font-family: "Gilroy";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1;
+  color: var(--white);
+}
+.user__head-info .username a {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.66667;
+  font-family: "Gilroy";
+  color: var(--white);
+}
+.order__user-king {
+  width: 32px;
+  height: 32px;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.order__delete-user {
+  width: 24px;
+  height: 24px;
+  border-radius: 5px;
+  background: rgba(255, 63, 51, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* checkbox */
+.order__user-content .checkbox-custom {
+  background: var(--white);
+  border: 1px solid rgba(126, 130, 153, 0.3);
+}
+.order__user-content .checkbox-custom::after {
+  top: 50%;
+  background: #d9dae1;
+  transform: translateY(-50%);
+}
+.order__user-content
+  .checkbox-input:checked
+  + .checkbox-label
+  .checkbox-custom::after {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* order__price-list */
+.order__price-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.order__price-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+.price__item-name {
+  font-family: "Gilroy";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 2;
+  color: var(--white);
+}
+.price-line {
+  flex: 1;
+  border: 1px dashed #d1d1d1;
+  opacity: 0.2;
+}
+.order__price-item .total-price {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.order__price-item .total-price span {
+  width: 16px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(90deg);
+}
+/* scroll bar */
+.modal-accept__block-inner .modal-content::-webkit-scrollbar {
+  width: 6px;
+}
+
+.modal-accept__block-inner .modal-content::-webkit-scrollbar-track {
+  background: var(--white);
+  opacity: 0.2;
+}
+
+.modal-accept__block-inner .modal-content::-webkit-scrollbar-thumb {
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+/* Firefox */
+.modal-accept__block-inner .modal-content {
+  scrollbar-width: thin;
+  scrollbar-color: #fff rgba(255, 255, 255, 0.2);
+}
+
+/* modal__cancel-task */
+.modal__cancel-task .popups-items {
+  display: none;
+}

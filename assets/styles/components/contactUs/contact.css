@@ -12,9 +12,6 @@
   border-radius: 6px;
   background: var(--dark-gray);
 }
-.contact__form.form-send {
-  background: none;
-}
 .contact__form-inner {
   height: 100%;
   padding: 30px;
@@ -167,6 +164,9 @@
   }
   .contact__form-send__inner {
     padding: 60px;
+  }
+  .contact__form.form-send {
+    background: none;
   }
 }
 @media screen and (max-width: 720px) {

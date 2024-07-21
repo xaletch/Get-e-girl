@@ -13,6 +13,10 @@
       rel="stylesheet"
       href="../../assets/styles/components/tinder/tinder.css"
     />
+    <link
+      rel="stylesheet"
+      href="../../assets/styles/components/modals/modal.css"
+    />
   </head>
   <body>
     <div class="app">
@@ -558,9 +562,240 @@
           </div>
         </div>
       </div>
+
+      <!-- modal task accept -->
+      <div class="modal-big modal__chat-accept">
+        <div class="modal__accept-wrapper">
+          <div class="modal__accept-game">
+            <img
+              class="game-img"
+              src="../../assets/images/dota.png"
+              alt="dota 2"
+            />
+          </div>
+          <div class="modal__accept-content modal__block">
+            <div class="modal__block-inner modal-accept__block-inner">
+              <div class="modal-head">
+                <button class="modal-close modal__order-close">
+                  <svg width="14" height="14">
+                    <use
+                      href="../../../../assets/icon/icons.svg#close-madal"
+                    ></use>
+                  </svg>
+                </button>
+                <h4 class="modal-name">Add new folder</h4>
+              </div>
+              <div class="modal-content">
+                <div class="modal__content-inner">
+                  <div class="modal__content-inner__block">
+                    <div class="modal__content-game">
+                      <h3 class="game-name">Dota</h3>
+                      <p class="game-category">Ranked</p>
+                    </div>
+                    <div class="input__group-three">
+                      <div class="input-group">
+                        <div class="input__wrapper">
+                          <label for="hour" class="input-label">Hour</label>
+                          <input
+                            class="ui__dark-input"
+                            type="number"
+                            name="hour"
+                            id="hour"
+                            placeholder="Часы"
+                          />
+                        </div>
+                        <div class="input__wrapper">
+                          <label for="minutes" class="input-label"
+                            >Минуты</label
+                          >
+                          <input
+                            class="ui__dark-input"
+                            type="number"
+                            name="minutes"
+                            id="minutes"
+                            placeholder="Минуты"
+                          />
+                        </div>
+                      </div>
+                      <div class="input__wrapper">
+                        <label for="time-price" class="input-label"
+                          >Стоимость времени ($)</label
+                        >
+                        <input
+                          class="ui__dark-input"
+                          type="number"
+                          name="time-price"
+                          id="time-price"
+                          placeholder="Стоимость времени"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="add-user">
+                      <button class="add__user-btn">
+                        <svg width="24" height="24">
+                          <use
+                            href="../../../../assets/icon/icons.svg#plus"
+                          ></use>
+                        </svg>
+                      </button>
+                      <p class="add__user-text">Добавить девушку</p>
+                    </div>
+
+                    <div class="order__users">
+                      <!-- 1 -->
+                      <div class="urder__user-item">
+                        <div class="order__user-head">
+                          <div class="user__head-info">
+                            <img
+                              class="order__user-avatar"
+                              src="../../assets/images/subscribers-1.png"
+                              alt="user"
+                            />
+                            <div class="username">
+                              <h3>Булгари Кристина</h3>
+                              <a href="#">@Biancalop</a>
+                            </div>
+                          </div>
+                          <div class="order__user-king">
+                            <svg width="20" height="15">
+                              <use
+                                href="../../../../assets/icon/icons.svg#king"
+                              ></use>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="order__user-content">
+                          <!-- checkbox -->
+                          <div
+                            class="checkbox-container big-modal__checkbox checkbox__add-services"
+                          >
+                            <input
+                              type="checkbox"
+                              id="customCheckbox-2"
+                              class="checkbox-input"
+                              checked
+                            />
+                            <label
+                              for="customCheckbox-2"
+                              class="checkbox-label"
+                            >
+                              Вкл. камера
+                              <span class="checkbox-custom"></span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="order__users-line"></div>
+                      <!-- 2 -->
+                      <div class="urder__user-item">
+                        <div class="order__user-head">
+                          <div class="user__head-info">
+                            <img
+                              class="order__user-avatar"
+                              src="../../assets/images/subscribers-1.png"
+                              alt="user"
+                            />
+                            <div class="username">
+                              <h3>Булгари Кристина</h3>
+                              <a href="#">@Biancalop</a>
+                            </div>
+                          </div>
+                          <button class="order__delete-user">
+                            <svg width="24" height="25">
+                              <use
+                                href="../../../../assets/icon/icons.svg#delete-user"
+                              ></use>
+                            </svg>
+                          </button>
+                        </div>
+                        <div class="order__user-content">
+                          <!-- checkbox -->
+                          <div
+                            class="checkbox-container big-modal__checkbox checkbox__add-services"
+                          >
+                            <input
+                              type="checkbox"
+                              id="customCheckbox"
+                              class="checkbox-input"
+                            />
+                            <label for="customCheckbox" class="checkbox-label">
+                              Вкл. камера
+                              <span class="checkbox-custom"></span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Добавить друга -->
+                    <div class="add-user">
+                      <button class="add__user-btn">
+                        <svg width="24" height="24">
+                          <use
+                            href="../../../../assets/icon/icons.svg#plus"
+                          ></use>
+                        </svg>
+                      </button>
+                      <p class="add__user-text">Добавить друга</p>
+                    </div>
+
+                    <div class="order__block-price">
+                      <ul class="order__price-list">
+                        <li class="order__price-item">
+                          <p class="price__item-name">Общая сумма</p>
+                          <div class="price-line"></div>
+                          <div class="total-price">
+                            <p class="item__total-price">$ 13</p>
+                            <span>
+                              <svg width="12" height="10">
+                                <use
+                                  href="../../../../assets/icon/icons.svg#arrow-white"
+                                ></use>
+                              </svg>
+                            </span>
+                          </div>
+                        </li>
+                        <li class="order__price-item">
+                          <p class="price__item-name">Цена за час</p>
+                          <div class="price-line"></div>
+                          <p class="item__total-price">$ 5</p>
+                        </li>
+                        <li class="order__price-item">
+                          <p class="price__item-name">
+                            Камера вкл (Булгари Кристина)
+                          </p>
+                          <div class="price-line"></div>
+                          <p class="item__total-price">$ 5</p>
+                        </li>
+                        <li class="order__price-item">
+                          <p class="price__item-name">Скидка за подписку</p>
+                          <div class="price-line"></div>
+                          <p class="item__total-price">$ 2</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="order__content-shadow"></div>
+                </div>
+              </div>
+
+              <div class="modal-big__button modal__button-fidex">
+                <button class="modal-btn modal__btn-cancel order-cancel">
+                  Cancel
+                </button>
+                <button class="modal-btn modal__btn-confirm order-confirm">
+                  Confirm
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <script src="../../app/popup.js"></script>
+    <script src="../../app/popups.js"></script>
     <script src="../../app/openChat.js"></script>
   </body>
 </html>

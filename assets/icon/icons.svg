@@ -671,4 +671,14 @@
   <symbol id="application-send" viewBox="0 0 40 27" fill="none">
     <path d="M1.5 13.5L14 26L39 1" stroke="#24AC23" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
   </symbol>
+
+  <!-- king -->
+  <symbol id="king" viewBox="0 0 20 15" fill="none">
+    <path d="M10 1.79407L14 7.79407L19 3.79407L17 13.7941H3L1 3.79407L6 7.79407L10 1.79407Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+  </symbol>
+  <!-- delete-user -->
+  <symbol id="delete-user" viewBox="0 0 24 25" fill="none">
+    <path d="M18 6.79407L6 18.7941" stroke="#FF3F33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M6 6.79407L18 18.7941" stroke="#FF3F33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+  </symbol>
 <svg/>  

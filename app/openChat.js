@@ -16,6 +16,12 @@ const modalCancelTask = document.querySelector(
   ".modal__cancel-task .modal__menu"
 );
 
+// order
+const cancelOrderModal = document.querySelector(".modal__chat-accept");
+const modalOrderTask = document.querySelector(
+  ".modal__chat-accept .modal__accept-wrapper"
+);
+
 let activeUser = null;
 
 // modals
@@ -72,6 +78,26 @@ function initializeCancelTaskButton() {
   }
 }
 
+// open order
+function initializeOrderButton() {
+  const orderAccept = document.querySelector(".button__order-accept");
+
+  modalOrderTask.addEventListener("click", (e) => e.stopPropagation());
+
+  if (!orderAccept) {
+    return;
+  }
+
+  cancelOrderModal.addEventListener("click", () => {
+    console.log("Closing modal");
+    cancelOrderModal.classList.remove("open");
+  });
+
+  orderAccept.addEventListener("click", () => {
+    cancelOrderModal.classList.add("open");
+  });
+}
+
 // chat
 
 openBtn.addEventListener("click", openChat);
@@ -100,6 +126,7 @@ users.forEach((item) => {
     initializeDeleteChatButton();
     initializeReportChatButton();
     initializeCancelTaskButton();
+    initializeOrderButton();
   });
 });
 
@@ -306,7 +333,7 @@ function openUserChat(item) {
             </div>
             <div class="task__message-button">
               <button class="ui-button button-black cancel-task">Отменить запрос</button>
-              <button class="ui-button button-white">Принять</button>
+              <button class="ui-button button-white button__order-accept">Принять</button>
             </div>
         </div>
       </div>

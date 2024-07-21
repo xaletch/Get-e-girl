@@ -19,6 +19,14 @@
       rel="stylesheet"
       href="../../../assets/styles/components/subscribe/cards.css"
     />
+    <link
+      rel="stylesheet"
+      href="../../../assets/styles/components/modals/editCover.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../../../assets/styles/components/modals/modal.css"
+    />
   </head>
   <body>
     <div class="app">
@@ -191,11 +199,18 @@
             <div class="profile__wrapper">
               <div class="profile__navbar">
                 <div class="profile__navbar-inner">
-                  <div class="profile-img">
+                  <div class="profile-img your-avatar">
                     <img
-                      src="../../../assets/images/user-girl.png"
+                      src="../../../assets/images/subscribers-1.png"
                       alt="Булгари Кристина"
                     />
+                    <div class="your-avatar__replace">
+                      <svg width="24" height="24">
+                        <use
+                          href="../../../assets/icon/icons.svg#video-camera"
+                        ></use>
+                      </svg>
+                    </div>
                   </div>
                   <div class="profile__user-name">
                     <h2>Булгари Кристина</h2>
@@ -218,30 +233,11 @@
                     </div>
                   </div>
                   <div class="profile__user-subscribe">
-                    <button class="user-subscribe ui-button">
-                      Subscribe $<span>25</span> /m
+                    <button class="user-add__services ui-button">
+                      Add services
                     </button>
                   </div>
-                  <div class="profile__user-contacts">
-                    <button class="user__contact-button">
-                      <span>
-                        <svg width="25" height="24">
-                          <use href="../../../assets/icon/icons.svg#plus"></use>
-                        </svg>
-                      </span>
-                      Follow
-                    </button>
-                    <button class="user__contact-button">
-                      Сообщение
-                      <span>
-                        <svg width="25" height="24">
-                          <use
-                            href="../../../assets/icon/icons.svg#message"
-                          ></use>
-                        </svg>
-                      </span>
-                    </button>
-                  </div>
+
                   <!-- описание -->
                   <div class="profile__user-description">
                     <p class="user-description">
@@ -1105,6 +1101,361 @@
           </div>
         </section>
       </main>
+
+      <!-- Редактирование обложки -->
+      <div class="modal-big modal__edit-avatar">
+        <div class="modal__block">
+          <div class="modal__block-inner">
+            <div class="modal-head">
+              <button class="modal-close modal__edit-avatar__close">
+                <svg width="14" height="14">
+                  <use
+                    href="../../../../assets/icon/icons.svg#close-madal"
+                  ></use>
+                </svg>
+              </button>
+              <h4 class="modal-name">Редактирование обложки</h4>
+            </div>
+            <div class="modal-content">
+              <div class="edit__cover-img">
+                <img
+                  src="../../../assets/images/subscribers-1.png"
+                  alt="Image"
+                  id="edit__cover-image"
+                />
+                <div class="edit__cover-overlay" id="cropOverlay">
+                  <div class="handle edit__top-left"></div>
+                  <div class="handle edit__top-right"></div>
+                  <div class="handle edit__bottom-left"></div>
+                  <div class="handle edit__bottom-right"></div>
+                  <div class="handle edit__top-center"></div>
+                  <div class="handle edit__bottom-center"></div>
+                </div>
+                <div class="overlay-top"></div>
+                <div class="overlay-bottom"></div>
+              </div>
+            </div>
+            <div class="modal-big__button">
+              <button class="modal-btn modal__btn-cancel cancel__edit-avatar">
+                Cancel
+              </button>
+              <button class="modal-btn modal__btn-confirm confirm__edit-avatar">
+                Confirm
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Add services -->
+      <div class="modal-big modal__add-services">
+        <div class="modal__block">
+          <div class="modal__block-inner">
+            <div class="modal-head">
+              <button class="modal-close add-services__close">
+                <svg width="14" height="14">
+                  <use
+                    href="../../../../assets/icon/icons.svg#close-madal"
+                  ></use>
+                </svg>
+              </button>
+              <h4 class="modal-name">Add new service</h4>
+            </div>
+            <div class="modal-content">
+              <div class="modal__content-input">
+                <!--  -->
+                <div class="input__wrapper">
+                  <label class="input-label">Chose category</label>
+                  <div class="ui-popup ui__dark-popup popup__chose-category">
+                    <div class="popup-label">
+                      <p class="popup-placeholder">Chose category</p>
+                      <p class="popup__select-value select-item"></p>
+                      <span class="popup-icon">
+                        <svg width="14" height="9">
+                          <use
+                            href="../../../assets/icon/icons.svg#arrow-white"
+                          ></use>
+                        </svg>
+                      </span>
+                    </div>
+                    <div class="popups-items">
+                      <div class="popups-item">category 1</div>
+                      <div class="popups-item">category 2</div>
+                      <div class="popups-item">category 3</div>
+                    </div>
+                  </div>
+                </div>
+                <!--  -->
+                <div class="input__wrapper">
+                  <label class="input-label">Chose game</label>
+                  <div class="ui-popup ui__dark-popup">
+                    <div class="popup-label">
+                      <p class="popup-placeholder">Chose game</p>
+                      <p class="popup__select-value select-item"></p>
+                      <span class="popup-icon">
+                        <svg width="14" height="9">
+                          <use
+                            href="../../../assets/icon/icons.svg#arrow-white"
+                          ></use>
+                        </svg>
+                      </span>
+                    </div>
+                    <div class="popups-items">
+                      <div class="popups-item">game 1</div>
+                      <div class="popups-item">game 2</div>
+                      <div class="popups-item">game 3</div>
+                    </div>
+                  </div>
+                </div>
+                <!--  -->
+                <div class="input__wrapper">
+                  <label for="name-1" class="input-label">Name</label>
+                  <input
+                    class="ui__dark-input"
+                    type="text"
+                    name="name"
+                    id="name-1"
+                    placeholder="Напишите название"
+                  />
+                </div>
+                <div class="input__wrapper">
+                  <label for="price" class="input-label">Цена ($)</label>
+                  <input
+                    class="ui__dark-input"
+                    type="number"
+                    name="price"
+                    id="price"
+                    placeholder="Цена"
+                  />
+                </div>
+                <!-- checkbox -->
+                <div
+                  class="checkbox-container big-modal__checkbox checkbox__add-services"
+                >
+                  <input
+                    type="checkbox"
+                    id="customCheckbox"
+                    class="checkbox-input"
+                    checked
+                  />
+                  <label for="customCheckbox" class="checkbox-label">
+                    Только для подписчиков
+                    <span class="checkbox-custom"></span>
+                  </label>
+                </div>
+
+                <div
+                  class="input__wrapper textarea__wrapper textarea__add-services"
+                >
+                  <label for="message" class="input-label">Сообщение</label>
+                  <textarea
+                    class="ui__dark-textarea ui__dark-input"
+                    type="number"
+                    name="message"
+                    id="message"
+                    placeholder="Сообщение"
+                  ></textarea>
+                </div>
+
+                <div class="upload-container upload-container__add-services">
+                  <input
+                    type="file"
+                    id="fileInput"
+                    accept=".jpeg, .jpg, .png, .bmp"
+                  />
+                  <label for="fileInput" class="upload-label">
+                    <div class="upload-text">Нажмите для загрузки</div>
+                    <div class="upload-text upload__text-sm">
+                      Доступные расширения фото: jpeg, jpg, png, bmp
+                    </div>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="modal-big__button">
+              <button class="modal-btn modal__btn-cancel add-services__cancel">
+                Cancel
+              </button>
+              <button
+                class="modal-btn modal__btn-confirm add-services__confirm"
+              >
+                Confirm
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Add card -->
+      <div class="modal-big modal__add-card">
+        <div class="modal__block">
+          <div class="modal__block-inner">
+            <div class="modal-head">
+              <button class="modal-close add-card__close">
+                <svg width="14" height="14">
+                  <use
+                    href="../../../../assets/icon/icons.svg#close-madal"
+                  ></use>
+                </svg>
+              </button>
+              <h4 class="modal-name">New card</h4>
+            </div>
+            <div class="modal-content">
+              <div class="modal__content-input">
+                <!--  -->
+                <div class="input__wrapper">
+                  <label class="input-label">Chose game</label>
+                  <div class="ui-popup ui__dark-popup">
+                    <div class="popup-label">
+                      <p class="popup-placeholder">Chose game</p>
+                      <p class="popup__select-value select-item"></p>
+                      <span class="popup-icon">
+                        <svg width="14" height="9">
+                          <use
+                            href="../../../assets/icon/icons.svg#arrow-white"
+                          ></use>
+                        </svg>
+                      </span>
+                    </div>
+                    <div class="popups-items">
+                      <div class="popups-item">Дота 2</div>
+                      <div class="popups-item">game 2</div>
+                      <div class="popups-item">game 3</div>
+                    </div>
+                  </div>
+                </div>
+                <!--  -->
+                <div
+                  class="input__wrapper textarea__wrapper textarea__add-services"
+                >
+                  <label for="message-2" class="input-label">Сообщение</label>
+                  <textarea
+                    class="ui__dark-textarea ui__dark-input"
+                    type="number"
+                    name="message-2"
+                    id="message-2"
+                    placeholder="Сообщение"
+                  ></textarea>
+                </div>
+                <!--  -->
+                <div class="input__wrapper">
+                  <label class="input-label">Выбрать тип</label>
+                  <div class="ui-popup ui__dark-popup">
+                    <div class="popup-label">
+                      <p class="popup-placeholder">Тип</p>
+                      <p class="popup__select-value select-item"></p>
+                      <span class="popup-icon">
+                        <svg width="14" height="9">
+                          <use
+                            href="../../../assets/icon/icons.svg#arrow-white"
+                          ></use>
+                        </svg>
+                      </span>
+                    </div>
+                    <div class="popups-items">
+                      <div class="popups-item">Время</div>
+                      <div class="popups-item">game 2</div>
+                      <div class="popups-item">game 3</div>
+                    </div>
+                  </div>
+                </div>
+                <!--  -->
+                <div class="input__wrapper">
+                  <label for="name-2" class="input-label">Name</label>
+                  <input
+                    class="ui__dark-input"
+                    type="text"
+                    name="name-2"
+                    id="name-2"
+                    placeholder="Напишите название"
+                  />
+                </div>
+
+                <!-- checkbox -->
+                <div
+                  class="checkbox-container big-modal__checkbox checkbox__add-services"
+                >
+                  <input
+                    type="checkbox"
+                    id="customCheckbox-3"
+                    class="checkbox-input"
+                    checked
+                  />
+                  <label for="customCheckbox-3" class="checkbox-label">
+                    Игры
+                    <span class="checkbox-custom"></span>
+                  </label>
+                </div>
+
+                <div class="input__group-three">
+                  <div class="input-group">
+                    <div class="input__wrapper">
+                      <label for="hour" class="input-label">Hour</label>
+                      <input
+                        class="ui__dark-input"
+                        type="number"
+                        name="hour"
+                        id="hour"
+                        placeholder="Часы"
+                      />
+                    </div>
+                    <div class="input__wrapper">
+                      <label for="minutes" class="input-label">Минуты</label>
+                      <input
+                        class="ui__dark-input"
+                        type="number"
+                        name="minutes"
+                        id="minutes"
+                        placeholder="Минуты"
+                      />
+                    </div>
+                  </div>
+                  <div class="input__wrapper">
+                    <label for="time-price" class="input-label"
+                      >Стоимость времени ($)</label
+                    >
+                    <input
+                      class="ui__dark-input"
+                      type="number"
+                      name="time-price"
+                      id="time-price"
+                      placeholder="Стоимость времени"
+                    />
+                  </div>
+                </div>
+                <!-- checkbox -->
+                <div
+                  class="checkbox-container big-modal__checkbox checkbox__add-services"
+                >
+                  <input
+                    type="checkbox"
+                    id="customCheckbox-2"
+                    class="checkbox-input"
+                    checked
+                  />
+                  <label for="customCheckbox-2" class="checkbox-label">
+                    Только для подписчиков
+                    <span class="checkbox-custom"></span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="modal-big__button">
+              <button class="modal-btn modal__btn-cancel add-card__cancel">
+                Cancel
+              </button>
+              <button class="modal-btn modal__btn-confirm add-card__confirm">
+                Confirm
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+
+    <script src="../../../app/editCover.js"></script>
+    <script src="../../../app/addServices.js"></script>
+    <script src="../../../app/modalAddCard.js"></script>
+    <script src="../../../app/popups.js"></script>
   </body>
 </html>

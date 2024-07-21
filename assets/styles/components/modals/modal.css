@@ -4,13 +4,33 @@
   left: 0;
   width: 100%;
   height: 100%;
-  display: flex;
   align-items: center;
   justify-content: center;
   z-index: 999;
   backdrop-filter: blur(25px);
   -webkit-backdrop-filter: blur(25px);
+  display: none;
 }
+.modal-big.modal__edit-avatar.open {
+  display: flex;
+}
+.modal-big.modal__add-services.open {
+  display: flex;
+}
+.modal-big.modal__add-card.open {
+  display: flex;
+}
+.modal-big.modal__chat-accept.open {
+  display: flex;
+}
+.modal__chat-accept .modal__block .modal__add-services .modal__block,
+.modal__add-card .modal__block {
+  width: 560px;
+}
+.modal__add-services .modal__block {
+  width: 560px;
+}
+
 .modal__block {
   border-radius: 12px;
   background: var(--black);

@@ -3,6 +3,30 @@ const handles = document.querySelectorAll(".handle");
 const overlayTop = document.querySelector(".overlay-top");
 const overlayBottom = document.querySelector(".overlay-bottom");
 
+// modal
+const modal = document.querySelector(".modal__edit-avatar");
+const modalContent = document
+  .querySelector(".modal__block")
+  .addEventListener("click", (e) => e.stopPropagation());
+const replaceButton = document.querySelector(".profile-img.your-avatar");
+const close = document.querySelector(".modal__edit-avatar__close");
+const cancel = document.querySelector(".cancel__edit-avatar");
+const confirm = document.querySelector(".confirm__edit-avatar");
+
+replaceButton.addEventListener("click", openModal);
+modal.addEventListener("click", closeModal);
+close.addEventListener("click", closeModal);
+cancel.addEventListener("click", closeModal);
+confirm.addEventListener("click", closeModal);
+
+function closeModal() {
+  modal.classList.remove("open");
+}
+function openModal() {
+  modal.classList.add("open");
+}
+
+// edit
 let isResizing = false;
 let isDragging = false;
 let startX, startY, startWidth, startHeight, startLeft, startTop;
