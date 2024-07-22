@@ -155,6 +155,35 @@
   color: var(--dark);
 }
 
+/* scroll bar */
+.year-selector::-webkit-scrollbar,
+.month-selector::-webkit-scrollbar,
+.calendar #calendarWrapper::-webkit-scrollbar {
+  width: 4px;
+}
+.year-selector::-webkit-scrollbar-track,
+.month-selector::-webkit-scrollbar-track,
+.calendar #calendarWrapper:-webkit-scrollbar-track {
+  background: var(--white);
+}
+.year-selector.dark::-webkit-scrollbar-track,
+.month-selector.dark::-webkit-scrollbar-track,
+.calendar.dark #calendarWrapper::-webkit-scrollbar-track {
+  background: var(--dark-gray);
+}
+.year-selector.dark::-webkit-scrollbar-thumb,
+.month-selector.dark::-webkit-scrollbar-thumb,
+.calendar.dark #calendarWrapper::-webkit-scrollbar-thumb {
+  background-color: var(--white);
+  border-radius: 20px;
+}
+.year-selector::-webkit-scrollbar-thumb,
+.month-selector::-webkit-scrollbar-thumb,
+.calendar #calendarWrapper::-webkit-scrollbar-thumb {
+  background-color: #d6d6d6;
+  border-radius: 20px;
+}
+
 @media screen and (max-width: 1111px) {
   .order__date .calendar-container {
     top: 80px;

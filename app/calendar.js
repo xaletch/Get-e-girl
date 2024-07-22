@@ -48,7 +48,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  // Закрытие календаря при клике вне его
   document.addEventListener("click", function (e) {
     if (
       openCalendarIndex !== null &&
@@ -60,9 +59,8 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   calendars.forEach((calendar, calendarIndex) => {
-    const { yearList, monthList, calendarWrapper, calendarMonths } = calendar;
+    const { yearList, monthList } = calendar;
 
-    // Populate year list
     for (let year = 1980; year <= new Date().getFullYear() + 1; year++) {
       let li = document.createElement("li");
       li.textContent = year;
@@ -83,6 +81,21 @@ document.addEventListener("DOMContentLoaded", function () {
       "Окт",
       "Ноя",
       "Дек",
+    ];
+
+    const calendarMonthsArr = [
+      "Январь",
+      "Февраль",
+      "Март",
+      "Апрель",
+      "Май",
+      "Июнь",
+      "Июль",
+      "Август",
+      "Сентябрь",
+      "Октябрь",
+      "Ноябрь",
+      "Декабрь",
     ];
     months.forEach((monthName, index) => {
       let li = document.createElement("li");
@@ -155,7 +168,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         const monthHeader = document.createElement("div");
         monthHeader.classList.add("month-header");
-        monthHeader.textContent = `${months[i]} ${year}`;
+        monthHeader.textContent = `${calendarMonthsArr[i]} ${year}`;
         monthDiv.appendChild(monthHeader);
 
         const daysGrid = document.createElement("div");
@@ -167,7 +180,6 @@ document.addEventListener("DOMContentLoaded", function () {
           dayDiv.classList.add("day");
           dayDiv.textContent = day;
 
-          // Add 'selected' class if the day is today
           if (
             year === today.getFullYear() &&
             i === today.getMonth() &&
@@ -183,12 +195,10 @@ document.addEventListener("DOMContentLoaded", function () {
           }
 
           dayDiv.addEventListener("click", function () {
-            // Remove selected class from previous selected date
             if (calendar.selectedDate.element) {
               calendar.selectedDate.element.classList.remove("selected");
             }
 
-            // Add selected class to the newly selected date
             dayDiv.classList.add("selected");
             calendar.selectedDate = {
               year: year,
@@ -197,7 +207,6 @@ document.addEventListener("DOMContentLoaded", function () {
               element: dayDiv,
             };
 
-            // Update the date in the .order__select-date element
             const dateText = `${day < 10 ? "0" : ""}${day}.${i < 9 ? "0" : ""}${
               i + 1
             }.${year % 100}`;
@@ -231,7 +240,6 @@ document.addEventListener("DOMContentLoaded", function () {
         selected.offsetTop - list.clientHeight / 2 + selected.clientHeight / 2;
     }
 
-    // Initialize calendar
     const currentDate = new Date();
     updateCalendar(calendar, currentDate.getFullYear(), currentDate.getMonth());
     const initialYearElement = yearList.querySelector(
