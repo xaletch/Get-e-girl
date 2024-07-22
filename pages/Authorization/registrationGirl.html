@@ -11,6 +11,10 @@
       href="../../assets/styles/components/authorization/authorization.css"
     />
     <link rel="stylesheet" href="../../assets/styles/components/calendar.css" />
+    <link
+      rel="stylesheet"
+      href="../../assets/styles/components/calendar/calendar.css"
+    />
   </head>
   <body>
     <div class="authorization">
@@ -19,7 +23,7 @@
           <div class="authorization__block-inner">
             <div class="authorization__logo">
               <svg width="212" height="62">
-                <use href="../../assets/icon/icons.svg#logo_dark"></use>
+                <use href="../../assets/icon/icons.svg#logo_"></use>
               </svg>
             </div>
             <div class="authorization__content">
@@ -42,12 +46,44 @@
                         name="username"
                         placeholder="Username"
                       />
-                      <input
-                        type="date"
-                        class="ui-input input-required"
-                        name="birthday"
-                        placeholder="Birthday"
-                      />
+                      <div class="sort__date-block date-block date__block-form">
+                        <div class="date__block-wrapper date-form">
+                          <p class="select-date select-date">Birthday</p>
+                          <span class="order__date-icon date-icon">
+                            <svg width="19" height="20">
+                              <use
+                                href="../../assets/icon/icons.svg#calendar"
+                              ></use>
+                            </svg>
+                          </span>
+                        </div>
+                        <!-- calendar -->
+                        <div class="calendar-container calendar-form">
+                          <div class="year-selector">
+                            <ul id="yearList"></ul>
+                          </div>
+                          <div class="month-selector">
+                            <ul id="monthList"></ul>
+                          </div>
+                          <div class="calendar">
+                            <div id="calendarWrapper">
+                              <div class="calendar-week">
+                                <div class="week-item">Пн</div>
+                                <div class="week-item">Вт</div>
+                                <div class="week-item">Ср</div>
+                                <div class="week-item">Чт</div>
+                                <div class="week-item">Пт</div>
+                                <div class="week-item">Сб</div>
+                                <div class="week-item">Вс</div>
+                              </div>
+                              <div
+                                id="calendarMonths"
+                                class="calendar__month-"
+                              ></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                     <div class="input__wrapper">
                       <input
@@ -130,6 +166,6 @@
     <!-- Валидация формы -->
     <script type="module" src="../../app/invalidForm.js"></script>
     <!-- Календарь -->
-    <!-- <script src="./app/calendar.js"></script> -->
+    <script src="../../app/calendar.js"></script>
   </body>
 </html>
