@@ -39,6 +39,12 @@
   font-family: "Gilroy";
   line-height: 34px;
 }
+.number__item-num.green {
+  color: var(--green);
+}
+.number__item-num.red {
+  color: var(--red);
+}
 .subscribe__prices {
   margin-top: 40px;
 }

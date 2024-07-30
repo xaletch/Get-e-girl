@@ -15,6 +15,10 @@
       rel="stylesheet"
       href="../../../assets/styles/components/profile/profile.css"
     />
+    <link
+      rel="stylesheet"
+      href="../../../assets/styles/components/calendar/calendar.css"
+    />
   </head>
   <body>
     <div class="app">
@@ -358,14 +362,60 @@
                               />
                             </div>
                             <div class="input__wrapper">
-                              <label class="input-label" for="date">Дата</label>
-                              <input
-                                class="ui__dark-input"
-                                type="date"
-                                name="date"
-                                id="date"
-                                placeholder="Выберите дату сдачи"
-                              />
+                              <p class="input-label" for="date">Дата</p>
+                              <div class="select__date-wrapper">
+                                <div class="date__block-wrapper ui__dark-input">
+                                  <p class="order__select-date select-date">
+                                    Выберите дату сдачи
+                                  </p>
+                                  <span class="order__date-icon date-icon">
+                                    <svg width="14" height="14">
+                                      <use
+                                        href="../../../assets/icon/icons.svg#calendar"
+                                      ></use>
+                                    </svg>
+                                  </span>
+                                </div>
+                                <!-- calendar -->
+                                <div class="calendar-container dark">
+                                  <div class="year-selector dark">
+                                    <ul id="yearList"></ul>
+                                  </div>
+                                  <div class="month-selector dark">
+                                    <ul id="monthList">
+                                      <li data-month="0">Янв</li>
+                                      <li data-month="1">Фев</li>
+                                      <li data-month="2">Мар</li>
+                                      <li data-month="3">Апр</li>
+                                      <li data-month="4">Май</li>
+                                      <li data-month="5">Июн</li>
+                                      <li data-month="6">Июл</li>
+                                      <li data-month="7">Авг</li>
+                                      <li data-month="8">Сен</li>
+                                      <li data-month="9">Окт</li>
+                                      <li data-month="10">Ноя</li>
+                                      <li data-month="11">Дек</li>
+                                    </ul>
+                                  </div>
+                                  <div class="calendar dark">
+                                    <div id="calendarWrapper">
+                                      <div class="calendar-week dark">
+                                        <div class="week-item dark">Пн</div>
+                                        <div class="week-item dark">Вт</div>
+                                        <div class="week-item dark">Ср</div>
+                                        <div class="week-item dark">Чт</div>
+                                        <div class="week-item dark">Пт</div>
+                                        <div class="week-item dark">Сб</div>
+                                        <div class="week-item dark">Вс</div>
+                                      </div>
+                                      <div
+                                        id="calendarMonths"
+                                        class="calendar__month-dark"
+                                      ></div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
                             </div>
                           </div>
                           <!--  -->
@@ -387,7 +437,7 @@
                             </div>
                           </div>
                           <!--  -->
-                          <div class="input-group inputs-gap input__grid-two">
+                          <div class="inputs-gap">
                             <div class="input__wrapper">
                               <label class="input-label" for="message"
                                 >Сообщение</label
@@ -440,5 +490,7 @@
         </section>
       </main>
     </div>
+
+    <script src="../../../app/calendar.js"></script>
   </body>
 </html>

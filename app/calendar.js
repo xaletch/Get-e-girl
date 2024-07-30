@@ -1,4 +1,3 @@
-document.addEventListener("DOMContentLoaded", function () {
   const dateBlocks = document.querySelectorAll(".date__block-wrapper");
   const calendarContainers = document.querySelectorAll(".calendar-container");
 
@@ -256,4 +255,3 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     scrollToMonth(calendar, currentDate.getMonth());
   });
-});
