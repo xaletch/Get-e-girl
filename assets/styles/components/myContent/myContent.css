@@ -224,7 +224,7 @@
 
 .my-content__media {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(auto-fill, 220px);
   gap: 20px;
 }
 .contents__wrapper .my-content__media .media__card-img {
@@ -278,4 +278,109 @@
 .ui-input__edit-folder {
   height: 46px;
   border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.media__collection-back.mobile {
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+.media__collection-back.success {
+  border: none;
+  background: var(--green);
+}
+
+.media__inf-block {
+  width: 100%;
+  margin-left: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 900px) {
+  .media__head.edit {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  .media__inf-block {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .media__card-create__info {
+    margin-top: 8px;
+    gap: 4px;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .my-content__media {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+  .media__card-img, .my-content__media .media__collection-card {
+    height: auto !important;
+  }
+  .my-content__media .create__content-card.add-content .card {
+    height: 100%;
+  }
+  .contents__wrapper {
+    margin-top: 24px;
+  }
+  .media__collection-back {
+    display: none;
+  }
+  .media__collection-back.delete {
+    display: flex;
+  }
+  .media__collection-back.mobile {
+    min-width: 42px;
+    min-height: 42px;
+    padding: 0;
+    display: flex;
+  }
+  .title-page div {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  .title-page.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .media__collection-name {
+    width: 100%;
+  }
+  .media__collection-edit {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .content__wrapper {
+    margin-top: 20px;
+  }
+  .my-content__media {
+    gap: 14px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .media__collection-back.mobile {
+    min-width: 40px;
+    min-height: 40px;
+  }
+  .my-content-price {
+    font-size: 18px;
+  }
 }

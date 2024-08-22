@@ -88,6 +88,9 @@
 }
 
 /* Модалка Add new folder */
+.modal__big-folder {
+    padding: 20px 15px;
+}
 .modal__big-folder .modal__block {
   width: 1130px;
 }
@@ -164,4 +167,63 @@
 }
 .modal__big-folder.active {
   display: flex;
+}
+
+.modal__content-files .uploading__files {
+  margin-top: 16px;
+}
+
+@media screen and (max-width: 540px) {
+  .modal-head {
+    padding: 20px 24px 16px;
+  }
+  .modal-content {
+    margin-top: 20px;
+    padding: 0 24px 20px;
+  }
+  .modal-content .input-group {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .modal-content .upload-image {
+    margin-top: 16px;
+  }
+  .files-item {
+    width: 80px;
+    height: 80px;
+  }
+  .uploading__files-inner {
+    padding: 22px 12px;
+    justify-content: center;
+    gap: 8px;
+  }
+  .delete-item {
+    width: 16px;
+    height: 16px;
+  }
+  .delete-item svg {
+    width: 8px;
+    height: 8px;
+  }
+  .modal-big__button {
+    gap: 16px;
+  }
+  .modal__btn-cancel {
+    width: 70%;
+  }
+  .modal__btn-confirm {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 440px) {
+  .files-item {
+    width: 60px;
+    height: 60px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .files-item {
+    width: 50px;
+    height: 50px;
+  }
 }

@@ -195,7 +195,27 @@
       <main class="main">
         <section class="my-content">
           <div class="container">
-            <h1 class="title-page">My content</h1>
+            <h1 class="title-page flex">
+              <div>
+                <a href="./contentFolder.html" class="media__collection-back mobile">
+                  <svg width="22" height="10">
+                    <use
+                      href="../../../assets/icon/icons.svg#go-back"
+                    ></use>
+                  </svg>
+                </a>
+                <span>
+                  My content
+                </span>
+              </div>
+              <a href="#" class="media__collection-back mobile success">
+                <svg width="20" height="20">
+                  <use
+                    href="../../../assets/icon/icons.svg#check-mark"
+                  ></use>
+                </svg>
+              </a>
+            </h1>
             <div class="content__wrapper content-wrapper">
               <!--  -->
               <div class="my-content__content">
@@ -211,7 +231,7 @@
                     </div>
                     <h2 class="content-username">My content</h2>
                   </div>
-                  <a href="./contentFolder.html" class="media__collection-back">
+                  <a href="./contentFolder.html" class="media__collection-back success">
                     <span>
                       <svg width="20" height="20">
                         <use
@@ -224,7 +244,7 @@
                 </div>
                 <div class="profile__content-inner">
                   <div class="user__media media__collection">
-                    <div class="media__head content__media-head">
+                    <div class="media__head content__media-head edit">
                       <div class="media__collection-name">
                         <div class="media__collection-edit">
                           <input
@@ -238,7 +258,8 @@
                             value="$20"
                           />
                         </div>
-
+                      </div>
+                      <div class="media__inf-block">
                         <div class="media__info-card">
                           <svg width="15" height="15">
                             <use
@@ -247,8 +268,8 @@
                           </svg>
                           <span>11</span>
                         </div>
-                      </div>
-                      <button
+
+                        <button
                         class="media__collection-back delete button-modal"
                       >
                         <span>
@@ -260,6 +281,7 @@
                         </span>
                         Удалить папку
                       </button>
+                      </div>
                     </div>
 
                     <div

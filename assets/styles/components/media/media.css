@@ -268,4 +268,57 @@
     width: 660px;
     height: 660px;
   }
+  .user__media-inner .media__card-img {
+    height: auto !important;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .my-content__sort {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .content__wrapper {
+    gap: 20px;
+  }
+  .contents__wrapper .user__media-inner {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .media__card-information {
+    margin-top: 8px;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .my-content__content.home {
+    display: none;
+  }
+  .content__wrapper {
+    margin-top: 24px;
+  }
+  .my-content__navbar {
+    width: 100%;
+    background: none;
+    border: none;
+  }
+  .content__navbar-head {
+    padding: 0;
+    border: none;
+  }
+  .content__navbar-head .input-wrapper {
+    background: var(--dark-gray);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .media__collection-name h2 {
+    font-size: 18px;
+  }
 }

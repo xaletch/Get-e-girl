@@ -80,3 +80,69 @@
   display: flex;
   gap: 32px;
 }
+
+
+@media screen and (max-width: 1180px) {
+  .create__content-cards {
+    grid-template-columns: repeat(4, 220px);
+  }
+
+  .create__content-card .card {
+    height: 220px;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .create__content-cards {
+    grid-template-columns: repeat(auto-fill, 220px);
+    gap: 16px;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .create__content-cards {
+    grid-template-columns: repeat(auto-fill, 180px);
+    gap: 14px;
+  }
+  .create__content-card .card {
+    height: 180px;
+  }
+  .create__content-card__name {
+    margin-top: 4px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+@media screen and (max-width: 610px) {
+  .create__content-cards {
+    grid-template-columns: repeat(auto-fill, 158px);
+  }
+  .create__content-card .card {
+    height: 158px;
+  }
+}
+
+@media screen and (max-width: 541px) {
+  .create__content-cards {
+    grid-template-columns: repeat(auto-fill, 180px);
+  }
+  .create__content-card .card {
+    height: 180px;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .create__content-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .create__content-card .card {
+    height: 160px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .create__content-card .card {
+    height: 155px;
+  }
+}
