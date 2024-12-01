@@ -322,29 +322,11 @@
                   <div class="input__wrapper">
                     <span class="input-label">Стоимость подписки</span>
                     <input
-                      class="ui-input"
+                      class="ui-input input-price"
                       type="text"
                       name="price"
                       value="$ 250"
                     />
-                  </div>
-                  <div class="input__wrapper">
-                    <span class="input-label">Акция</span>
-                    <div class="input-wrapper">
-                      <input
-                        class="ui-input input__prices-apply"
-                        type="text"
-                        name="action"
-                        value="20%"
-                      />
-                      <button class="prices-apply">
-                        <svg width="14" height="13">
-                          <use
-                            href="../../assets/icon/icons.svg#arrow-white"
-                          ></use>
-                        </svg>
-                      </button>
-                    </div>
                   </div>
                   <button class="apply-subscribers">
                     <span>
@@ -352,8 +334,162 @@
                         <use href="../../assets/icon/icons.svg#plus"></use>
                       </svg>
                     </span>
-                    <p>Акция для подписчиков</p>
+                    <p class="text">Добавить скидку</p>
                   </button>
+                  <div class="input__wrapper">
+                    <span class="input-label">Акция</span>
+                    <div class="input-wrapper input-wrapper-subscribe">
+                      <input
+                        class="ui-input ui-subscribe-input ui-placeholder-mini"
+                        type="text"
+                        name="action"
+                        placeholder="Введите % скидки"
+                        value="25%"
+                      />
+                      <button class="prices-apply select-services">
+                        <div class="button-content">
+                          <p>выбрать услугу</p>
+                          <span class="button-content-count" style="display: none;"></span>
+                        </div>
+                        <svg width="14" height="13">
+                          <use
+                            href="../../assets/icon/icons.svg#arrow-white"
+                          ></use>
+                        </svg>
+                      </button>
+                      <div class="popups-items">
+                        <div class="popups-item">
+                          <div class="checkbox-wrapper">
+                            <input
+                              type="checkbox"
+                              id="checkbox-1"
+                              class="checkbox-input"
+                            />
+                            <label for="checkbox-1" class="checkbox-label">
+                              <svg class="checkbox-icon" width="11" height="9">
+                                <use
+                                  href="../../assets/icon/icons.svg#checkbox-active"
+                                ></use>
+                              </svg>
+                            </label>
+                          </div>
+                          Just chatting
+                        </div>
+                        <div class="popups-item">
+                          <div class="checkbox-wrapper">
+                            <input
+                              type="checkbox"
+                              id="ASMR"
+                              class="checkbox-input"
+                            />
+                            <label for="ASMR" class="checkbox-label">
+                              <svg class="checkbox-icon" width="11" height="9">
+                                <use
+                                  href="../../assets/icon/icons.svg#checkbox-active"
+                                ></use>
+                              </svg>
+                            </label>
+                          </div>
+                          ASMR
+                        </div>
+                        <div class="popups-item">
+                          <div class="checkbox-wrapper">
+                            <input
+                              type="checkbox"
+                              id="Sleep call"
+                              class="checkbox-input"
+                            />
+                            <label for="Sleep call" class="checkbox-label">
+                              <svg class="checkbox-icon" width="11" height="9">
+                                <use
+                                  href="../../assets/icon/icons.svg#checkbox-active"
+                                ></use>
+                              </svg>
+                            </label>
+                          </div>
+                          Sleep call
+                        </div>
+                        <div class="popups-item">
+                          <div class="checkbox-wrapper">
+                            <input
+                              type="checkbox"
+                              id="Sleep call4"
+                              class="checkbox-input"
+                            />
+                            <label for="Sleep call4" class="checkbox-label">
+                              <svg class="checkbox-icon" width="11" height="9">
+                                <use
+                                  href="../../assets/icon/icons.svg#checkbox-active"
+                                ></use>
+                              </svg>
+                            </label>
+                          </div>
+                          Sleep call
+                        </div>
+                        <div class="popups-item">
+                          <div class="checkbox-wrapper">
+                            <input
+                              type="checkbox"
+                              id="Sleep call3"
+                              class="checkbox-input"
+                            />
+                            <label for="Sleep call3" class="checkbox-label">
+                              <svg class="checkbox-icon" width="11" height="9">
+                                <use
+                                  href="../../assets/icon/icons.svg#checkbox-active"
+                                ></use>
+                              </svg>
+                            </label>
+                          </div>
+                          Sleep call
+                        </div>
+                        <div class="popups-item">
+                          <div class="checkbox-wrapper">
+                            <input
+                              type="checkbox"
+                              id="Sleep call2"
+                              class="checkbox-input"
+                            />
+                            <label for="Sleep call2" class="checkbox-label">
+                              <svg class="checkbox-icon" width="11" height="9">
+                                <use
+                                  href="../../assets/icon/icons.svg#checkbox-active"
+                                ></use>
+                              </svg>
+                            </label>
+                          </div>
+                          Sleep call
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="subscribe__prices-sort">
+                  <div class="ui-sort__popup">
+                    <div class="sort__popup-block">
+                      <div class="select__sort-value">По регистрации, убывание</div>
+                      <svg width="14" height="9">
+                        <use
+                          href="../../assets/icon/icons.svg#arrow_bottom"
+                        ></use>
+                      </svg>
+                    </div>
+                    <div class="sort__popup-values">
+                      <div class="popup__values-list">
+                        <div class="popup__valuer-list__item select">
+                          По регистрации, убывание
+                        </div>
+                        <div class="line"></div>
+                        <div class="popup__valuer-list__item">
+                          По регистрации, убывание 2
+                        </div>
+                        <div class="line"></div>
+                        <div class="popup__valuer-list__item">
+                          По регистрации, убывание 3
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
 
@@ -428,16 +564,33 @@
                     <div class="table__head-item item-actions">Действия</div>
                   </div>
                   <!-- main -->
+                  <div class="select-all">
+                    <div class="checkbox-wrapper">
+                      <input
+                        type="checkbox"
+                        id="select-all"
+                        class="checkbox-input"
+                      />
+                      <label for="select-all" class="checkbox-label">
+                        <svg class="checkbox-icon" width="11" height="9">
+                          <use
+                            href="../../assets/icon/icons.svg#checkbox-active"
+                          ></use>
+                        </svg>
+                      </label>
+                    </div>
+                    выбрать всех
+                  </div>
                   <div class="table__main">
-                    <div class="table__main-col">
+                    <div class="table__main-col unlock border-r">
                       <div class="main__col-item">
                         <div class="checkbox-wrapper">
                           <input
                             type="checkbox"
-                            id="checkbox-1"
+                            id="MoraruV"
                             class="checkbox-input"
                           />
-                          <label for="checkbox-1" class="checkbox-label">
+                          <label for="MoraruV" class="checkbox-label">
                             <svg class="checkbox-icon" width="11" height="9">
                               <use
                                 href="../../assets/icon/icons.svg#checkbox-active"
@@ -447,20 +600,40 @@
                         </div>
                         @MoraruV
                       </div>
-                      <div class="main__col-item">26.06.2024</div>
-                      <div class="main__col-item">
+                      <div class="main__col-item date">26.06.2024</div>
+                      <div class="main__col-item status">
                         <div class="item-status status-completed">
                           Завершенный
                         </div>
                       </div>
-                      <div class="main__col-item">24</div>
-                      <div class="main__col-item">$2 240</div>
+                      <div class="main__col-item shop">
+                        <span class="tit">Покупок:</span>
+                        24
+                      </div>
+                      <div class="main__col-item spent">
+                        <span class="tit">Потрачено:</span>
+                        $2 240
+                      </div>
                       <div class="item-actions item__actions-unlock">
+                        <span class="icon">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_2649_28921)">
+                              <path d="M5 13C5 12.4696 5.21071 11.9609 5.58579 11.5858C5.96086 11.2107 6.46957 11 7 11H17C17.5304 11 18.0391 11.2107 18.4142 11.5858C18.7893 11.9609 19 12.4696 19 13V19C19 19.5304 18.7893 20.0391 18.4142 20.4142C18.0391 20.7893 17.5304 21 17 21H7C6.46957 21 5.96086 20.7893 5.58579 20.4142C5.21071 20.0391 5 19.5304 5 19V13Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                              <path d="M11 16C11 16.2652 11.1054 16.5196 11.2929 16.7071C11.4804 16.8946 11.7348 17 12 17C12.2652 17 12.5196 16.8946 12.7071 16.7071C12.8946 16.5196 13 16.2652 13 16C13 15.7348 12.8946 15.4804 12.7071 15.2929C12.5196 15.1054 12.2652 15 12 15C11.7348 15 11.4804 15.1054 11.2929 15.2929C11.1054 15.4804 11 15.7348 11 16Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                              <path d="M8 11V6C8 4.93913 8.42143 3.92172 9.17157 3.17157C9.92172 2.42143 10.9391 2 12 2C13.0609 2 14.0783 2.42143 14.8284 3.17157C15.5786 3.92172 16 4.93913 16 6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </g>
+                            <defs>
+                              <clipPath id="clip0_2649_28921">
+                                <rect width="24" height="24" fill="white" />
+                              </clipPath>
+                            </defs>
+                          </svg>
+                        </span>
                         Разблокировать
                       </div>
                     </div>
                     <!-- col 2 -->
-                    <div class="table__main-col">
+                    <div class="table__main-col block">
                       <div class="main__col-item">
                         <div class="checkbox-wrapper">
                           <input
@@ -479,17 +652,39 @@
                         </div>
                         @MoraruV
                       </div>
-                      <div class="main__col-item">26.06.2024</div>
-                      <div class="main__col-item">
+                      <div class="main__col-item date">26.06.2024</div>
+                      <div class="main__col-item status">
                         <div class="item-status status-active">Активный</div>
                       </div>
-                      <div class="main__col-item">24</div>
-                      <div class="main__col-item">$2 240</div>
-                      <div class="item-actions">Заблокировать</div>
+                      <div class="main__col-item shop">
+                        <span class="tit">Покупок:</span>
+                        24
+                      </div>
+                      <div class="main__col-item spent">
+                        <span class="tit">Потрачено:</span>
+                        $2 240
+                      </div>
+                      <div class="item-actions">
+                        <span class="icon">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_2649_28934)">
+                              <path d="M5 13C5 12.4696 5.21071 11.9609 5.58579 11.5858C5.96086 11.2107 6.46957 11 7 11H17C17.5304 11 18.0391 11.2107 18.4142 11.5858C18.7893 11.9609 19 12.4696 19 13V19C19 19.5304 18.7893 20.0391 18.4142 20.4142C18.0391 20.7893 17.5304 21 17 21H7C6.46957 21 5.96086 20.7893 5.58579 20.4142C5.21071 20.0391 5 19.5304 5 19V13Z" stroke="#FF3F33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                              <path d="M11 16C11 16.2652 11.1054 16.5196 11.2929 16.7071C11.4804 16.8946 11.7348 17 12 17C12.2652 17 12.5196 16.8946 12.7071 16.7071C12.8946 16.5196 13 16.2652 13 16C13 15.7348 12.8946 15.4804 12.7071 15.2929C12.5196 15.1054 12.2652 15 12 15C11.7348 15 11.4804 15.1054 11.2929 15.2929C11.1054 15.4804 11 15.7348 11 16Z" stroke="#FF3F33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                              <path d="M8 11V7C8 5.93913 8.42143 4.92172 9.17157 4.17157C9.92172 3.42143 10.9391 3 12 3C13.0609 3 14.0783 3.42143 14.8284 4.17157C15.5786 4.92172 16 5.93913 16 7V11" stroke="#FF3F33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </g>
+                            <defs>
+                              <clipPath id="clip0_2649_28934">
+                                <rect width="24" height="24" fill="white" />
+                              </clipPath>
+                            </defs>
+                          </svg>
+                        </span>
+                        Заблокировать
+                      </div>
                     </div>
 
                     <!-- col 3 -->
-                    <div class="table__main-col border-b">
+                    <div class="table__main-col border-b block">
                       <div class="main__col-item">
                         <div class="checkbox-wrapper">
                           <input
@@ -507,13 +702,35 @@
                         </div>
                         @Isavitsi
                       </div>
-                      <div class="main__col-item">26.06.2024</div>
-                      <div class="main__col-item">
+                      <div class="main__col-item date">26.06.2024</div>
+                      <div class="main__col-item status">
                         <div class="item-status status-active">Активный</div>
                       </div>
-                      <div class="main__col-item">1</div>
-                      <div class="main__col-item">$20</div>
-                      <div class="item-actions">Заблокировать</div>
+                      <div class="main__col-item shop">
+                        <span class="tit">Покупок:</span>
+                        2
+                      </div>
+                      <div class="main__col-item spent">
+                        <span class="tit">Потрачено:</span>
+                        24 $0
+                      </div>
+                      <div class="item-actions">
+                        <span class="icon">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_2649_28934)">
+                              <path d="M5 13C5 12.4696 5.21071 11.9609 5.58579 11.5858C5.96086 11.2107 6.46957 11 7 11H17C17.5304 11 18.0391 11.2107 18.4142 11.5858C18.7893 11.9609 19 12.4696 19 13V19C19 19.5304 18.7893 20.0391 18.4142 20.4142C18.0391 20.7893 17.5304 21 17 21H7C6.46957 21 5.96086 20.7893 5.58579 20.4142C5.21071 20.0391 5 19.5304 5 19V13Z" stroke="#FF3F33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                              <path d="M11 16C11 16.2652 11.1054 16.5196 11.2929 16.7071C11.4804 16.8946 11.7348 17 12 17C12.2652 17 12.5196 16.8946 12.7071 16.7071C12.8946 16.5196 13 16.2652 13 16C13 15.7348 12.8946 15.4804 12.7071 15.2929C12.5196 15.1054 12.2652 15 12 15C11.7348 15 11.4804 15.1054 11.2929 15.2929C11.1054 15.4804 11 15.7348 11 16Z" stroke="#FF3F33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                              <path d="M8 11V7C8 5.93913 8.42143 4.92172 9.17157 4.17157C9.92172 3.42143 10.9391 3 12 3C13.0609 3 14.0783 3.42143 14.8284 4.17157C15.5786 4.92172 16 5.93913 16 7V11" stroke="#FF3F33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </g>
+                            <defs>
+                              <clipPath id="clip0_2649_28934">
+                                <rect width="24" height="24" fill="white" />
+                              </clipPath>
+                            </defs>
+                          </svg>
+                        </span>
+                        Заблокировать
+                    </div>
                     </div>
                   </div>
                 </div>
@@ -525,5 +742,7 @@
     </div>
 
     <script src="../../app/calendar.js"></script>
+    <script src="../../app/sortPopup.js"></script>
+    <script src="../../app/pupuppsubscribe.js"></script>
   </body>
 </html>

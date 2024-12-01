@@ -2,13 +2,14 @@ const gallery = document.getElementById("media-gallery");
 const thumbnailsContainer = document.querySelector(".thumbnails");
 const mainImage = document.getElementById("main-img");
 const slider = document.getElementById("media-slider");
-const modal = document.querySelector(".slider-modal ");
+const modal = document.querySelector(".slider-modal");
 const sliderMain = document
   .querySelector(".slider-main")
   .addEventListener("click", (e) => e.stopPropagation());
 const sliderThumbnails = document
   .querySelector(".slider-thumbnails")
   .addEventListener("click", (e) => e.stopPropagation());
+const closeSliderButton = document.querySelector(".close-slider");
 
 let images = [];
 
@@ -50,6 +51,11 @@ window.nextImage = () => {
 };
 
 modal.addEventListener("click", closeModal);
+
+closeSliderButton.addEventListener("click", (e) => {
+  e.stopPropagation();
+  closeModal();
+});
 
 function closeModal() {
   modal.classList.remove("open");

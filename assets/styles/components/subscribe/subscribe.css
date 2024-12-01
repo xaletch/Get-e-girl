@@ -50,7 +50,7 @@
 }
 .subscribe__prices-wrapper {
   display: grid;
-  grid-template-columns: 181px 165px 244px;
+  grid-template-columns: 181px 51px 292px;
   align-items: flex-end;
   gap: 24px;
 }
@@ -90,7 +90,12 @@
   border-radius: 6px;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 10px;
+  box-sizing: border-box;
+}
+.apply-subscribers span {
+  display: flex;
 }
 .apply-subscribers p {
   font-weight: 400;
@@ -125,6 +130,16 @@
 .table__head-item.item-actions {
   padding-right: 20px;
   justify-content: flex-end;
+}
+.item-actions {
+  color: var(--red);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+}
+.item-actions .icon {
+  display: flex;
 }
 .table__head-item .checkbox-wrapper {
   margin-right: 6px;
@@ -186,5 +201,292 @@
   text-decoration-skip-ink: none;
 }
 .table__main-col .item__actions-unlock {
-  color: var(--green);
+  color: var(--white);
+}
+
+.input-wrapper-subscribe {
+  width: 292px;
+}
+.input-wrapper-subscribe input {
+  display: flex;
+  align-items: center;
+}
+.select-services {
+  width: 150px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  color: rgba(255, 255, 255, 0.2);
+  font-size: 12px;
+  font-weight: 400;
+}
+.select-services svg {
+  transform: rotate(90deg);
+  opacity: 0.5;
+}
+.popups-item  {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.subscribe__prices .popups-items {
+  display: none;
+}
+.subscribe__prices .popups-items.active {
+  display: block;
+}
+.button-content {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.button-content .active {
+  font-size: 12px;
+  color: var(--white);
+}
+.button-content-count {
+  width: 22px;
+  height: 22px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #4971FF;
+  color: var(--white);
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.15;
+}
+.apply-subscribers .text {
+  display: none;
+  font-size: 16px;
+  color: var(--white);
+  font-weight: 400;
+  line-height: 1.4;
+}
+.subscribe__prices-sort {
+  margin-top: 18px;
+  display: none;
+}
+.subscribe__prices-sort .sort__popup-block {
+  justify-content: space-between;
+}
+.main__col-item .tit {
+  display: none;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.33333;
+  opacity: 0.5;
+  color: var(--white);
+}
+.select-all {
+  margin-top: 16px;
+  display: none;
+  gap: 12px;
+  align-items: center;
+  color: var(--white);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.33333;
+}
+
+@media screen and (max-width: 1140px) {
+  .subscribe__table-head {
+    grid-template-columns: 170px 140px 150px 141px 150px auto;
+  }
+  .table__head-item {
+    padding: 0 10px;
+    font-size: 11px;
+  }
+  .table__main-col {
+    grid-template-columns: 170px 140px 150px 141px 150px auto;
+  }
+  .subscribe__table {
+    margin-top: 32px;
+  }
+}
+
+@media screen and (max-width: 1020px) {
+  .subscribe-info,
+  .subscribe__prices {
+    margin-top: 32px;
+  }
+  .subscribe__info-number {
+    width: 100%;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .subscribe__number-item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .number__item-num {
+    margin-top: 0;
+  }
+  .subscribe-info {
+    flex-direction: column;
+  }
+  .sort-date {
+    width: 100%;
+    justify-content: flex-start;
+    margin-top: 32px;
+  }
+
+  /* таблица */
+  .subscribe__table {
+    margin-top: 16px;
+  }
+  .table__main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .subscribe__table-head {
+    display: none;
+  }
+  .table__main-col {
+    padding: 12px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 8px;
+    column-gap: 12px;
+  }
+  .table__main .icon svg {
+    width: 20px;
+    height: 20px;
+  }
+  .table__main-col.unlock {
+    background: rgba(36, 172, 35, 0.1);
+  }
+  .table__main-col.block {
+    background: rgba(255, 63, 51, 0.1);
+  }
+  .main__col-item {
+    border: none;
+    padding: 0;
+  }
+  .main__col-item .tit {
+    display: flex;
+  }
+  .item-actions {
+    border: none;
+  }
+  .table__main {
+    border: none;
+  }
+  .main__col-item.date {
+    grid-column: span 3;
+    justify-content: flex-end;
+  }
+  .main__col-item.shop {
+    grid-column: 1 / 1 span;
+
+  }
+  .main__col-item.spent {
+    grid-column: 2 / 3 span;
+  }
+  .main__col-item.status {
+    grid-row: 3;
+    grid-column: 1 / 2 span;
+  }
+  .table__main-col .item-actions {
+    grid-column: 2 span;
+    padding: 0;
+    gap: 4px;
+  }
+  .table__main-col.border-r {
+    border-right: 1px solid var(--graphite);
+  }
+  .select-all {
+    display: flex;
+  }
+  .table__main {
+    margin-top: 16px;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .subscribe-head {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  .subscribe-buttons {
+    gap: 16px;
+  }
+  .number__item-name {
+    font-size: 14px
+  }
+  .number__item-num {
+    font-size: 32px;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  /*  */
+  .apply-subscribers {
+    display: none;
+  }
+
+  .subscribe__prices-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .apply-subscribers {
+    width: 100%;
+  }
+  .input-wrapper-subscribe {
+    width: 100%;
+  }
+  .apply-subscribers .text {
+    display: block;
+  }
+  .input-price {
+    text-align: center;
+  }
+  .select-services {
+    width: 240px;
+  }
+  .subscribe__prices-sort {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .table__main {
+    display: grid;
+    grid-template-columns: auto;
+  }
+  .table__main-col.border-r {
+    border-right: none;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .subscribe-buttons {
+    width: 100%;
+  }
+  .number__item-num {
+    font-size: 24px;
+  }
+  .sort-date {
+    display: none;
+  }
+}
+@media screen and (max-width: 480px) {
+  .ui-button {
+    padding: 0 !important;
+    font-size: 18px;
+  }
+  .ui-input {
+    height: 51px !important;
+  }
+  .select-services {
+    width: 180px;
+  }
 }

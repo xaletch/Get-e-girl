@@ -84,3 +84,13 @@
   bottom: 0;
   height: 301px;
 }
+
+
+@media screen and (max-width: 620px) {
+  .modal__edit-avatar {
+    padding: 0 16px;
+  }
+  .edit__cover-img {
+    width: 100%;
+  }
+}

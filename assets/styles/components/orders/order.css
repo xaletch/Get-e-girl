@@ -55,6 +55,19 @@
   user-select: none;
   gap: 10px;
 }
+.order__come-back__mobile-v2 {
+  display: none;
+  width: 34px;
+  height: 36px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2px;
+  background-color: var(--black);
+}
+.order__come-back__mobile-v2 span{
+  margin: 0;
+  transform: rotate(-180deg);
+}
 .order__come-back span {
   transform: rotate(180deg);
 }
@@ -140,6 +153,11 @@
   font-family: "Gilroy";
   font-weight: 400;
   line-height: 1.3125;
+}
+.information__name-two {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 .information-member {
   display: flex;
@@ -303,6 +321,9 @@
 }
 
 @media screen and (max-width: 660px) {
+  .order__come-back__mobile-v2 {
+    display: flex;
+  }
   .order {
     margin-top: 30px;
   }

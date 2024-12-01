@@ -241,7 +241,7 @@ function openUserChat(item) {
                 </li>
                 <li class="task__list-item">
                   <p class="task-name task__name-total">Итого:</p>
-                  <div class="task-item task__item-total">$240</div>
+                  <div class="task-item task__item-total">24 $0</div>
                 </li>
               </ul>
             </div>
@@ -327,7 +327,7 @@ function openUserChat(item) {
                 </li>
                 <li class="task__list-item">
                   <p class="task-name task__name-total">Итого:</p>
-                  <div class="task-item task__item-total">$240</div>
+                  <div class="task-item task__item-total">24 $0</div>
                 </li>
               </ul>
             </div>
@@ -432,7 +432,7 @@ function openUserChat(item) {
                 </li>
                 <li class="task__list-item">
                   <p class="task-name task__name-total">Итого:</p>
-                  <div class="task-item task__item-total">$240</div>
+                  <div class="task-item task__item-total">24 $0</div>
                 </li>
               </ul>
             </div>

@@ -176,10 +176,21 @@
       <main class="main">
         <section class="my-content">
           <div class="container">
-            <h1 class="title-page">My content</h1>
+            <h1 class="title-page flex">
+              <div>
+                <a href="./myContent.html" class="media__collection-back mobile">
+                  <svg width="22" height="10">
+                    <use
+                      href="../../../assets/icon/icons.svg#go-back"
+                    ></use>
+                  </svg>
+                </a>
+                Сontent
+              </div>
+            </h1>
             <div class="content__wrapper">
               <!-- navbar -->
-              <div class="my-content__navbar">
+              <div class="my-content__navbar hide">
                 <div class="content__navbar-head">
                   <div class="input-wrapper">
                     <input
@@ -519,6 +530,25 @@
         <div class="slider-modal">
           <div class="slider" id="media-slider">
             <div class="slider-main">
+              <button class="close-slider">
+                <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g filter="url(#filter0_d_2711_23701)">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.98566 26.009C5.43241 26.5622 5.43361 27.458 5.98832 28.0098C6.54303 28.5616 7.44121 28.5604 7.99445 28.0071L17.0099 18.9916L26.0363 28.018C26.5895 28.5712 27.4877 28.5724 28.0424 28.0206C28.5971 27.4689 28.5983 26.5731 28.045 26.0198L19.0134 16.9882L28.0291 7.97244C28.5824 7.41919 28.5812 6.52341 28.0265 5.97164C27.4718 5.41987 26.5736 5.42107 26.0203 5.97431L17.0099 14.9847L8.01036 5.98514C7.45711 5.43189 6.55894 5.4307 6.00422 5.98246C5.44951 6.53423 5.44832 7.43002 6.00156 7.98326L15.0065 16.9882L5.98566 26.009Z" fill="white" />
+                  </g>
+                  <defs>
+                    <filter id="filter0_d_2711_23701" x="1.5715" y="1.55859" width="30.8877" height="30.875" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                      <feOffset />
+                      <feGaussianBlur stdDeviation="2" />
+                      <feComposite in2="hardAlpha" operator="out" />
+                      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0" />
+                      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2711_23701" />
+                      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2711_23701" result="shape" />
+                    </filter>
+                  </defs>
+                </svg>
+              </button>
               <button class="slider-button arrow left" onclick="prevImage()">
                 <svg width="60" height="60">
                   <use href="../../assets/icon/icons.svg#slider-button"></use>

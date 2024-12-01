@@ -1,5 +1,10 @@
+.authorization {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
 .authorization__wrapper {
-  max-width: 650px;
+  width: 648px;
   height: 100vh;
   background: var(--white);
   overflow-x: auto;
@@ -166,16 +171,24 @@
   font-weight: 400;
   line-height: 1.4;
 }
+.auth-bg {
+  flex: 1;
+  height: 100vh;
+  background-image: url('../../../images/auth-bg.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1320px) {
   .authorization__wrapper {
-    max-width: 100%;
+    width: 100%;
   }
 }
 
 @media screen and (max-width: 480px) {
   .authorization__wrapper {
-    max-width: 100%;
+    width: 100%;
   }
   .authorization__block-inner,
   .authorization__block-home {

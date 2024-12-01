@@ -1,8 +1,7 @@
 .contact__wrapper {
   margin-top: 40px;
-  display: grid;
-  grid-template-columns: 1fr 380px;
-  align-items: center;
+  display: flex;
+  flex-direction: column;
   gap: 32px;
 }
 /* form */
@@ -58,8 +57,8 @@
 /* contact */
 .contact__contacts {
   display: grid;
-  grid-template-rows: repeat(3, 149px);
-  gap: 6px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
 }
 .contacts__card {
   background: var(--dark-gray);
@@ -109,7 +108,7 @@
 
 /* form send */
 .contact__form-send {
-  height: 100%;
+  height: 338px;
   background: rgba(36, 172, 35, 0.15);
   border: 1px solid var(--green);
   border-radius: 8px;
@@ -158,9 +157,13 @@
   }
   .contact__contacts {
     width: 100%;
+    grid-template-columns: repeat(2, 1fr);
   }
   .form-send .contact__form-inner {
     padding: 0;
+  }
+  .contact__form-send {
+    height: 240px;
   }
   .contact__form-send__inner {
     padding: 60px;
