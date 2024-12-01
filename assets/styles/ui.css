@@ -401,7 +401,8 @@
   width: 100%;
   height: 57px;
   padding: 14px 30px;
-  border-radius: 40px;
+  /* border-radius: 40px; */
+  border-radius: 4px;
   text-align: center;
   font-size: 18px;
   font-family: "Gilroy";
@@ -801,6 +802,33 @@
 .checkbox-wrapper .checkbox-input:checked + .checkbox-label .checkbox-icon {
   display: block;
 }
+.modal__menu-user {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.modal__menu-user img {
+  border: 1px solid var(--white);
+  border-radius: 360px;
+  width: 236px;
+  height: 236px;
+}
+.modal__menu-user .username {
+  margin-top: 16px;
+  font-weight: 700;
+font-size: 18px;
+line-height: 1;
+color: var(--white);
+}
+.modal__menu-user .text {
+  margin-top: 12px;
+  font-weight: 400;
+font-size: 13px;
+line-height: 1.53846;
+text-align: right;
+color: var(--white);
+}
 
 @media screen and (max-width: 1111px) {
   .sort-date {
@@ -846,6 +874,10 @@
     padding: 10px 20px;
     font-size: 14px;
   }
+  .modal__menu-user img {
+    width: 144px;
+    height: 144px;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -865,7 +897,9 @@
     font-size: 14px;
     line-height: 18px;
   }
-
+.modal__menu {
+  width: 100%;
+}
   /* Социальные сети */
   .auth__social-button {
     height: 37px;

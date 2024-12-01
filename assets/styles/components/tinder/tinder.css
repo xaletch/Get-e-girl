@@ -137,6 +137,9 @@
   position: relative;
   z-index: 10;
 }
+.tinder__content-head.mobile {
+  display: none;
+}
 .tinder-user {
   display: flex;
   align-items: center;
@@ -240,4 +243,144 @@
 }
 .scroll-button.button-bottom {
   transform: rotate(-180deg);
+}
+.games.hide {
+  padding: 0;
+}
+.games {
+  width: 176px;
+  padding: 16px 0;
+  border-radius: 30px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  z-index: 10;
+}
+.games-button {
+  width: 100%;
+  padding-bottom: 0;
+  padding-top: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 1.06667;
+  color: var(--white);
+}
+.games.hide .games-button {
+  padding: 8px;
+}
+.games.hide .games-button span {
+  display: flex;
+}
+.games-button span {
+  display: none;
+}
+.games.hide .games-list{
+  display: none;
+}
+.games-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+}
+.verified-account {
+  display: flex;
+}
+
+@media screen and (max-width: 920px) {
+  .tinder {
+    margin-top: 16px;
+    padding-left: 0;
+  }
+  .tinder .container-lg {
+    padding: 0;
+  }
+  .tinder__content-head {
+    display: none;
+  }
+  .tinder__content-head.mobile {
+    display: flex;
+    width: 100%;
+    padding: 0 15px;
+  }
+  .tinder__wrapper {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .tinder__scroll-button {
+    flex-direction: row;
+  }
+  .tinder-setting {
+    width: 32px;
+    height: 32px;
+  }
+  .tinder-setting svg {
+    width: 24px;
+    height: 24px;
+  }
+  .tinder__user-img {
+    width: 42px;
+    height: 42px;
+  }
+  .tinder-user {
+    gap: 12px;
+  }
+  .scroll-button.button-top svg{
+    transform: rotate(-90deg);
+  }
+  .scroll-button.button-bottom svg{
+    transform: rotate(270deg);
+  }
+  .games.hide {
+    width: 176px !important;
+  }
+  .games {
+    width: 100%;
+  }
+  .games-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .tinder {
+    padding-bottom: 120px;
+  }
+  .tinder__content-inner {
+    padding: 13px 15px;
+  }
+  .scroll-button {
+    width: 60px;
+    height: 60px;
+  }
+  /* .scroll-button svg {
+    width: 16px;
+    height: 16px;
+  } */
+  .tinder__block-content {
+    width: 100%;
+  }
+  .tinder__next-button {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .scroll-button {
+    width: 40px;
+    height: 40px;
+  }
+  .scroll-button svg {
+    width: 16px;
+    height: 16px;
+  }
 }

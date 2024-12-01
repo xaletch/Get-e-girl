@@ -30,7 +30,7 @@
                   </span>
                   Video call
                 </a>
-                <div class="video-call__time">00:32:10</div>
+                <!-- <div class="video-call__time">00:32:10</div> -->
               </div>
               <button class="video-call__extend">
                 <span>
@@ -51,18 +51,77 @@
                   class="video-call__users-wrapper video-call__users-wrapper-lg"
                 >
                   <!-- card 1 -->
-                  <div class="video-card">
+                  <div class="video-card video__card-big">
                     <div class="video__card-inner">
-                      <!-- buttons -->
-                      <div class="video__card-buttons">
-                        <div class="video__card-btn">
-                          <svg width="25" height="24">
-                            <use
-                              href="../../assets/icon/icons.svg#secure"
-                            ></use>
-                          </svg>
-                        </div>
+                      <div class="quick-access">
+                        <button class="quick__access-button orange">
+                          <span>
+                            <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <g clip-path="url(#clip0_2641_22357)">
+                                <path d="M3 12.5C3 13.6819 3.23279 14.8522 3.68508 15.9442C4.13738 17.0361 4.80031 18.0282 5.63604 18.864C6.47177 19.6997 7.46392 20.3626 8.55585 20.8149C9.64778 21.2672 10.8181 21.5 12 21.5C13.1819 21.5 14.3522 21.2672 15.4442 20.8149C16.5361 20.3626 17.5282 19.6997 18.364 18.864C19.1997 18.0282 19.8626 17.0361 20.3149 15.9442C20.7672 14.8522 21 13.6819 21 12.5C21 11.3181 20.7672 10.1478 20.3149 9.05585C19.8626 7.96392 19.1997 6.97177 18.364 6.13604C17.5282 5.30031 16.5361 4.63738 15.4442 4.18508C14.3522 3.73279 13.1819 3.5 12 3.5C10.8181 3.5 9.64778 3.73279 8.55585 4.18508C7.46392 4.63738 6.47177 5.30031 5.63604 6.13604C4.80031 6.97177 4.13738 7.96392 3.68508 9.05585C3.23279 10.1478 3 11.3181 3 12.5Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M12 12.5L15 14.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M12 7.5V12.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_2641_22357">
+                                  <rect width="24" height="24" fill="white" transform="translate(0 0.5)" />
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </span>
+                          Time left: 14:24
+                        </button>
+                        <button class="quick__access-button open-camera">
+                          <span class="add">
+                            <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M0 6.5C0 3.18629 2.68629 0.5 6 0.5H18C21.3137 0.5 24 3.18629 24 6.5V18.5C24 21.8137 21.3137 24.5 18 24.5H6C2.68629 24.5 0 21.8137 0 18.5V6.5Z" fill="white" />
+                              <path d="M12 18.3921L12 6.61027" stroke="#090909" stroke-width="2" stroke-linecap="round" />
+                              <path d="M6.10938 12.5005L17.8912 12.5005" stroke="#090909" stroke-width="2" stroke-linecap="round" />
+                            </svg>
+                          </span>
+                          Продлить
+                        </button>
+                        <button class="quick__access-button query">
+                          <span>
+                            <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <g clip-path="url(#clip0_2641_22372)">
+                                <path d="M13 20.5H5C4.46957 20.5 3.96086 20.2893 3.58579 19.9142C3.21071 19.5391 3 19.0304 3 18.5V9.5C3 8.96957 3.21071 8.46086 3.58579 8.08579C3.96086 7.71071 4.46957 7.5 5 7.5H6C6.53043 7.5 7.03914 7.28929 7.41421 6.91421C7.78929 6.53914 8 6.03043 8 5.5C8 5.23478 8.10536 4.98043 8.29289 4.79289C8.48043 4.60536 8.73478 4.5 9 4.5H15C15.2652 4.5 15.5196 4.60536 15.7071 4.79289C15.8946 4.98043 16 5.23478 16 5.5C16 6.03043 16.2107 6.53914 16.5858 6.91421C16.9609 7.28929 17.4696 7.5 18 7.5H19C19.5304 7.5 20.0391 7.71071 20.4142 8.08579C20.7893 8.46086 21 8.96957 21 9.5V11" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M14.9363 12.875C14.809 12.2767 14.5019 11.7316 14.0562 11.3127C13.6105 10.8938 13.0474 10.6211 12.4423 10.5312C11.8373 10.4412 11.2192 10.5383 10.6709 10.8094C10.1226 11.0805 9.6702 11.5127 9.37435 12.0481C9.07851 12.5835 8.95333 13.1965 9.01559 13.805C9.07785 14.4135 9.32457 14.9884 9.7227 15.4528C10.1208 15.9172 10.6514 16.2488 11.2432 16.4033C11.8351 16.5577 12.46 16.5276 13.0343 16.317" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M21 15.5H18.5C18.1022 15.5 17.7206 15.658 17.4393 15.9393C17.158 16.2206 17 16.6022 17 17C17 17.3978 17.158 17.7794 17.4393 18.0607C17.7206 18.342 18.1022 18.5 18.5 18.5H19.5C19.8978 18.5 20.2794 18.658 20.5607 18.9393C20.842 19.2206 21 19.6022 21 20C21 20.3978 20.842 20.7794 20.5607 21.0607C20.2794 21.342 19.8978 21.5 19.5 21.5H17" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M19 21.5V22.5M19 14.5V15.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_2641_22372">
+                                  <rect width="24" height="24" fill="white" transform="translate(0 0.5)" />
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </span>
+                          Запрос
+                        </button>
+                        <button class="quick__access-button donate">
+                          <span>
+                            <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <g clip-path="url(#clip0_2641_22380)">
+                                <path d="M12.9974 19.4999L11.9974 20.4999L4.49737 13.0719C4.00268 12.5905 3.61301 12.0119 3.35292 11.3726C3.09282 10.7332 2.96793 10.0469 2.98611 9.35687C3.00428 8.66685 3.16513 7.98807 3.45853 7.36327C3.75192 6.73847 4.17151 6.18119 4.69086 5.72651C5.21021 5.27184 5.81808 4.92962 6.47618 4.72141C7.13429 4.51321 7.82838 4.44352 8.51474 4.51673C9.2011 4.58995 9.86487 4.80449 10.4642 5.14684C11.0636 5.48919 11.5856 5.95193 11.9974 6.50593C12.7028 5.56747 13.716 4.90717 14.8594 4.64073C16.0028 4.37428 17.2035 4.51869 18.2511 5.04864C19.2987 5.57859 20.1264 6.46028 20.5892 7.53925C21.052 8.61821 21.1204 9.82562 20.7824 10.9499" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M21 15.5H18.5C18.1022 15.5 17.7206 15.658 17.4393 15.9393C17.158 16.2206 17 16.6022 17 17C17 17.3978 17.158 17.7794 17.4393 18.0607C17.7206 18.342 18.1022 18.5 18.5 18.5H19.5C19.8978 18.5 20.2794 18.658 20.5607 18.9393C20.842 19.2206 21 19.6022 21 20C21 20.3978 20.842 20.7794 20.5607 21.0607C20.2794 21.342 19.8978 21.5 19.5 21.5H17" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M19 21.5V22.5M19 14.5V15.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_2641_22380">
+                                  <rect width="24" height="24" fill="white" transform="translate(0 0.5)" />
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </span>
+                          Донат
+                        </button>
+
                       </div>
+                      <!-- buttons -->
+                      <button class="user-menu-setting">
+                        <img src="../../assets/icon/dot.svg" alt="dot">
+                      </button>
                       <!-- video -->
                       <div class="video__card-video">
                         <img
@@ -70,32 +129,55 @@
                           alt="video"
                         />
                       </div>
+
+                      <div class="video-call__sound">
+                        <div class="sound">
+                          <div class="sound__track">
+                            <div class="sound__level"></div>
+                          </div>
+                          <div class="sound__icon">
+                            <svg width="15" height="14">
+                              <use href="../../assets/icon/icons.svg#sound"></use>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
 
                   <!-- card 2 -->
-                  <div class="video-card">
+                  <div class="video-card video__card-big-2">
                     <div class="video__card-inner">
+                      <div class="quick-access">
+                        <button class="quick__access-button">
+                          <span>
+                            <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <g clip-path="url(#clip0_2641_22357)">
+                                <path d="M3 12.5C3 13.6819 3.23279 14.8522 3.68508 15.9442C4.13738 17.0361 4.80031 18.0282 5.63604 18.864C6.47177 19.6997 7.46392 20.3626 8.55585 20.8149C9.64778 21.2672 10.8181 21.5 12 21.5C13.1819 21.5 14.3522 21.2672 15.4442 20.8149C16.5361 20.3626 17.5282 19.6997 18.364 18.864C19.1997 18.0282 19.8626 17.0361 20.3149 15.9442C20.7672 14.8522 21 13.6819 21 12.5C21 11.3181 20.7672 10.1478 20.3149 9.05585C19.8626 7.96392 19.1997 6.97177 18.364 6.13604C17.5282 5.30031 16.5361 4.63738 15.4442 4.18508C14.3522 3.73279 13.1819 3.5 12 3.5C10.8181 3.5 9.64778 3.73279 8.55585 4.18508C7.46392 4.63738 6.47177 5.30031 5.63604 6.13604C4.80031 6.97177 4.13738 7.96392 3.68508 9.05585C3.23279 10.1478 3 11.3181 3 12.5Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M12 12.5L15 14.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M12 7.5V12.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_2641_22357">
+                                  <rect width="24" height="24" fill="white" transform="translate(0 0.5)" />
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </span>
+                          Time left: 30:24
+                        </button>
+                        </div>
                       <!-- buttons -->
-                      <div class="video__card-buttons">
-                        <div class="video__card-btn">
-                          <svg width="25" height="24">
-                            <use
-                              href="../../assets/icon/icons.svg#secure"
-                            ></use>
-                          </svg>
-                        </div>
-                        <div class="video__card-btn">
-                          <svg width="25" height="24">
-                            <use
-                              href="../../assets/icon/icons.svg#video-camera"
-                            ></use>
-                          </svg>
-                        </div>
-                      </div>
+
+                      <button class="user-menu-setting">
+                        <img src="../../assets/icon/dot.svg" alt="dot">
+                      </button>
                       <!-- video -->
-                      <div class="video__card-video video-block">
-                        <img src="../../assets/images/video.png" alt="video" />
+                      <div class="video__card-video">
+                        <img
+                          src="../../assets/images/subscribers-8.png"
+                          alt="video"
+                        />
                       </div>
                       <!-- video button action -->
                       <div class="video__card-action__btn">
@@ -107,19 +189,35 @@
                           </svg>
                         </div>
                       </div>
+
+                      <div class="video-call__sound">
+                        <div class="sound">
+                          <div class="sound__track">
+                            <div class="sound__level"></div>
+                          </div>
+                          <div class="sound__icon">
+                            <svg width="15" height="14">
+                              <use href="../../assets/icon/icons.svg#sound"></use>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
 
                   <!-- card 3 -->
-                  <div class="video-card">
+                  <div class="video-card video__card-big-3">
                     <div class="video__card-inner">
                       <!-- video -->
                       <div class="video__card-video">
                         <img
-                          src="../../assets/images/subscribers-3.png"
+                          src="../../assets/images/subscribers-11.png"
                           alt="video"
                         />
                       </div>
+                      <button class="user-menu-setting">
+                        <img src="../../assets/icon/dot.svg" alt="dot">
+                      </button>
                       <!-- video button action -->
                       <div class="video__card-action__btn">
                         <div class="action-button green">
@@ -130,56 +228,52 @@
                           </svg>
                         </div>
                       </div>
-                    </div>
-                  </div>
 
-                  <!-- card 4 -->
-                  <div class="video-card">
-                    <div class="video__card-inner">
-                      <!-- video -->
-                      <div class="video__card-video">
-                        <img
-                          src="../../assets/images/subscribers-3.png"
-                          alt="video"
-                        />
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- card 5 -->
-                  <div class="video-card">
-                    <div class="video__card-inner">
-                      <!-- video -->
-                      <div class="video__card-video">
-                        <img
-                          src="../../assets/images/subscribers-3.png"
-                          alt="video"
-                        />
-                      </div>
-                      <!-- video button action -->
-                      <div class="video__card-action__btn">
-                        <div class="action-button red">
-                          <svg width="21" height="21">
-                            <use
-                              href="../../assets/icon/icons.svg#microphone-off"
-                            ></use>
-                          </svg>
+                      <div class="video-call__sound">
+                        <div class="sound">
+                          <div class="sound__track">
+                            <div class="sound__level"></div>
+                          </div>
+                          <div class="sound__icon">
+                            <svg width="15" height="14">
+                              <use href="../../assets/icon/icons.svg#sound"></use>
+                            </svg>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
 
-                  <!-- card 6 -->
-                  <div class="video-card">
+                  <!-- card 4 -->
+                  <div class="video-card video__card-big-4">
                     <div class="video__card-inner">
+                      <button class="user-menu-setting">
+                        <img src="../../assets/icon/dot.svg" alt="dot">
+                      </button>
                       <!-- video -->
-                      <div class="video__card-video video-block">
-                        <img src="../../assets/images/video.png" alt="video" />
+                      <div class="video__card-video">
+                        <img
+                          src="../../assets/images/subscribers-4.png"
+                          alt="video"
+                        />
+                      </div>
+
+                      <div class="video-call__sound">
+                        <div class="sound">
+                          <div class="sound__track">
+                            <div class="sound__level"></div>
+                          </div>
+                          <div class="sound__icon">
+                            <svg width="15" height="14">
+                              <use href="../../assets/icon/icons.svg#sound"></use>
+                            </svg>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
 
+                </div>
                 <!-- video call buttons -->
                 <div class="vide-call__buttons">
                   <div class="video__buttons-inner">
@@ -214,12 +308,11 @@
                     </button>
                   </div>
                 </div>
-              </div>
             </div>
           </div>
 
           <!-- sound -->
-          <div class="video-call__sound">
+          <!-- <div class="video-call__sound">
             <div class="sound">
               <div class="sound__track">
                 <div class="sound__level"></div>
@@ -230,7 +323,7 @@
                 </svg>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
 
@@ -238,13 +331,71 @@
       <div class="modal">
         <div class="modal__menu">
           <div class="modal__menu-wrapper">
-            <h3 class="modal__menu-name">Выйти из лобби</h3>
+            <h3 class="modal__menu-name">Выйти из лобби</h3>
             <p class="modal__menu-text">
-              Вы уверены что хотите выйти из лобби ?
+              Вы уверены что хотите выйти из лобби?
             </p>
             <div class="modal__menu-buttons">
               <button class="modal-button modal__button-apply">Выйти</button>
-              <button class="modal-button modal__button-close">Отменить</button>
+              <button class="modal-button modal__button-close">Отмена</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal modal-open-camera">
+        <div class="modal__menu">
+          <div class="modal__menu-wrapper">
+            <div class="modal__menu-user">
+              <img src="../../assets/images/subscribers-8.png" alt="user">
+              <h3 class="username">Булгари Кристина</h3>
+              <p class="text">@Biancalop</p>
+            </div>
+            <h3 class="modal__menu-name">Включить камеру</h3>
+            <p class="modal__menu-text">
+              С вашего счета будет списано 25 $
+            </p>
+            <div class="modal__menu-buttons">
+              <button class="modal-button modal__button-close">Оплатить</button>
+              <button class="modal-button modal__button-apply">Отменить</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal modal-donate">
+        <div class="modal__menu">
+          <div class="modal__menu-wrapper">
+            <div class="modal__menu-user">
+              <img src="../../assets/images/subscribers-8.png" alt="user">
+              <h3 class="username">Булгари Кристина</h3>
+              <p class="text">@Biancalop</p>
+            </div>
+            <h3 class="modal__menu-name">Оставить чаевые</h3>
+            <p class="modal__menu-text">
+              С вашего счета будет списано 25 $
+            </p>
+            <div class="modal__menu-buttons">
+              <button class="modal-button modal__button-close">Оплатить</button>
+              <button class="modal-button modal__button-apply">Отменить</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal modal-connect">
+        <div class="modal__menu">
+          <div class="modal__menu-wrapper">
+            <div class="modal__menu-user">
+              <img src="../../assets/images/user.png" alt="user">
+            </div>
+            <h3 class="modal__menu-name">@MoraruV</h3>
+            <p class="modal__menu-text">
+              Хочет включить вашу камеру
+            </p>
+            <div class="modal__menu-buttons">
+              <button class="modal-button modal__button-close">Отмена</button>
+              <button class="modal-button modal__button-apply">Подтвердить</button>
             </div>
           </div>
         </div>
@@ -252,5 +403,7 @@
     </div>
 
     <script src="../../app/modal.js"></script>
+    <script src="../../app/video-call.js"></script>
+
   </body>
 </html>

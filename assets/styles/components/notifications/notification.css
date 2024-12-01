@@ -125,3 +125,22 @@
   right: 12px;
   transform: translateY(-50%);
 }
+
+
+@media screen and (max-width: 740px) {
+  .notification {
+    top: 80px;
+    right: 20px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .notification {
+    width: calc(100% - 30px);
+    left: 15px;
+    right: 15px;
+  }
+  .notification__item-status {
+    display: none;
+  }
+}

@@ -14,182 +14,17 @@
       href="../../assets/styles/components/tinder/tinder.css"
     />
     <link
+    rel="stylesheet"
+    href="../../assets/styles/components/mobileNavigation.css"
+  />
+    <link
       rel="stylesheet"
       href="../../assets/styles/components/modals/modal.css"
     />
   </head>
   <body>
     <div class="app">
-      <div class="chat">
-        <div class="navbar chat-navbar">
-          <div class="navbar__wrapper">
-            <div class="navbar__head">
-              <div class="navbar__head-inner">
-                <div class="navbar__head-name">
-                  <p>Chats</p>
-                  <button class="navbar-close">
-                    <svg width="24" height="24" class="icon">
-                      <use href="../../assets/icon/icons.svg#video-close"></use>
-                    </svg>
-                  </button>
-                </div>
-                <button class="navbar__head-icon" id="chat-open">
-                  <svg width="22" height="21">
-                    <use href="../../assets/icon/icons.svg#chat"></use>
-                  </svg>
-                </button>
-                <div class="navbar__chat-search">
-                  <input class="chat-search" type="text" placeholder="Поиск" />
-                  <button class="chat__search-button">
-                    <svg width="20" height="20">
-                      <use href="../../assets/icon/icons.svg#search"></use>
-                    </svg>
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="navbar__chats">
-              <div class="navbar__chats-category">
-                <div class="chats__category-list">
-                  <div class="category-item active">
-                    <p class="category-name">Подписчики</p>
-                    <div class="category__count-massage">14</div>
-                  </div>
-                  <div class="category-item">
-                    <p class="category-name">Rent time</p>
-                    <div class="category__count-massage">1</div>
-                  </div>
-                  <div class="category-item">
-                    <p class="category-name">Оплачено</p>
-                    <div class="category__count-massage">1</div>
-                  </div>
-                </div>
-              </div>
-              <div class="navbar__chats-wrapper">
-                <p class="chat-when">Today</p>
-                <a href="#" class="navbar__chat navbar__chat-item" user-id="1">
-                  <img src="../../assets/images/subscribers-9.png" alt="girl" />
-                  <div class="navbar__chat-info">
-                    <div class="chat__info-name">
-                      <h3 class="chat-name">Лера</h3>
-                      <p class="char-message">Привет</p>
-                    </div>
-                    <div class="chat__info-date">
-                      <span>21.02.24</span>
-                      <span>14:25</span>
-                    </div>
-                  </div>
-                </a>
-                <a href="#" class="navbar__chat navbar__chat-item" user-id="2">
-                  <img
-                    src="../../assets/images/subscribers-10.png"
-                    alt="girl"
-                  />
-                  <div class="navbar__chat-info">
-                    <div class="chat__info-name">
-                      <h3 class="chat-name">Лера</h3>
-                      <p class="char-message">Привет</p>
-                    </div>
-                    <div class="chat__info-date">
-                      <span>21.02.24</span>
-                      <span>14:25</span>
-                    </div>
-                  </div>
-                </a>
-                <p class="chat-when">Yesterday</p>
-                <a href="#" class="navbar__chat navbar__chat-item" user-id="3">
-                  <img src="../../assets/images/subscribers-7.png" alt="girl" />
-                  <div class="navbar__chat-info">
-                    <div class="chat__info-name">
-                      <h3 class="chat-name">Иван</h3>
-                      <p class="char-message">Привет</p>
-                    </div>
-                    <div class="chat__info-date">
-                      <span>21.02.24</span>
-                      <span>14:25</span>
-                    </div>
-                  </div>
-                </a>
-                <p class="chat-when">Previous 7 days</p>
-
-                <a href="#" class="navbar__chat navbar__chat-item" user-id="4">
-                  <img src="../../assets/images/subscribers-2.png" alt="girl" />
-                  <div class="navbar__chat-info">
-                    <div class="chat__info-name">
-                      <h3 class="chat-name">Маша</h3>
-                      <p class="char-message">Привет</p>
-                    </div>
-                    <div class="chat__info-date">
-                      <span>21.02.24</span>
-                      <span>14:25</span>
-                    </div>
-                  </div>
-                </a>
-                <a href="#" class="navbar__chat navbar__chat-item" user-id="5">
-                  <img src="../../assets/images/media-3.png" alt="girl" />
-                  <div class="navbar__chat-info">
-                    <div class="chat__info-name">
-                      <h3 class="chat-name">Вера</h3>
-                      <p class="char-message">Привет</p>
-                    </div>
-                    <div class="chat__info-date">
-                      <span>21.02.24</span>
-                      <span>14:25</span>
-                    </div>
-                  </div>
-                </a>
-                <a href="#" class="navbar__chat navbar__chat-item" user-id="6">
-                  <img src="../../assets/images/subscribers-8.png" alt="girl" />
-                  <div class="navbar__chat-info">
-                    <div class="chat__info-name">
-                      <h3 class="chat-name">Таня</h3>
-                      <p class="char-message">Привет</p>
-                    </div>
-                    <div class="chat__info-date">
-                      <span>21.02.24</span>
-                      <span>14:25</span>
-                    </div>
-                  </div>
-                </a>
-                <a href="#" class="navbar__chat navbar__chat-item" user-id="7">
-                  <img
-                    src="../../assets/images/subscribers-11.png"
-                    alt="girl"
-                  />
-                  <div class="navbar__chat-info">
-                    <div class="chat__info-name">
-                      <h3 class="chat-name">Ксюша</h3>
-                      <p class="char-message">Привет</p>
-                    </div>
-                    <div class="chat__info-date">
-                      <span>21.02.24</span>
-                      <span>14:25</span>
-                    </div>
-                  </div>
-                </a>
-                <a href="#" class="navbar__chat navbar__chat-item" user-id="8">
-                  <img src="../../assets/images/subscribers-1.png" alt="girl" />
-                  <div class="navbar__chat-info">
-                    <div class="chat__info-name">
-                      <h3 class="chat-name">Соня</h3>
-                      <p class="char-message">Привет</p>
-                    </div>
-                    <div class="chat__info-date">
-                      <span>21.02.24</span>
-                      <span>14:25</span>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- chat -->
-        <div class="chat__wrapper">
-          <!-- Тут контент чата -->
-        </div>
-      </div>
-
+    
       <header class="header header-l header-big-l">
         <div class="container-xl">
           <div class="header__wrapper">
@@ -348,6 +183,34 @@
         <section class="tinder">
           <div class="container-lg">
             <div class="tinder__wrapper">
+              <div class="tinder__content-head mobile">
+                <div class="tinder-user">
+                  <img
+                    src="../../assets/images/subscribers-1.png"
+                    alt="user"
+                    class="tinder__user-img"
+                  />
+                  <div class="tinder__username">
+                    <div class="username">
+                      <a href="#">@Biancalop</a>
+                      <span class="verified-account">
+                        <svg width="18" height="18">
+                          <use
+                            href="../../assets/icon/icons.svg#verified-account"
+                          ></use>
+                        </svg>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <button class="tinder-setting">
+                  <svg width="32" height="32">
+                    <use
+                      href="../../assets/icon/icons.svg#tinder-setting"
+                    ></use>
+                  </svg>
+                </button>
+              </div>
               <div
                 class="tinder__content"
                 style="background-image: url(../../assets/images/tinder.png)"
@@ -362,16 +225,15 @@
                         class="tinder__user-img"
                       />
                       <div class="tinder__username">
-                        <h2>Булгари Кристина</h2>
                         <div class="username">
                           <span class="verified-account">
+                            <a href="#">@Biancalop</a>
                             <svg width="18" height="18">
                               <use
                                 href="../../assets/icon/icons.svg#verified-account"
                               ></use>
                             </svg>
                           </span>
-                          <a href="#">@Biancalop</a>
                         </div>
                       </div>
                     </div>
@@ -399,8 +261,8 @@
                   </div>
 
                   <!-- games -->
-                  <div class="tinder-games">
-                    <h3 class="tinder__games-title">Мои игры</h3>
+                  <!-- <div class="tinder-games">
+
                     <div class="tinder__games-block">
                       <a href="#" class="tinder__game">
                         <img src="../../assets/images/game-1.png" alt="game" />
@@ -420,6 +282,43 @@
                       <a href="#" class="tinder__game">
                         <img src="../../assets/images/game-6.png" alt="game" />
                       </a>
+                    </div>
+                  </div> -->
+
+                  <div class="games hide">
+                    <div class="games-list">
+                      <a href="#" class="tinder__game-icon">
+                        <img src="../../assets/images/game-1.png" alt="game" />
+                      </a>
+                      <a href="#" class="tinder__game-icon">
+                        <img src="../../assets/images/game-2.png" alt="game" />
+                      </a>
+                      <a href="#" class="tinder__game-icon">
+                        <img src="../../assets/images/game-3.png" alt="game" />
+                      </a>
+                      <a href="#" class="tinder__game-icon">
+                        <img src="../../assets/images/game-4.png" alt="game" />
+                      </a>
+                    </div>
+                    <div class="games-button">
+                      <span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g clip-path="url(#clip0_2662_19629)">
+                            <path d="M4 8V6C4 5.46957 4.21071 4.96086 4.58579 4.58579C4.96086 4.21071 5.46957 4 6 4H8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M4 16V18C4 18.5304 4.21071 19.0391 4.58579 19.4142C4.96086 19.7893 5.46957 20 6 20H8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M16 4H18C18.5304 4 19.0391 4.21071 19.4142 4.58579C19.7893 4.96086 20 5.46957 20 6V8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M16 20H18C18.5304 20 19.0391 19.7893 19.4142 19.4142C19.7893 19.0391 20 18.5304 20 18V16" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M8 11C8 11.394 8.0776 11.7841 8.22836 12.1481C8.37913 12.512 8.6001 12.8427 8.87868 13.1213C9.15726 13.3999 9.48797 13.6209 9.85195 13.7716C10.2159 13.9224 10.606 14 11 14C11.394 14 11.7841 13.9224 12.1481 13.7716C12.512 13.6209 12.8427 13.3999 13.1213 13.1213C13.3999 12.8427 13.6209 12.512 13.7716 12.1481C13.9224 11.7841 14 11.394 14 11C14 10.2044 13.6839 9.44129 13.1213 8.87868C12.5587 8.31607 11.7956 8 11 8C10.2044 8 9.44129 8.31607 8.87868 8.87868C8.31607 9.44129 8 10.2044 8 11Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M16 16L13.5 13.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                          </g>
+                          <defs>
+                            <clipPath id="clip0_2662_19629">
+                              <rect width="24" height="24" fill="white" />
+                            </clipPath>
+                          </defs>
+                        </svg>
+                      </span>
+                      <p class="games__button-text">Biancalop games</p>
                     </div>
                   </div>
 
@@ -462,6 +361,44 @@
           </div>
         </section>
       </main>
+
+      <!-- mobile navbar -->
+      <div class="mobile__navigation">
+        <div class="mobile__navigation-wrapper">
+          <a href="#" class="mobile__navigation-item">
+            <span class="mobile__navigation-icon">
+              <svg width="21" height="19">
+                <use href="../../assets/icon/icons.svg#chat-nav"></use>
+              </svg>
+            </span>
+            Chat
+          </a>
+          <a href="#" class="mobile__navigation-item">
+            <span class="mobile__navigation-icon">
+              <svg width="14" height="20">
+                <use href="../../assets/icon/icons.svg#my_e-giris"></use>
+              </svg>
+            </span>
+            My E-girls
+          </a>
+          <a href="#" class="mobile__navigation-item">
+            <span class="mobile__navigation-icon">
+              <svg width="16" height="20">
+                <use href="../../assets/icon/icons.svg#lock"></use>
+              </svg>
+            </span>
+            My Сontent
+          </a>
+          <a href="#" class="mobile__navigation-item">
+            <span class="mobile__navigation-icon">
+              <svg width="24" height="24">
+                <use href="../../assets/icon/icons.svg#orders"></use>
+              </svg>
+            </span>
+            Orders
+          </a>
+        </div>
+      </div>
 
       <!-- modals -->
 
@@ -794,5 +731,6 @@
     <script src="../../app/popup.js"></script>
     <script src="../../app/popups.js"></script>
     <script src="../../app/openChat.js"></script>
+    <script src="../../app/tinder.js"></script>
   </body>
 </html>

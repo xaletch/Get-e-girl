@@ -3,6 +3,7 @@
   position: fixed;
   top: 0;
   left: 0;
+  right: 0;
   bottom: 0;
   z-index: 99;
 }
@@ -992,4 +993,75 @@
 /* modal__cancel-task */
 .modal__cancel-task .popups-items {
   display: none;
+}
+
+
+@media screen and (max-width: 1280px) {
+  .chat__wrapper {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .chat__message {
+    padding: 12px 15px;
+  }
+  .chat__send-message.chat-send {
+    padding: 8px 15px;
+  }
+  .chat__send-message.chat-send .send__message-inner {
+    padding: 6px 8px;
+    height: 52px;
+  }
+  .chat__user-img {
+    max-width: 38px;
+    max-height: 38px;
+    min-width: 38px;
+    min-height: 38px;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .chat-button.chat-delete {
+    display: none;
+  }
+  .chat__head-buttons {
+    gap: 8px;
+  }
+  .chat-button svg {
+    width: 20px;
+    height: 20px;
+  }
+  .chat__user-info__name p {
+    line-height: 1;
+  }
+  .task__list-item .task-name,
+  .task__list-item .task-item {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .chat__message-contents {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .chat__message-head {
+    flex-direction: column-reverse;
+  }
+  .message-info {
+    width: 100%;
+    justify-content: flex-end;
+  }
+  .chat__message-task__inner.bg {
+    padding: 12px;
+  }
+  .message-info {
+    display: none;
+  }
+}
+@media screen and (max-width: 420px) {
+  .task__message-button {
+    flex-direction: column;
+  }
 }
